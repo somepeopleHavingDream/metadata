@@ -1,0 +1,164 @@
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<!-- START SNIPPET: example -->
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core.xsd">
+
+    <!-- Allows us to use system properties as variables in this configuration file -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <value>file:${activemq.conf}/credentials.properties</value>
+        </property>
+    </bean>
+
+    <!-- Allows accessing the server log -->
+    <bean id="logQuery" class="io.fabric8.insight.log.log4j.Log4jLogQuery"
+        lazy-init="false" scope="singleton"
+        init-method="start" destroy-method="stop"></bean>
+
+    <!--
+        The <broker> element is used to configure the ActiveMQ broker.
+    -->
+    <!-- 
+        - brokerName Str localhost 机器名网络内唯一
+        - dataDirectory Str 默认持久化数据的目录
+        - deleteAllMessagesOnStartup Boolean false 启动时是否清空持久化的消息
+        - enableStatistics Boolean true 是否启用数据收集
+    -->
+    <broker xmlns="http://activemq.apache.org/schema/core" brokerName="localhost" dataDirectory="${activemq.data}" schedulerSupport="true">
+        <destinationPolicy>
+            <policyMap>
+                <policyEntries>
+                    <policyEntry topic=">">
+                        <!-- The constantPendingMessageLimitStrategy is used to prevent
+                         slow topic consumers to block producers and affect other consumers
+                         by limiting the number of messages that are retained
+                         For more information, see:
+
+                         http://activemq.apache.org/slow-consumer-handling.html
+
+                    -->
+                        <!-- 
+                        - 【消息限制策略，面向Slow Consumer的】
+                            - 此策略只对Topic有效，只对nondurable订阅者有效，当通道中有大量的消息积压时，broker可以保留的消息量
+                            - 为了防止Topic中有慢速消费者，导致整个通道消息积压（对于Topic而言，一条消息只有所有的订阅者都消费才会被删除）
+                    -->
+                        <pendingMessageLimitStrategy>
+                            <!-- 此策略对所有使用者使用恒定限制（超过其欲取大小）-->
+                            <constantPendingMessageLimitStrategy limit="1000" />
+                        </pendingMessageLimitStrategy>
+                    </policyEntry>
+                </policyEntries>
+            </policyMap>
+        </destinationPolicy>
+
+
+        <!--
+            The managementContext is used to configure how ActiveMQ is exposed in
+            JMX. By default, ActiveMQ uses the MBean server that is started by
+            the JVM. For more information, see:
+
+            http://activemq.apache.org/jmx.html
+        -->
+        <!-- 确保启用了JMX，但告诉ActiveMQ不要创建自己的连接器，以便它将使用默认的JVM JMX连接器 -->
+        <managementContext>
+            <managementContext createConnector="false" />
+        </managementContext>
+
+        <!--
+            Configure message persistence for the broker. The default persistence
+            mechanism is the KahaDB store (identified by the kahaDB tag).
+            For more information, see:
+
+            http://activemq.apache.org/persistence.html
+        -->
+        <!-- 配置消息的持久化，默认的消息持久化是KahaDB存储 -->
+        <persistenceAdapter>
+            <!-- KahaDB存储 -->
+            <kahaDB directory="${activemq.data}/kahadb" />
+        </persistenceAdapter>
+
+
+        <!--
+            The systemUsage controls the maximum amount of space the broker will
+            use before disabling caching and/or slowing down producers. For more information, see:
+            http://activemq.apache.org/producer-flow-control.html
+          -->
+        <!-- 
+            systemUsage控制代理将被占用的最大空间量，在禁用缓存或减慢生产者速度之前使用。
+            如果代理检测到已超出目标的内存限制，或代理的临时或文件存储限制，则消息流可能会减慢，生产者将被阻塞，直到资源可用或收到JMSException为止。
+            此行为是可配置的。
+        -->
+        <systemUsage>
+            <systemUsage>
+                <memoryUsage>
+                    <memoryUsage percentOfJvmHeap="70" />
+                </memoryUsage>
+                <storeUsage>
+                    <storeUsage limit="100 gb" />
+                </storeUsage>
+                <tempUsage>
+                    <tempUsage limit="50 gb" />
+                </tempUsage>
+            </systemUsage>
+        </systemUsage>
+
+        <!--
+            The transport connectors expose ActiveMQ over a given protocol to
+            clients and other brokers. For more information, see:
+
+            http://activemq.apache.org/configuring-transports.html
+        -->
+        <!-- 
+            传输连接器通过给定的协议将ActiveMQ公开给客户和其他经纪人
+        -->
+        <transportConnectors>
+            <!-- DOS protection, limit concurrent connections to 1000 and frame size to 100MB -->
+            <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600" />
+            <transportConnector name="amqp" uri="amqp://0.0.0.0:5672?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600" />
+            <transportConnector name="stomp" uri="stomp://0.0.0.0:61613?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600" />
+            <transportConnector name="mqtt" uri="mqtt://0.0.0.0:1883?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600" />
+            <transportConnector name="ws" uri="ws://0.0.0.0:61614?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600" />
+        </transportConnectors>
+
+        <!-- 
+            NetworkConnector（网络连接器）则主要用来配置ActiveMQ服务端与服务端之间的通信。
+            有静态配置和动态配置的区分。
+        -->
+        <!-- <networkConnectors>
+            <networkConnector uri="multicast://default" />
+        </networkConnectors> -->
+
+        <!-- destroy the spring context on shutdown to stop jetty -->
+        <shutdownHooks>
+            <bean xmlns="http://www.springframework.org/schema/beans" class="org.apache.activemq.hooks.SpringContextHook" />
+        </shutdownHooks>
+
+    </broker>
+
+    <!--
+        Enable web consoles, REST and Ajax APIs and demos
+        The web consoles requires by default login, you can disable this in the jetty.xml file
+
+        Take a look at ${ACTIVEMQ_HOME}/conf/jetty.xml for more details
+    -->
+    <import resource="jetty.xml" />
+
+</beans> <!-- END SNIPPET: example -->
