@@ -1,0 +1,27 @@
+# 定制的镜像都是基于FROM的镜像，这里的activemq就是定制需要的基础镜像，后续的操作都是基于此
+FROM rmobh/activemq:5.15.4
+
+# 设置元数据
+LABEL maintainer="yangxin"
+
+# 用于指定执行后续命令的用户和用户组，这边只是切换后续命令执行的用户（用户和用户组必须提前已经存在）
+USER root
+
+# 设置时区
+# EVN，设置环境变量，定义了环境变量，那么在后续的指令中，就可以使用这个环境变量
+ENV TIME_ZONE Asia/Shanghai
+# RUN，用于执行后面跟着的命令行命令
+# ln -s（symbolic）：对源文件建立符号链接，而非硬链接；-f（force）：强行建立文件或目录的链接，无论文件或目录是否存在
+RUN ln -sf /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime
+RUN echo 'LANG="zh_CN.utf8"' > /etc/locale.conf
+
+ENV work_path /opt/apache-activemq-5.15.4
+
+RUN chown -R activemq:activemq $work_path
+
+WORKDIR $work_path
+
+EXPOSE 8161
+EXPOSE 61616
+
+CMD ["/bin/sh", "-c", "bin/activemq console"]
