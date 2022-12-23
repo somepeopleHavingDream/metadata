@@ -1,0 +1,27 @@
+FROM openjdk
+
+LABEL maintainer="yangxin"
+
+VOLUME /data/docker
+
+# 使用root用户
+USER root
+
+# 配置环境变量
+ENV app_log /data/weblog/java/test
+ENV app_jar test.jar
+ENV service_port 18084
+
+# 创建运行根目录
+RUN mkdir -p $app_log
+
+# 复制jar到容器
+COPY ./$app_jar $work_path/
+
+# 开放端口
+EXPOSE $service_port
+
+# 进入目录
+WORKDIR $work_path/
+# 启动命令
+ENTRYPOINT java -jar ./$app_jar
