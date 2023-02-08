@@ -1,0 +1,59 @@
+FROM daocloud.io/library/centos
+
+LABEL maintainer="yangxin"
+
+# VOLUME指令只是起到了声明了容器中的目录作为匿名卷，但是并没有将匿名卷绑定到宿主机指定目录的功能
+VOLUME /data/weblog/java/nginx
+VOLUME /data/static
+
+USER root
+
+# 设置时区
+ENV TIME_ZONE Asia/Shanghai
+RUN ln -sf /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime \
+&& echo 'LANG="zh_CN.utf8"' > /etc/locale.conf
+
+# 安装nginx
+WORKDIR /etc/yum.repos.d
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* \
+&& sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-* \
+&& yum install -y wget \
+&& wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo \
+&& yum clean all \
+&& yum makecache \
+&& yum install -y nginx \
+&& mkdir /apps \
+&& mkdir /apps/html
+
+# 切换工作目录
+WORKDIR /apps/html
+
+# 配置nginx.conf
+RUN rm /etc/nginx/nginx.conf
+
+# 拷贝配置
+# COPY [--chown=<user>:<group>] <src>..<dest>
+# <src>：相对路径，指的是相对于宿主机上构建目录的文件路径
+# <dest>：指的是容器内的路径，如果是相对路径，则是相对于WORKDIR的路径
+COPY nginx.conf /etc/nginx
+# COPY conf.d /etc/nginx/conf.d
+
+# docker日志
+# docker daemon可以拿到容器里进程的标准输出与标准错误输出，然后通过docker的log driver模块来处理
+RUN ln -sf /dev/stdout /data/weblog/java/nginx/access.log && ln -sf /dev/stderr /data/weblog/java/nginx/error.log
+
+# EXPOSE命令只是声明了容器应该打开的端口，但并没有实际上将它打开，也就是说，如果你不用-p或-P指定要映射的端口，你的容器是不会映射端口出去的，
+# 从而我们知道，我们是没有办法在Dockerfile里面进行端口映射的，只能在容器启动的时候或者在docker-compose文件中使用ports来指定就要映射的端口
+EXPOSE 80
+
+# CMD给出的是一个容器的默认的可执行体，也就是容器启动以后，默认执行的命令，重点就是这个“默认”
+# 意味着，如果docker run没有指定任何的执行命令或者dockerfile里面也没有entrypoint，那么，就会使用cmd指定的默认的执行命令执行
+# 一个dockerfile至多只能有一个cmd，如果有多个，只有最后一个失效
+# 如果我们在run时指定了命令或者有entrypoint，那么cmd就会被覆盖
+# 采用中括号形式，那么第一个参数必须是命令的全路径才行
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+
+# 健康检测
+# wget的--spider参数不会下载任何东西
+# 用||分割的命令具有短路效应，即如果前面的命令为真，在后面的命令不会执行，如果前面的命令为假，则继续执行后面的命令
+HEALTHCHECK --interval=20s --timeout=10s --retries=5 CMD wget --quiet --tries=1 --spider http://localhost:80/ || exit 1
