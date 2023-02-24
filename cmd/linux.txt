@@ -1,0 +1,15 @@
+systemctl stop docker
+systemctl status docker
+systemctl start docker
+
+netstat -tln | grep 80
+lsof -i:80
+kill -9 950
+history
+ps aux | grep nginx
+chmod +x /usr/local/bin/docker-compose
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+curl -L https://get.daocloud.io/docker/compose/releases/download/v2.15.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+git clone https://github.com/somepeopleHavingDream/python-project.git
+pip3 install redis-py-cluster
+python3 redis._demo.py
