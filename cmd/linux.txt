@@ -2,6 +2,17 @@ systemctl stop docker
 systemctl status docker
 systemctl start docker
 
+cat /etc/redhat-release
+cat /proc/cpuinfo | grep 'physical id' | sort | uniq | wc -l
+cat /proc/cpuinfo | grep 'cpu cores' | uniq
+cat /proc/cpuinfo | grep 'processor' | wc -l
+
+curl -L https://get.daocloud.io/docker/compose/releases/download/v2.15.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+curl -s https://mirror.go-repo.io/centos/go-repo.repo | tee /etc/yum.repos.d/go-repo.repo
+
+yum remove go
+yum makecache
+
 netstat -tln | grep 80
 lsof -i:80
 kill -9 950
@@ -9,7 +20,11 @@ history
 ps aux | grep nginx
 chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-curl -L https://get.daocloud.io/docker/compose/releases/download/v2.15.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-git clone https://github.com/somepeopleHavingDream/python-project.git
 pip3 install redis-py-cluster
 python3 redis._demo.py
+top
+export GO111MODULE=off​​
+rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO
+wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
+tar -C /usr/local/ -zxf go1.20.1.linux-amd64.tar.gz
+source /etc/profile

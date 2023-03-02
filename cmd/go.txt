@@ -1,0 +1,10 @@
+go mod init gobuild
+go mod tidy
+
+go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/
+go install github.com/go-delve/delve/cmd/dlv@latest
+go get github.com/sirupsen/logrus
+go clean
+go run main.go
+go install .
+go version
