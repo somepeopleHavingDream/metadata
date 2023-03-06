@@ -28,3 +28,4 @@ rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 tar -C /usr/local/ -zxf go1.20.1.linux-amd64.tar.gz
 source /etc/profile
+ifconfig -a
