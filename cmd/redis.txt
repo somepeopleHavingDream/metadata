@@ -1,2 +1,5 @@
 get bobo_gift_rocket_exist_id_:90309734:90309995
+set bobo:bobo_gift_rocket_tmp '1'
+
 zrevrange bobo_gift_rocket_user_gift_value_:90309734:90309995 0 -1 withscores
+zrank bobo_rank_room_total_gold_90309734 90306555

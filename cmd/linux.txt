@@ -2,6 +2,7 @@ systemctl stop docker
 systemctl status docker
 systemctl start docker
 systemctl daemon-reload
+systemctl restart NetworkManager
 
 cat /etc/redhat-release
 cat /proc/cpuinfo | grep 'physical id' | sort | uniq | wc -l
@@ -16,9 +17,14 @@ yum makecache
 
 ipvsadm -A -t 192.168.63.48:80 -s rr
 ipvsadm -a -t 192.168.63.48:80 -r 192.168.60.26 -m
+ipvsadm -a -t 192.168.63.48:80 -r 192.168.60.26 -g
 ipvsadm -L -n
 ipvsadm -L -n -c
 ipvsadm -C
+ipvsadm -ln
+
+ipvsadm-save
+ipvsadm-save > /etc/sysconfig/ipvsadm
 
 echo 'net.ipv4.ip_forward = 1' >> /etc/sysctl.conf
 echo $?
@@ -43,3 +49,6 @@ sysctl -p
 pgrep nginx | xargs kill -9
 pidof nginx
 ip addr
+ifup ens160
+setenforce 0
+modprobe ip_vs
