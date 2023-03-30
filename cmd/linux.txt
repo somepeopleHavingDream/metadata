@@ -29,6 +29,9 @@ ipvsadm-save > /etc/sysconfig/ipvsadm
 echo 'net.ipv4.ip_forward = 1' >> /etc/sysctl.conf
 echo $?
 
+tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet"
+tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet" | grep -v "logStatus"
+
 netstat -tln | grep 80
 lsof -i:80
 kill -9 950

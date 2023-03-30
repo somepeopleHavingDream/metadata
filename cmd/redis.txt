@@ -4,3 +4,5 @@ set bobo:bobo_gift_rocket_tmp '1'
 zrevrange bobo_gift_rocket_user_gift_value_:90309734:90309995 0 -1 withscores
 zrank bobo_rank_room_total_gold_90309734 90306555
 zcard bobo_rank_room_total_gold_98000601
+
+hlen bibi_guild_member_cache
