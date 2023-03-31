@@ -32,6 +32,11 @@ echo $?
 tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet"
 tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet" | grep -v "logStatus"
 
+redis-server redis.conf
+redis-cli shutdown
+redis-cli shutdown && redis-server redis.conf
+redis-cli zrange bibi_user_active_score 0 -1 withscores > tmp-datas/bibi_user_active_score.txt
+
 netstat -tln | grep 80
 lsof -i:80
 kill -9 950
@@ -55,3 +60,5 @@ ip addr
 ifup ens160
 setenforce 0
 modprobe ip_vs
+reboot
+find / -name "redis.conf"
