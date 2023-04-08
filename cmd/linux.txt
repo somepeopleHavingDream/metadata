@@ -62,3 +62,4 @@ setenforce 0
 modprobe ip_vs
 reboot
 find / -name "redis.conf"
+timedatectl set-timezone Asia/Shanghai
