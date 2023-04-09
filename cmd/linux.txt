@@ -8,6 +8,7 @@ cat /etc/redhat-release
 cat /proc/cpuinfo | grep 'physical id' | sort | uniq | wc -l
 cat /proc/cpuinfo | grep 'cpu cores' | uniq
 cat /proc/cpuinfo | grep 'processor' | wc -l
+cat /proc/cpuinfo | grep processor
 
 curl -L https://get.daocloud.io/docker/compose/releases/download/v2.15.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 curl -s https://mirror.go-repo.io/centos/go-repo.repo | tee /etc/yum.repos.d/go-repo.repo
@@ -67,3 +68,4 @@ modprobe ip_vs
 reboot
 find / -name "redis.conf"
 timedatectl set-timezone Asia/Shanghai
+nohup java -jar sec-kill.jar &
