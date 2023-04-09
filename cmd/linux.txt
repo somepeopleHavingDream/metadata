@@ -12,6 +12,7 @@ cat /proc/cpuinfo | grep processor
 
 curl -L https://get.daocloud.io/docker/compose/releases/download/v2.15.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 curl -s https://mirror.go-repo.io/centos/go-repo.repo | tee /etc/yum.repos.d/go-repo.repo
+curl www.baidu.com
 
 yum remove go
 yum makecache
@@ -42,9 +43,14 @@ redis-cli shutdown
 redis-cli shutdown && redis-server redis.conf
 redis-cli zrange bibi_user_active_score 0 -1 withscores > tmp-datas/bibi_user_active_score.txt
 
+kill -9 950
+kill 950
+
+pgrep nginx | xargs kill -9
+pgrep nginx | xargs kill
+
 netstat -tln | grep 80
 lsof -i:80
-kill -9 950
 history
 ps aux | grep nginx
 chmod +x /usr/local/bin/docker-compose
@@ -59,7 +65,6 @@ tar -C /usr/local/ -zxf go1.20.1.linux-amd64.tar.gz
 source /etc/profile
 ifconfig -a
 sysctl -p
-pgrep nginx | xargs kill -9
 pidof nginx
 ip addr
 ifup ens160
