@@ -74,3 +74,4 @@ reboot
 find / -name "redis.conf"
 timedatectl set-timezone Asia/Shanghai
 nohup java -jar sec-kill.jar &
+jmeter.sh -n -t goods_list.jmx -l result.jtl
