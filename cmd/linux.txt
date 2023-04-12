@@ -8,9 +8,11 @@ cat /etc/redhat-release
 cat /proc/cpuinfo | grep 'physical id' | sort | uniq | wc -l
 cat /proc/cpuinfo | grep 'cpu cores' | uniq
 cat /proc/cpuinfo | grep 'processor' | wc -l
+cat /proc/cpuinfo | grep processor
 
 curl -L https://get.daocloud.io/docker/compose/releases/download/v2.15.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 curl -s https://mirror.go-repo.io/centos/go-repo.repo | tee /etc/yum.repos.d/go-repo.repo
+curl www.baidu.com
 
 yum remove go
 yum makecache
@@ -33,13 +35,22 @@ tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet"
 tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet" | grep -v "logStatus"
 
 redis-server redis.conf
+redis-benchmark -h 127.0.0.1 -p 6379 -c 100 -n 100000
+redis-benchmark -h 127.0.0.1 -p 6379 -q -d 100
+redis-benchmark -t set,lpush -n 100000 -q
+redis-benchmark -n 100000 -q script load "redis.call('set','foo','bar')"
 redis-cli shutdown
 redis-cli shutdown && redis-server redis.conf
 redis-cli zrange bibi_user_active_score 0 -1 withscores > tmp-datas/bibi_user_active_score.txt
 
+kill -9 950
+kill 950
+
+pgrep nginx | xargs kill -9
+pgrep nginx | xargs kill
+
 netstat -tln | grep 80
 lsof -i:80
-kill -9 950
 history
 ps aux | grep nginx
 chmod +x /usr/local/bin/docker-compose
@@ -54,7 +65,6 @@ tar -C /usr/local/ -zxf go1.20.1.linux-amd64.tar.gz
 source /etc/profile
 ifconfig -a
 sysctl -p
-pgrep nginx | xargs kill -9
 pidof nginx
 ip addr
 ifup ens160
@@ -62,3 +72,6 @@ setenforce 0
 modprobe ip_vs
 reboot
 find / -name "redis.conf"
+timedatectl set-timezone Asia/Shanghai
+nohup java -jar sec-kill.jar &
+jmeter.sh -n -t goods_list.jmx -l result.jtl
