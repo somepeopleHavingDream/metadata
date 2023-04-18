@@ -6,7 +6,7 @@ zrange bibi_user_active_score 0 -1 withscores
 zrank bobo_rank_room_total_gold_90309734 90306555
 zcard bobo_rank_room_total_gold_98000601
 zcount bibi_user_active_score 0 0
-zremrangebyscore bibi_user_active_score 0  0
+zremrangebyscore bibi_user_active_score 0 0
 zscore bibi_user_active_score 1
 
 hlen bibi_guild_member_cache
