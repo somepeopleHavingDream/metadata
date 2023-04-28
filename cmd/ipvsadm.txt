@@ -1,0 +1,10 @@
+ipvsadm -A -t 192.168.63.48:80 -s rr
+ipvsadm -a -t 192.168.63.48:80 -r 192.168.60.26 -m
+ipvsadm -a -t 192.168.63.48:80 -r 192.168.60.26 -g
+ipvsadm -L -n
+ipvsadm -L -n -c
+ipvsadm -C
+ipvsadm -ln
+
+ipvsadm-save
+ipvsadm-save > /etc/sysconfig/ipvsadm

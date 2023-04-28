@@ -1,0 +1,13 @@
+pip3 install redis-py-cluster
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple cmake
+pip list
+pip freeze | xargs pip uninstall -y
+
+conda list
+conda create --name dev
+conda activate dev
+conda deactivate
+conda info --envs
+conda search --full-name python
+conda search py
+conda install --name dev openpyxl

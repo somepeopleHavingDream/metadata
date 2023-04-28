@@ -17,31 +17,11 @@ curl www.baidu.com
 yum remove go
 yum makecache
 
-ipvsadm -A -t 192.168.63.48:80 -s rr
-ipvsadm -a -t 192.168.63.48:80 -r 192.168.60.26 -m
-ipvsadm -a -t 192.168.63.48:80 -r 192.168.60.26 -g
-ipvsadm -L -n
-ipvsadm -L -n -c
-ipvsadm -C
-ipvsadm -ln
-
-ipvsadm-save
-ipvsadm-save > /etc/sysconfig/ipvsadm
-
 echo 'net.ipv4.ip_forward = 1' >> /etc/sysctl.conf
 echo $?
 
 tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet"
 tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet" | grep -v "logStatus"
-
-redis-server redis.conf
-redis-benchmark -h 127.0.0.1 -p 6379 -c 100 -n 100000
-redis-benchmark -h 127.0.0.1 -p 6379 -q -d 100
-redis-benchmark -t set,lpush -n 100000 -q
-redis-benchmark -n 100000 -q script load "redis.call('set','foo','bar')"
-redis-cli shutdown
-redis-cli shutdown && redis-server redis.conf
-redis-cli zrange bibi_user_active_score 0 -1 withscores > tmp-datas/bibi_user_active_score.txt
 
 kill -9 950
 kill 950
@@ -49,14 +29,18 @@ kill 950
 pgrep nginx | xargs kill -9
 pgrep nginx | xargs kill
 
+df -h /root/anaconda3/
+df -Th
+
+fdisk -l
+fdisk /dev/nvme0n1
+
 netstat -tln | grep 80
 lsof -i:80
 history
 ps aux | grep nginx
 chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-pip3 install redis-py-cluster
-python3 redis._demo.py
 top
 export GO111MODULE=off​​
 rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO
@@ -75,3 +59,12 @@ find / -name "redis.conf"
 timedatectl set-timezone Asia/Shanghai
 nohup java -jar sec-kill.jar &
 jmeter.sh -n -t goods_list.jmx -l result.jtl
+virtualenv test_env
+python3 redis._demo.py
+deactivate
+du -sh anaconda3
+dumpe2fs /dev/nvme0n1p3
+mkfs.xfs /dev/nvme0n1p3
+umount /dev/nvme0n1p3
+tmux new -s a
+blkid | grep -i /dev/sdb
