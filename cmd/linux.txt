@@ -68,3 +68,4 @@ mkfs.xfs /dev/nvme0n1p3
 umount /dev/nvme0n1p3
 tmux new -s a
 blkid | grep -i /dev/sdb
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
