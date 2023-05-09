@@ -1,0 +1,2 @@
+select @@tx_isolation;
+select @@global.transaction_isolation;
