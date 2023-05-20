@@ -1,2 +1,7 @@
 select @@tx_isolation;
 select @@global.transaction_isolation;
+
+update song_playlist as sp
+    inner join song_playlist_classification spc on sp.uid = spc.uid
+set sp.classification_id = spc.id
+where sp.uid = spc.uid and sp.classification_id is null;

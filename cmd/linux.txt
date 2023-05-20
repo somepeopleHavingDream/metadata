@@ -22,6 +22,7 @@ echo $?
 
 tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet"
 tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet" | grep -v "logStatus"
+tail -f web_info.log | grep -C 50 "/charge/pay/apply" | grep -v "logStatus"
 
 kill -9 950
 kill 950
