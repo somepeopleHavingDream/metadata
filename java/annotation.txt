@@ -13,3 +13,5 @@
 @Valid
 
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
+@JsonFormat(shape = JsonFormat.Shape.STRING)
+@JSONField(serializeUsing = ToStringSerializer.class)
