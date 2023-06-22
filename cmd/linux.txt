@@ -46,7 +46,7 @@ top
 export GO111MODULE=off​​
 rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
-tar -C /usr/local/ -zxf go1.20.1.linux-amd64.tar.gz
+tar -zxvf go1.20.1.linux-amd64.tar.gz -C /usr/local/
 source /etc/profile
 ifconfig -a
 sysctl -p
@@ -70,3 +70,5 @@ umount /dev/nvme0n1p3
 tmux new -s a
 blkid | grep -i /dev/sdb
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+ssh-keygen -t rsa
+hdfs namenode -format
