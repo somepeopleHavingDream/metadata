@@ -1,0 +1,11 @@
+hadoop fs -ls /
+hadoop fs -put README.txt /
+hadoop fs -copyFromLocal cdh_version.properties  /
+hadoop fs -moveFromLocal cdh_version.properties.bak  /
+hadoop fs -cat /README.txt
+hadoop fs -text /README.txt
+hadoop fs -get /README.txt
+hadoop fs -mkdir /hdfs-test
+hadoop fs -mv /README.txt /hdfs-test
+
+hdfs namenode -format
