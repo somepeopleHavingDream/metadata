@@ -7,5 +7,6 @@ hadoop fs -text /README.txt
 hadoop fs -get /README.txt
 hadoop fs -mkdir /hdfs-test
 hadoop fs -mv /README.txt /hdfs-test
+hadoop fs -rm -r /hdfs-test
 
 hdfs namenode -format
