@@ -1,0 +1,17 @@
+# HDFS读数据流程图解
+
+```mermaid
+sequenceDiagram
+    participant A as client
+    participant B as NN
+    participant C as DN1
+    participant D as DN2
+    participant E as DN3
+    participant F as DN4
+    A->>B: 1) 读数据请求
+    B-->>A: 2) 告知文件的元数据信息
+    A->>C: 3) 发送读取BLK1的请求
+    C-->>A: 4) 数据流返回
+    A->>D: 5) 发送读取BLK2的请求
+    D-->>A: 6) 数据流返回
+```
