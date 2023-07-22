@@ -9,4 +9,8 @@ hadoop fs -mkdir /hdfs-test
 hadoop fs -mv /README.txt /hdfs-test
 hadoop fs -rm -r /hdfs-test
 
+hadoop jar hadoop-train-1.0-SNAPSHOT.jar org.yangxin.hadoop.mr.access.AccessYarnApp /access/input/access.log /access/output
+hadoop dfsadmin -safemode leave
+
 hdfs namenode -format
+hdfs fsck / -delete
