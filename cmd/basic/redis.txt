@@ -19,3 +19,5 @@ zremrangebyscore bibi_user_active_score 0 0
 zscore bibi_user_active_score 1
 
 hlen bibi_guild_member_cache
+
+rename act_recharge_day_z fancy_act_recharge_day_z
