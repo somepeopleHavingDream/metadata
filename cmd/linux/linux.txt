@@ -36,6 +36,9 @@ df -Th
 fdisk -l
 fdisk /dev/nvme0n1
 
+timedatectl set-timezone Asia/Shanghai
+timedatectl
+
 netstat -tln | grep 80
 lsof -i:80
 history
@@ -57,7 +60,6 @@ setenforce 0
 modprobe ip_vs
 reboot
 find / -name "redis.conf"
-timedatectl set-timezone Asia/Shanghai
 nohup java -jar sec-kill.jar &
 jmeter.sh -n -t goods_list.jmx -l result.jtl
 virtualenv test_env
