@@ -1,3 +1,7 @@
+show tables;
+alter database hive121 character set latin1;
+
+
 select @@tx_isolation;
 select @@global.transaction_isolation;
 select @@global.time_zone;

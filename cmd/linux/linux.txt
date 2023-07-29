@@ -74,3 +74,4 @@ blkid | grep -i /dev/sdb
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 ssh-keygen -t rsa
 firewall-cmd --state
+which bash

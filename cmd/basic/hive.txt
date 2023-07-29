@@ -1,0 +1,8 @@
+create database test_db;
+use test_db;
+show tables;
+set hive.cli.print.current.db=true;
+!clear
+
+create table helloworld(id int, name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';
+load data local inpath '/root/hadoop-01/data/helloworld.txt' overwrite into table helloworld;
