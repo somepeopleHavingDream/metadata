@@ -3,6 +3,17 @@ use test_db;
 show tables;
 set hive.cli.print.current.db=true;
 !clear
+desc formatted track_info;
 
-create table helloworld(id int, name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';
 load data local inpath '/root/hadoop-01/data/helloworld.txt' overwrite into table helloworld;
+
+create external table track_info(
+    ip string,
+    country string,
+    province string,
+    city string,
+    url string,
+    page string
+) partitioned by (day string)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+location '/project/trackinfo';
