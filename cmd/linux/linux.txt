@@ -75,3 +75,4 @@ dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.r
 ssh-keygen -t rsa
 firewall-cmd --state
 which bash
+stty erase ^H
