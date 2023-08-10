@@ -38,6 +38,9 @@ fdisk /dev/nvme0n1
 timedatectl set-timezone Asia/Shanghai
 timedatectl
 
+ssh-keygen -t rsa
+ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop000
+
 netstat -tln | grep 80
 lsof -i:80
 history
@@ -71,7 +74,6 @@ umount /dev/nvme0n1p3
 tmux new -s a
 blkid | grep -i /dev/sdb
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-ssh-keygen -t rsa
 firewall-cmd --state
 which bash
 stty erase ^H
