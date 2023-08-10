@@ -19,5 +19,7 @@ sequenceDiagram
     D-->>C: 9) ok
     C-->>A: 10) ok
     A->>C: 11) 传输BLK1的数据
-    Note right of A: 12) BLK2的传输过程和BLK1的过程一模一样
+    C->>D: 12) 传输BLK1的数据
+    D->>E: 13) 传输BLK1的数据
+    Note right of A: 14) BLK2的传输过程和BLK1的过程一模一样
 ```
