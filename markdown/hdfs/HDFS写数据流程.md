@@ -1,4 +1,4 @@
-# HDFS写数据流程图解
+# HDFS写数据流程
 
 ```mermaid
 sequenceDiagram
