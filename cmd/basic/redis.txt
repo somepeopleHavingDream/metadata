@@ -26,3 +26,5 @@ zremrangebyscore bibi_user_active_score 0 0
 zscore bibi_user_active_score 1
 
 hlen bibi_guild_member_cache
+
+llen fancy_batch_luck_record
