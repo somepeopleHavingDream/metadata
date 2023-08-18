@@ -24,6 +24,8 @@ zcard bobo_rank_room_total_gold_98000601
 zcount bibi_user_active_score 0 0
 zremrangebyscore bibi_user_active_score 0 0
 zscore bibi_user_active_score 1
+zadd fancy_lucky_gift_num_rank_2_-1_2023-08-14 50000400 14070 50000400 14069 50000400 14068 50000400 14067 50000400 14066 50000400 14065 50000400 14063 50000400 14064
+ZUNIONSTORE fancy_lucky_gift_num_rank_2_-1_2023-08-07 1 fancy_lucky_gift_num_rank_2_-1_2023-08-14
 
 hlen bibi_guild_member_cache
 
