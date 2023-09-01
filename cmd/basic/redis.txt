@@ -26,6 +26,7 @@ zremrangebyscore bibi_user_active_score 0 0
 zscore bibi_user_active_score 1
 zadd fancy_lucky_gift_num_rank_2_-1_2023-08-14 50000400 14070 50000400 14069 50000400 14068 50000400 14067 50000400 14066 50000400 14065 50000400 14063 50000400 14064
 ZUNIONSTORE fancy_lucky_gift_num_rank_2_-1_2023-08-07 1 fancy_lucky_gift_num_rank_2_-1_2023-08-14
+ZRANGEBYSCORE fancy_act_recharge_month_z 10000 +inf WITHSCORES
 
 hlen bibi_guild_member_cache
 

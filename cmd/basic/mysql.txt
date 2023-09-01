@@ -1,6 +1,7 @@
 show tables;
-alter database hive121 character set latin1;
 
+alter database hive121 character set latin1;
+ALTER TABLE sys_conf MODIFY config_value text;
 
 select @@tx_isolation;
 select @@global.transaction_isolation;
