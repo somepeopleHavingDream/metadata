@@ -1,3 +1,5 @@
 npm config set registry https://registry.npm.taobao.org
+npm config list -g
+
 npm install -g node-gyp
 npm cache clean -f

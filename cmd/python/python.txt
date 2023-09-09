@@ -3,11 +3,17 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple cmake
 pip list
 pip freeze | xargs pip uninstall -y
 
-conda list
+conda search --full-name python
+conda search py
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+
 conda create --name dev
+conda create --name py2env python=2.7
+
+conda list
 conda activate dev
 conda deactivate
 conda info --envs
-conda search --full-name python
-conda search py
 conda install --name dev openpyxl
