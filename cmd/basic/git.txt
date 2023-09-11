@@ -1,5 +1,7 @@
-git push
 git clone https://github.com/somepeopleHavingDream/python-project.git
+git clone -b imooc-island https://gitee.com/talelin/lin-cms-vue.git
+
+git push
 git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
 git push -u origin main
 git rm --cached -r .idea
