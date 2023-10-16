@@ -32,5 +32,10 @@ ZUNIONSTORE fancy_lucky_gift_num_rank_2_-1_2023-08-07 1 fancy_lucky_gift_num_ran
 ZRANGEBYSCORE fancy_act_recharge_month_z 10000 +inf WITHSCORES
 
 hlen bibi_guild_member_cache
+hdel fancy_official_block_time 20955502
 
 llen fancy_batch_luck_record
+lrange fancy_head_car_medal_history_syn_list 0 -1
+
+scard fancy_head_car_medal_history_syn_user_finish_set
+SISMEMBER fancy_head_car_medal_history_syn_user_finish_set head_34729772
