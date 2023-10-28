@@ -1,1 +1,2 @@
 mvn dependency:resolve -Dclassifier=sources
+mvn tomcat7:run 
