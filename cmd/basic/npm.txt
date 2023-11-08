@@ -6,3 +6,5 @@ npm install eslint@5.16.0 --save-dev
 
 npm uninstall node-sass
 npm cache clean -f
+
+nvm list
