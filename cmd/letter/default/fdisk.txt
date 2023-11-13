@@ -1,0 +1,2 @@
+fdisk -l
+fdisk /dev/nvme0n1

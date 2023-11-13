@@ -1,0 +1,2 @@
+yum remove go
+yum makecache

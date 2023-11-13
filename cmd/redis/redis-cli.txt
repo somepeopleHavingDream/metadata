@@ -1,0 +1,3 @@
+redis-cli shutdown
+redis-cli shutdown && redis-server redis.conf
+redis-cli zrange bibi_user_active_score 0 -1 withscores > tmp-datas/bibi_user_active_score.txt

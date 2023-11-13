@@ -1,0 +1,2 @@
+llen fancy_batch_luck_record
+lrange fancy_head_car_medal_history_syn_list 0 -1

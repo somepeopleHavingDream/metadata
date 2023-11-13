@@ -1,0 +1,2 @@
+get bobo_gift_rocket_exist_id_:90309734:90309995
+set bobo:bobo_gift_rocket_tmp '1'

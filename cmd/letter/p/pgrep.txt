@@ -1,0 +1,2 @@
+pgrep nginx | xargs kill -9
+pgrep nginx | xargs kill

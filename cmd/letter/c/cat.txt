@@ -1,0 +1,5 @@
+cat /etc/redhat-release
+cat /proc/cpuinfo | grep 'physical id' | sort | uniq | wc -l
+cat /proc/cpuinfo | grep 'cpu cores' | uniq
+cat /proc/cpuinfo | grep 'processor' | wc -l
+cat /proc/cpuinfo | grep processor

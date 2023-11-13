@@ -1,0 +1,4 @@
+redis-benchmark -h 127.0.0.1 -p 6379 -c 100 -n 100000
+redis-benchmark -h 127.0.0.1 -p 6379 -q -d 100
+redis-benchmark -t set,lpush -n 100000 -q
+redis-benchmark -n 100000 -q script load "redis.call('set','foo','bar')"

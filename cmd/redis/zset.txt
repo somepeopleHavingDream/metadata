@@ -1,0 +1,10 @@
+zrevrange bobo_gift_rocket_user_gift_value_:90309734:90309995 0 -1 withscores
+zrange bibi_user_active_score 0 -1 withscores
+zrank bobo_rank_room_total_gold_90309734 90306555
+zcard bobo_rank_room_total_gold_98000601
+zcount bibi_user_active_score 0 0
+zremrangebyscore bibi_user_active_score 0 0
+zscore bibi_user_active_score 1
+zadd fancy_lucky_gift_num_rank_2_-1_2023-08-14 50000400 14070 50000400 14069 50000400 14068 50000400 14067 50000400 14066 50000400 14065 50000400 14063 50000400 14064
+ZUNIONSTORE fancy_lucky_gift_num_rank_2_-1_2023-08-07 1 fancy_lucky_gift_num_rank_2_-1_2023-08-14
+ZRANGEBYSCORE fancy_act_recharge_month_z 10000 +inf WITHSCORES

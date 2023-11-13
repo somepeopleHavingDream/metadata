@@ -1,0 +1,5 @@
+systemctl stop docker
+systemctl status docker
+systemctl start docker
+systemctl daemon-reload
+systemctl restart NetworkManager

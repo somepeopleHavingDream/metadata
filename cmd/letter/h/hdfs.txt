@@ -1,0 +1,2 @@
+hdfs namenode -format
+hdfs fsck / -delete

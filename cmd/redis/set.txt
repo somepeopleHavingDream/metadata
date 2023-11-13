@@ -1,0 +1,2 @@
+scard fancy_head_car_medal_history_syn_user_finish_set
+SISMEMBER fancy_head_car_medal_history_syn_user_finish_set head_34729772

@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+netstat -tln | grep 80
+lsof -i:80
+history
+ps aux | grep nginx
+chmod +x /usr/local/bin/docker-compose
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+top
+export GO111MODULE=off​​
+rpm --import https://mirror.go-repo.io/centos/RPM-GPG-KEY-GO-REPO
+wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
+tar -zxvf go1.20.1.linux-amd64.tar.gz -C /usr/local/
+source /etc/profile
+ifconfig -a
+sysctl -p
+pidof nginx
+ip addr
+ifup ens160
+setenforce 0
+modprobe ip_vs
+reboot
+find / -name "redis.conf"
+nohup java -jar sec-kill.jar &
+jmeter.sh -n -t goods_list.jmx -l result.jtl
+virtualenv test_env
+python3 redis._demo.py
+deactivate
+du -sh anaconda3
+dumpe2fs /dev/nvme0n1p3
+mkfs.xfs /dev/nvme0n1p3
+umount /dev/nvme0n1p3
+tmux new -s a
+blkid | grep -i /dev/sdb
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+firewall-cmd --state
+which bash
+stty erase ^H
+scp -r hadoop-2.6.0-cdh5.15.1 root@hadoop001:~/hadoop-01/app
+ll -t
+stat base.log

@@ -11,5 +11,3 @@ npm i lodash --save
 npm run dev
 
 nvm list
-
-node b.js

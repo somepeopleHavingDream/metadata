@@ -1,0 +1,2 @@
+tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet"
+tail -f web_info.log | grep -C 50 "updateRoomNetease roomRet" | grep -v "logStatus"

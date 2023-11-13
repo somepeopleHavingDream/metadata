@@ -1,0 +1,2 @@
+df -h /root/anaconda3/
+df -Th

@@ -1,0 +1,2 @@
+psubscribe '__key*__:*'
+psubscribe '__keyspace@*__:fancy_activity_recharge_config*'

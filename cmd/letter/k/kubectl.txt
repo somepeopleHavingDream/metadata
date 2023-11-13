@@ -1,0 +1,3 @@
+kubectl get namespace
+kubectl get pods -n bibi
+kubectl exec -it bibi-admin-77b75df9c8-kqmqd -n bibi -- bash
