@@ -8,3 +8,9 @@ git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
 git rm --cached -r .idea
 git reset --soft HEAD~2
 git stash drop stash@`{0`}
+
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+
+git config --global --get http.proxy
+git config --global --get https.proxy

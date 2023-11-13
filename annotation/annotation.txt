@@ -18,3 +18,5 @@
 
 @PropertySource(value = "classpath:xchat.manager.yml", factory = YamlPropertyLoaderFactory.class)
 @ConfigurationProperties(prefix = "common.aes")
+
+@PostMapping(value = "/income/president/prepay", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
