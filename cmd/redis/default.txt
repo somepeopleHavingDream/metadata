@@ -1,2 +1,3 @@
 redis-server redis.conf
 rename act_recharge_day_z fancy_act_recharge_day_z
+CLUSTER NODES
