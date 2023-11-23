@@ -1,0 +1,6 @@
+db.blogs.find()
+db.blogs.find({"author": "zhangsan"})
+db.blogs.find().sort({ _id: -1 })
+
+db.blogs.insertOne({"title": "标题1", "content": "内容1", "author": "zhangsan"})
+db.blogs.updateOne({"author": "zhangsan"}, {$set: {"title": "标题A"}})
