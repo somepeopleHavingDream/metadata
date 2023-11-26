@@ -1,0 +1,7 @@
+pm2 list
+pm2 restart app
+pm2 info app
+pm2 log app
+pm2 monit
+pm2 stop app
+pm2 delete app

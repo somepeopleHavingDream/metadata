@@ -11,3 +11,5 @@ npm init -y
 npm i lodash --save
 npm run dev
 npm start
+npm list -g
+npm --version
