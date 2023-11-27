@@ -1,1 +1,2 @@
 nvm list
+nvm install v10.24.0
