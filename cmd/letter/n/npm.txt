@@ -1,4 +1,7 @@
 npm config set registry https://registry.npm.taobao.org
+npm config set proxy http://127.0.0.1:7890
+npm config set https-proxy http://127.0.0.1:7890
+
 npm config list -g
 
 npm install node-gyp -g
@@ -8,7 +11,6 @@ npm install
 npm uninstall node-sass
 npm cache clean -f
 npm init -y
-npm i lodash --save
 npm run dev
 npm start
 npm list -g
