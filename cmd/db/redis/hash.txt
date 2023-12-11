@@ -1,2 +1,3 @@
 hlen bibi_guild_member_cache
 hdel fancy_official_block_time 20955502
+HGETALL fancy_medal_list
