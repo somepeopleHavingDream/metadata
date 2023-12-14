@@ -1,0 +1,11 @@
+@Api(tags = "游戏战队技能管理接口")
+
+@ApiOperation("保存技能")
+@ApiImplicitParams({
+        @ApiImplicitParam(name = "uid", value = "uid", required = true),
+        @ApiImplicitParam(name = "selfieUrl", value = "自拍 url", required = true),
+})
+@ApiResponses({@ApiResponse(code = HttpServletResponse.SC_OK, message = Constant.SUCCESS_STR, response = OrderSkillVO.class),})
+
+@ApiModelProperty(value = "name", required = true)
+@ApiModelProperty("主键ID")
