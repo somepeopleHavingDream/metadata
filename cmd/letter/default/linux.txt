@@ -33,7 +33,6 @@ firewall-cmd --state
 which bash
 stty erase ^H
 scp -r hadoop-2.6.0-cdh5.15.1 root@hadoop001:~/hadoop-01/app
-ll -t
 stat base.log
 pwd
 uname -m
