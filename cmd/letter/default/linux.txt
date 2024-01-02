@@ -38,4 +38,3 @@ pwd
 uname -m
 mv docker-file/ docker-nginx/ docker-about/
 wc -l error.log
-grep '原因:>401:没有权限' error-bak.log
