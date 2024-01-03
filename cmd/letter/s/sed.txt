@@ -2,3 +2,4 @@ sed '/原因:>401:没有权限/d' error-bak.log
 
 sed -i '/原因:>401:没有权限/d' error-bak.log
 sed -i '/30827000/!d' web_info_2023-12-13_0_bak.log
+sed -i '/delete/I!d' base-0-1
