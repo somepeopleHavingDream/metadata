@@ -1,2 +1,3 @@
 yum remove go
 yum makecache
+yum -y update

@@ -1,7 +1,32 @@
-docker build -t yangxin/nginx:v1.0 -f nginx .
-docker run --name nginx -p 80:80 -p 443:443 -v /root/docker-nginx/nginx.conf:/etc/nginx/nginx.conf -v /root/docker-nginx:/home --rm -d nginx
-docker exec -it 7c4162a8250f bash
 docker ps
 docker ps -a
+
+docker search java
+docker search --no-trunc java
+
+docker run --name nginx -p 80:80 -p 443:443 -v /root/docker-nginx/nginx.conf:/etc/nginx/nginx.conf -v /root/docker-nginx:/home --rm -d nginx
+docker run -it -p 9000:8080 -p 9001:8085 -v ~/docker-about/project:/soft --privileged --name myjava openjdk bash
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=123456 -v v1:/var/lib/mysql --privileged --name=node1 --net=net1 --ip 172.18.0.2 pxc
+
+
+docker container prune
+docker container prune -f
+
+docker start -i myjava
+docker start node1
+
+docker build -t yangxin/nginx:v1.0 -f nginx .
+docker exec -it 7c4162a8250f bash
 docker logs 7c4162a8250f
 docker stop 7c4162a8250f
+docker pull openjdk
+docker images
+docker image prune -a
+docker save openjdk > ~/compressfiles/java.tar.gz
+docker rmi openjdk
+docker load < ~/compressfiles/java.tar.gz
+docker rm 8dd275a0bed5
+docker tag percona/percona-xtradb-cluster pxc
+docker network create --subnet=172.18.0.0/24 net1
+docker inspect net1
+docker volume create v1
