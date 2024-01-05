@@ -1,0 +1,40 @@
+docker ps
+docker ps -a
+docker ps -q
+docker ps -aq
+
+docker search java
+docker search --no-trunc java
+
+docker container prune
+docker container prune -f
+
+docker start -i myjava
+docker start node1
+
+docker stop 7c4162a8250f
+docker stop $(docker ps -q)
+
+docker rm 8dd275a0bed5
+docker rm $(docker ps -aq)
+
+docker pull openjdk
+docker pull percona/percona-xtradb-cluster:5.7.21
+
+docker tag percona/percona-xtradb-cluster pxc
+docker tag percona/percona-xtradb-cluster:5.7.21 pxc
+
+docker volume create v1
+docker volume ls
+docker volume prune
+
+docker build -t yangxin/nginx:v1.0 -f nginx .
+docker exec -it 7c4162a8250f bash
+docker logs 7c4162a8250f
+docker images
+docker image prune -a
+docker save openjdk > ~/compressfiles/java.tar.gz
+docker rmi openjdk
+docker load < ~/compressfiles/java.tar.gz
+docker network create --subnet=172.18.0.0/24 net1
+docker inspect net1

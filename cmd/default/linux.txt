@@ -37,3 +37,6 @@ pwd
 uname -m
 mv docker-file/ docker-nginx/ docker-about/
 wc -l error.log
+mkdir haproxy
+haproxy -c -f haproxy.cfg
+ls -l

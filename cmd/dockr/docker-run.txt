@@ -1,0 +1,7 @@
+docker run -it -p 9000:8080 -p 9001:8085 -v ~/docker-about/project:/soft --privileged --name myjava openjdk bash
+docker run -it --rm haproxy bash
+
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=123456 -v v1:/var/lib/mysql --privileged --name=node1 --net=net1 --ip 172.18.0.2 pxc
+docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=123456 -e CLUSTER_JOIN=node1 -v v2:/var/lib/mysql --privileged --name=node2 --net=net1 --ip 172.18.0.3 pxc
+
+docker run --name nginx -p 80:80 -p 443:443 -v /root/docker-nginx/nginx.conf:/etc/nginx/nginx.conf -v /root/docker-nginx:/home --rm -d nginx
