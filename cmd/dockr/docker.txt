@@ -14,6 +14,7 @@ docker start node1
 
 docker stop 7c4162a8250f
 docker stop $(docker ps -q)
+docker stop node1
 
 docker rm 8dd275a0bed5
 docker rm $(docker ps -aq)
@@ -28,13 +29,18 @@ docker volume create v1
 docker volume ls
 docker volume prune
 
-docker build -t yangxin/nginx:v1.0 -f nginx .
 docker exec -it 7c4162a8250f bash
+docker exec -it h1 bash
+
+docker network create --subnet=172.18.0.0/24 net1
+docker network ls
+docker network inspect net1
+
+docker build -t yangxin/nginx:v1.0 -f nginx .
 docker logs 7c4162a8250f
 docker images
 docker image prune -a
 docker save openjdk > ~/compressfiles/java.tar.gz
 docker rmi openjdk
 docker load < ~/compressfiles/java.tar.gz
-docker network create --subnet=172.18.0.0/24 net1
 docker inspect net1

@@ -1,3 +1,4 @@
 yum remove go
 yum makecache
 yum -y update
+yum install -y keepalived

@@ -40,3 +40,6 @@ wc -l error.log
 mkdir haproxy
 haproxy -c -f haproxy.cfg
 ls -l
+apt update
+dpkg -l | grep keepalived
+service keepalived start
