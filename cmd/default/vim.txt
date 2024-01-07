@@ -5,3 +5,4 @@ set nolist
 G
 q
 %s/old/new/g
+!q

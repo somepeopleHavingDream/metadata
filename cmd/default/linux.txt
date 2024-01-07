@@ -18,7 +18,6 @@ setenforce 0
 modprobe ip_vs
 reboot
 find / -name "redis.conf"
-nohup java -jar sec-kill.jar &
 jmeter.sh -n -t goods_list.jmx -l result.jtl
 virtualenv test_env
 deactivate
@@ -39,7 +38,9 @@ mv docker-file/ docker-nginx/ docker-about/
 wc -l error.log
 mkdir haproxy
 haproxy -c -f haproxy.cfg
-ls -l
-apt update
 dpkg -l | grep keepalived
 service keepalived start
+pkill keepalived
+!905
+innobackupex --user=root --password=123456 /data/backup/full
+rm -f .keepalived.conf.swp

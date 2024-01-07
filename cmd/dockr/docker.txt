@@ -15,6 +15,7 @@ docker start node1
 docker stop 7c4162a8250f
 docker stop $(docker ps -q)
 docker stop node1
+docker stop h1 h2
 
 docker rm 8dd275a0bed5
 docker rm $(docker ps -aq)
@@ -44,3 +45,5 @@ docker save openjdk > ~/compressfiles/java.tar.gz
 docker rmi openjdk
 docker load < ~/compressfiles/java.tar.gz
 docker inspect net1
+docker pause h1
+docker unpause h1

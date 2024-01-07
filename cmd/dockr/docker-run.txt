@@ -11,3 +11,9 @@ docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=123456 -e CLUSTER_NAME=PXC -e 
 
 # nginx
 docker run --name nginx -p 80:80 -p 443:443 -v /root/docker-nginx/nginx.conf:/etc/nginx/nginx.conf -v /root/docker-nginx:/home --rm -d nginx
+
+# redis
+docker run -it -d --name r1 -p 5001:6379 --net=net2 --ip 172.19.0.2 redis bash
+
+# jar
+docker run -it -d --name j1 -v j1:/home/soft --net=host java
