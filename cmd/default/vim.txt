@@ -6,3 +6,7 @@ G
 q
 %s/old/new/g
 !q
+yy
+p
+v
+y
