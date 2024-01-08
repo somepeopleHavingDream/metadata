@@ -2,3 +2,4 @@ hlen bibi_guild_member_cache
 hdel fancy_official_block_time 20955502
 HGETALL fancy_medal_list
 hget fancy_official_block_time 27414565
+HKEYS fancy_block_account
