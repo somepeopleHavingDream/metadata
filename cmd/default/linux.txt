@@ -44,3 +44,4 @@ pkill keepalived
 !905
 innobackupex --user=root --password=123456 /data/backup/full
 rm -f .keepalived.conf.swp
+free -h

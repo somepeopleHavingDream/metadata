@@ -1,0 +1,11 @@
+java -jar mybatis-generator-core-1.3.7.jar -configfile generator.xml -overwrite
+java -version
+java -help
+java -XX:+PrintFlagsFinal -version
+
+jinfo -flag MaxHeapSize 150040
+jinfo -flag ThreadStackSize 150040
+jinfo -flags 150040
+
+jps
+jps -l
