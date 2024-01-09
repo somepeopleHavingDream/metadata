@@ -1,9 +1,9 @@
-cat /proc/cpuinfo | grep 'physical id' | sort | uniq | wc -l
-cat /proc/cpuinfo | grep 'cpu cores' | uniq
-cat /proc/cpuinfo | grep 'processor' | wc -l
+cat /proc/cpuinfo | grep physical id | sort | uniq | wc -l
+cat /proc/cpuinfo | grep cpu cores | uniq
+cat /proc/cpuinfo | grep processor | wc -l
 cat /proc/cpuinfo | grep processor
 
 cat /etc/redhat-release
 cat /etc/os-release
 
-cat base.log | grep '/pay/payermax/charge/list' | grep -E ',"time":[0-9]{5},' | awk -F'countryCode=' '{print $2}' | awk -F'&' '{print $1}' | sort | uniq
+cat base.log | grep /pay/payermax/charge/list | grep -E ',"time":[0-9]{5},' | awk -F'countryCode=' '{print $2}' | awk -F'&' '{print $1}' | sort | uniq
