@@ -9,3 +9,6 @@ jinfo -flags 150040
 
 jps
 jps -l
+
+jstat -class 1782767
+jstat -gc 1782767
