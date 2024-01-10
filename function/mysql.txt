@@ -1,5 +1,0 @@
-create index idx_uid on users_selfie(uid);
-create user 'haproxy'@'%' identified by '';
-
-REGEXP_SUBSTR(charge_record_id, '[0-9]+')
-if(channel = 'company', amount, REGEXP_SUBSTR(charge_record_id, '[0-9]+') / 100)

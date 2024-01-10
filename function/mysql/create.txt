@@ -1,0 +1,2 @@
+create index idx_uid on users_selfie(uid);
+create user 'haproxy'@'%' identified by '';
