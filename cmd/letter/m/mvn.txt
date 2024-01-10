@@ -2,3 +2,4 @@ mvn dependency:resolve -Dclassifier=sources
 mvn tomcat7:run
 mvn -v
 mvn clean install
+mvn clean package -DskipTests

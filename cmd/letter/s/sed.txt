@@ -1,5 +1,6 @@
 sed -i 's/https/http/g' sources.list
 sed -i 's/&/\n/g' param.txt
+sed -i 's/ /\n/g' test-1.txt
 
 sed -i '/原因:>401:没有权限/d' error-bak.log
 sed -i '/30827000/!d' web_info_2023-12-13_0_bak.log
