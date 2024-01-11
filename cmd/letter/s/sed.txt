@@ -7,3 +7,5 @@ sed -i '/30827000/!d' web_info_2023-12-13_0_bak.log
 sed -i '/delete/I!d' base-0-1
 
 sed '/原因:>401:没有权限/d' error-bak.log
+sed '/\/oauth\/token/!d' sls-log.csv
+sed '/\/oauth\/token\|\/acc\/third\/login/!d' sls-log.csv

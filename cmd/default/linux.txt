@@ -17,7 +17,7 @@ ifup ens160
 setenforce 0
 modprobe ip_vs
 reboot
-find / -name "redis.conf"
+find / -name redis.conf
 jmeter.sh -n -t goods_list.jmx -l result.jtl
 virtualenv test_env
 deactivate
