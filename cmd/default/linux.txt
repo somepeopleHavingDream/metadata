@@ -1,3 +1,6 @@
+!905
+!155 && !156
+
 netstat -tln | grep 80
 lsof -i:80
 history
@@ -40,7 +43,6 @@ haproxy -c -f haproxy.cfg
 dpkg -l | grep keepalived
 service keepalived start
 pkill keepalived
-!905
 innobackupex --user=root --password=123456 /data/backup/full
 rm -f .keepalived.conf.swp
 free -h

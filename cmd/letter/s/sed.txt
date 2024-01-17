@@ -6,6 +6,8 @@ sed -i '/原因:>401:没有权限/d' error-bak.log
 sed -i '/30827000/!d' web_info_2023-12-13_0_bak.log
 sed -i '/delete/I!d' base-0-1
 
-sed '/原因:>401:没有权限/d' error-bak.log
 sed '/\/oauth\/token/!d' sls-log.csv
 sed '/\/oauth\/token\|\/acc\/third\/login/!d' sls-log.csv
+
+sed '/原因:>401:没有权限/d' error-bak.log
+sed '/22439907/!d' ac121938-fbb4-4eaa-b8d1-0f447c4f6084-代理扣减接口-bak.csv > 1.csv
