@@ -7,7 +7,6 @@ history
 ps aux | grep nginx
 chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-top
 export GO111MODULE=off​​
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 tar -zxvf go1.20.1.linux-amd64.tar.gz -C /usr/local/
@@ -47,3 +46,4 @@ pkill keepalived
 innobackupex --user=root --password=123456 /data/backup/full
 rm -f .keepalived.conf.swp
 free -h
+printf "%x" 1956
