@@ -5,3 +5,4 @@ SELECT @@session.time_zone;
 SELECT @@transaction_isolation;
 
 select unix_timestamp(block_start_time) from account_block where erban_no = 7214159 order by block_start_time desc limit 100;
+select DATE_FORMAT(FROM_UNIXTIME(expire_time / 1000), '%Y-%m-%d %H:%i:%s'), update_time from user_vip_purse;

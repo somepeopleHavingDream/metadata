@@ -16,3 +16,5 @@ npm start
 npm list -g
 npm --version
 npm i
+npm root -g
+npm prune
