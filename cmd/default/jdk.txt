@@ -17,7 +17,3 @@ jmap -help
 jmap -dump:format=b,file=heap.hprof 16608
 
 jstack 16608 > 16608.txt
-
--XX:MetaspaceSize=32M -XX:MaxMetaspaceSize=32M
--Xmx32M -Xms32M
--XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./

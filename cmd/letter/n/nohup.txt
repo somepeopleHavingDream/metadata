@@ -1,2 +1,4 @@
 nohup java -jar sec-kill.jar &
 nohup java -jar /home/soft/renren-fast.jar
+
+nohup java -Xloggc:gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -jar monitor-tuning-0.0.1-SNAPSHOT.jar &
