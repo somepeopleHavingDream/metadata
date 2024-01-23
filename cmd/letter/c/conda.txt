@@ -12,3 +12,4 @@ conda activate dev
 conda deactivate
 conda info --envs
 conda install --name dev openpyxl
+conda --version
