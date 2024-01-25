@@ -37,7 +37,6 @@ stat base.log
 pwd
 uname -m
 mv docker-file/ docker-nginx/ docker-about/
-wc -l error.log
 mkdir haproxy
 haproxy -c -f haproxy.cfg
 dpkg -l | grep keepalived
@@ -47,3 +46,4 @@ innobackupex --user=root --password=123456 /data/backup/full
 rm -f .keepalived.conf.swp
 free -h
 printf "%x" 1956
+head base.0.log

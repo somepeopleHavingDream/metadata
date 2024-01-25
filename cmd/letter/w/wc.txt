@@ -1,0 +1,2 @@
+wc -l error.log
+wc -l base.*.log
