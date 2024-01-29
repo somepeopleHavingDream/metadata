@@ -1,0 +1,1 @@
+docker run -it -d --name r1 -p 5001:6379 --net=net2 --ip 172.19.0.2 redis bash

@@ -1,0 +1,1 @@
+docker run -it -d --name j1 -v j1:/home/soft --net=host java
