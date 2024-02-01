@@ -3,3 +3,4 @@
 
 /acc/auth/check/login and 21098417
 #"/user/get"
+* and bbc2b1aa87c440c681dee4bb6d3581c4 not 云信发送消息 
