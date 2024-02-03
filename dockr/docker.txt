@@ -47,3 +47,4 @@ docker load < ~/compressfiles/java.tar.gz
 docker inspect net1
 docker pause h1
 docker unpause h1
+docker build -t some-content-nginx .

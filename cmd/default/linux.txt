@@ -47,3 +47,5 @@ rm -f .keepalived.conf.swp
 free -h
 printf "%x" 1956
 head base.0.log
+useradd www
+ulimit -n
