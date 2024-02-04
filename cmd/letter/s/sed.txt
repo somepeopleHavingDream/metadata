@@ -11,3 +11,4 @@ sed '/\/oauth\/token\|\/acc\/third\/login/!d' sls-log.csv
 
 sed '/原因:>401:没有权限/d' error-bak.log
 sed '/22439907/!d' ac121938-fbb4-4eaa-b8d1-0f447c4f6084-代理扣减接口-bak.csv > 1.csv
+sed '/223344/!d' web_info_2024-01-28.log >> 2024-02-04-223344.log
