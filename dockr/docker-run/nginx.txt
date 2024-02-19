@@ -4,3 +4,7 @@ docker run --name some-nginx -v /root/for-docker/nginx-test:/usr/share/nginx/htm
 
 docker run --name some-nginx -d some-content-nginx
 docker run --name some-nginx -d -p 8080:80 some-content-nginx
+
+docker run --name my-custom-nginx-container -v /root/for-docker/nginx-test/nginx-default.conf:/etc/nginx/nginx.conf:ro -d nginx
+
+docker run --rm --entrypoint=cat nginx /etc/nginx/nginx.conf > /root/for-docker/nginx-test/nginx-default.conf

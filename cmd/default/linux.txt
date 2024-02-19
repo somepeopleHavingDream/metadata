@@ -49,3 +49,4 @@ printf "%x" 1956
 head base.0.log
 useradd www
 ulimit -n
+nginx -t -c /root/for-docker/nginx-test/nginx.conf
