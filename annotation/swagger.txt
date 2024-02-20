@@ -2,9 +2,15 @@
 
 @ApiOperation("保存技能")
 @ApiImplicitParams({
-        @ApiImplicitParam(name = "uid", value = "uid", required = true),
-        @ApiImplicitParam(name = "selfieUrl", value = "自拍 url", required = true),
-})
+            @ApiImplicitParam(name = "uid", value = "uid", required = true, dataType = "long"),
+            @ApiImplicitParam(
+                    name = "type",
+                    value = "榜单类型 1财富榜、2魅力榜、3公会榜、4幸运礼物金币榜、5游戏榜",
+                    required = true,
+                    dataType = "byte"
+            ),
+            @ApiImplicitParam(name = "phase", value = "阶段，比如：1", required = true, dataType = "byte"),
+    })
 @ApiResponses({@ApiResponse(code = HttpServletResponse.SC_OK, message = Constant.SUCCESS_STR, response = OrderSkillVO.class),})
 
 @ApiModelProperty(value = "name", required = true)
