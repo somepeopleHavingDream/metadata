@@ -1,3 +1,5 @@
 config set notify-keyspace-events KEA
 config set notify-keyspace-events ""
+
 config get notify-keyspace-events
+CONFIG GET maxclients
