@@ -1,10 +1,13 @@
 sed -i 's/https/http/g' sources.list
 sed -i 's/&/\n/g' param.txt
 sed -i 's/ /\n/g' test-1.txt
+sed -i "s#webapps#${PROJECT_PATH}/webapps#g" ${TOMCAT_CONF}
 
 sed -i '/原因:>401:没有权限/d' error-bak.log
 sed -i '/30827000/!d' web_info_2023-12-13_0_bak.log
 sed -i '/delete/I!d' base-0-1
+
+sed -i "/autoDeploy/a \<Context docBase=\"${PROJECT_PATH}/webapps/ROOT\" path=\"\" reloadable=\"true\"/>" ${TOMCAT_CONF}
 
 sed '/\/oauth\/token/!d' sls-log.csv
 sed '/\/oauth\/token\|\/acc\/third\/login/!d' sls-log.csv

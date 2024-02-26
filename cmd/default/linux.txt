@@ -50,3 +50,6 @@ head base.0.log
 useradd www
 ulimit -n
 nginx -t -c /root/for-docker/nginx-test/nginx.conf
+rsync -az --delete ${TOMCAT_DIR}/conf ${PROJECT_PATH}/
+dos2unix ${TOMCAT_CONF}
+unzip -o -q ${PROJECT_PATH}/webapps/ROOT.war -d ${PROJECT_PATH}/webapps/ROOT
