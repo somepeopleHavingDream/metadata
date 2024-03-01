@@ -1,2 +1,4 @@
 ll -t
 ll -t | head -n 10
+
+ll -S

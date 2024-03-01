@@ -1,0 +1,2 @@
+awk -F '"' '{print $10}' httpslow.0-1.log
+awk -F '"' '{print $18}' httpslow.0-1.log | sort | uniq -c | sort -nr
