@@ -4,8 +4,10 @@ git clone -b imooc-island https://gitee.com/talelin/lin-cms-vue.git
 git push
 git push -u origin master
 
-git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
 git rm --cached -r .idea
+git rm --cached -r -f .idea
+
+git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
 git reset --soft HEAD~2
 git stash drop stash@`{0`}
 
