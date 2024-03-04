@@ -3,3 +3,4 @@ hdel fancy_official_block_time 20955502
 HGETALL fancy_medal_list
 hget fancy_official_block_time 27414565
 HKEYS fancy_block_account
+HSET fancy_association_anchor_point_hash_20657168_2024 1065 240000000
