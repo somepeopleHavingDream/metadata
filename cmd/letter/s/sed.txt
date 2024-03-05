@@ -1,6 +1,7 @@
 sed -i 's/https/http/g' sources.list
 sed -i 's/&/\n/g' param.txt
 sed -i 's/ /\n/g' test-1.txt
+sed -i 's/:[ ]\+/:/g' param.txt
 sed -i "s#webapps#${PROJECT_PATH}/webapps#g" ${TOMCAT_CONF}
 
 sed -i '/原因:>401:没有权限/d' error-bak.log
