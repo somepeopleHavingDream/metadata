@@ -2,7 +2,6 @@
 !155 && !156
 
 netstat -tln | grep 80
-lsof -i:80
 history
 ps aux | grep nginx
 chmod +x /usr/local/bin/docker-compose
