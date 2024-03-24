@@ -13,7 +13,6 @@ source /etc/profile
 ifconfig -a
 sysctl -p
 pidof nginx
-ip addr
 ifup ens160
 setenforce 0
 modprobe ip_vs
