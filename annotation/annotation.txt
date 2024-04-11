@@ -4,6 +4,7 @@
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
 @JsonFormat(shape = JsonFormat.Shape.STRING)
 @JSONField(serializeUsing = ToStringSerializer.class)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 
 @PropertySource(value = "classpath:xchat.manager.yml", factory = YamlPropertyLoaderFactory.class)
 @ConfigurationProperties(prefix = "common.aes")
