@@ -5,3 +5,4 @@ grep b11137aac2564b979e2eacce6796814d base.0.log
 grep -A 5 b11137aac2564b979e2eacce6796814d base.0.log
 grep -E ,time:[0-9]{5}, base.log | wc -l
 grep -r /laborUnion/center/income/agent/deduct base.*.log | grep 5140
+grep bf6c2e010f1d4403b2f4de915d18e654 base.log -A 10
