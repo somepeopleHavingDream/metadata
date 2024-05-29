@@ -1,0 +1,1 @@
+publish REFRESH_ROOM_LEVEL_CONFIG room_level
