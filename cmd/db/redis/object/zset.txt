@@ -8,6 +8,7 @@ zrange bibi_user_active_score 0 -1 withscores
 zrank bobo_rank_room_total_gold_90309734 90306555
 zcard bobo_rank_room_total_gold_98000601
 zremrangebyscore bibi_user_active_score 0 0
+zrem fancy_room_level_task_rate_50001085_6_2024-06-03 14074
 zscore bibi_user_active_score 1
 zadd fancy_lucky_gift_num_rank_2_-1_2023-08-14 50000400 14070 50000400 14069 50000400 14068 50000400 14067 50000400 14066 50000400 14065 50000400 14063 50000400 14064
 ZUNIONSTORE fancy_lucky_gift_num_rank_2_-1_2023-08-07 1 fancy_lucky_gift_num_rank_2_-1_2023-08-14
