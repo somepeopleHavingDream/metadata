@@ -1,0 +1,3 @@
+lvcreate -L 10G -n test-lv-1 test-vg-1
+lvresize -L +15G /dev/test-vg-1/test-lv-1
+lvremove /dev/test-vg-1/test-lv-1

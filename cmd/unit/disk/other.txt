@@ -1,0 +1,2 @@
+lsblk
+xfs_growfs /test-lv-1/

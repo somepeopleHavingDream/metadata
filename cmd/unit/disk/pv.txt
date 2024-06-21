@@ -1,0 +1,4 @@
+pvcreate /dev/nvme0n2
+pvscan
+pvdisplay
+pvremove /dev/nvme0n2 /dev/nvme0n3 /dev/nvme0n4

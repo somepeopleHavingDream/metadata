@@ -1,0 +1,5 @@
+vgcreate test-vg-1 /dev/nvme0n2 /dev/nvme0n3
+vgdisplay
+vgextend test-vg-1 /dev/nvme0n4
+vgremove test-vg-1
+vgscan

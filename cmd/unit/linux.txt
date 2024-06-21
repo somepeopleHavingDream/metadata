@@ -23,8 +23,6 @@ virtualenv test_env
 deactivate
 du -sh anaconda3
 dumpe2fs /dev/nvme0n1p3
-mkfs.xfs /dev/nvme0n1p3
-umount /dev/nvme0n1p3
 tmux new -s a
 blkid | grep -i /dev/sdb
 dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
@@ -52,3 +50,4 @@ rsync -az --delete ${TOMCAT_DIR}/conf ${PROJECT_PATH}/
 dos2unix ${TOMCAT_CONF}
 unzip -o -q ${PROJECT_PATH}/webapps/ROOT.war -d ${PROJECT_PATH}/webapps/ROOT
 clear
+watch ls logs

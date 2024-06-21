@@ -1,5 +1,6 @@
 set list
 set nolist
+set nu
 
 2dd
 G
