@@ -1,0 +1,2 @@
+netstat -tln | grep 80
+netstat -anltp | grep 8090
