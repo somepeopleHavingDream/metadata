@@ -7,9 +7,11 @@ conda config --set show_channel_urls yes
 conda create --name dev
 conda create --name py2env python=2.7
 
+conda install --name dev openpyxl
+conda install paramiko
+
 conda list
 conda activate dev
 conda deactivate
 conda info --envs
-conda install --name dev openpyxl
 conda --version
