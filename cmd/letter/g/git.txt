@@ -7,9 +7,8 @@ git push -u origin master
 git rm --cached -r .idea
 git rm --cached -r -f .idea
 
-git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
 git reset --soft HEAD~2
-git stash drop stash@`{0`}
+git reset
 
 git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
@@ -17,4 +16,8 @@ git config --global https.proxy http://127.0.0.1:7890
 git config --global --get http.proxy
 git config --global --get https.proxy
 
-git reset
+git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
+git stash drop stash@`{0`}
+git init
+git add -A
+git commit -m "初始化运维相关"
