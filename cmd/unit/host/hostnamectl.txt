@@ -1,0 +1,2 @@
+hostnamectl status
+hostnamectl set-hostname hadoop001

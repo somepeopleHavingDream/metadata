@@ -53,6 +53,5 @@ watch ls logs
 chown -R ftpuser.ftpuser /data/ftp_sources/
 getenforce
 ftp 192.168.1.107 8090
-hostname
 nproc
 cp -r shell-project shell-project-bak

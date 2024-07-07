@@ -1,0 +1,7 @@
+ansible nodes,center -i hosts -m shell -a "hostname"
+ansible hadoop001 -i hosts -m shell -a "hostname"
+
+ansible tbj -i hosts -m ping
+ansible all -i hosts -m debug -a "msg={{ ansible_ssh_port }}"
+
+ansible --version
