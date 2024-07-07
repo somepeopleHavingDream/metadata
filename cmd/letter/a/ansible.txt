@@ -1,4 +1,7 @@
+ansible nodes -i hosts -m shell -a "pwd creates=/root/hosts"
+ansible nodes -i hosts -m shell -a "pwd removes=/root/hosts"
 ansible nodes,center -i hosts -m shell -a "hostname"
+
 ansible hadoop001 -i hosts -m shell -a "hostname"
 
 ansible tbj -i hosts -m ping
