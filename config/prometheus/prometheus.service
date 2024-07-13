@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus
+Documentation=https://prometheus.io/
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/root/prometheus/prometheus-2.53.1.linux-amd64/prometheus --config.file=/root/prometheus/prometheus-2.53.1.linux-amd64/prometheus.yml --web.listen-address=192.168.1.105:9090
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
