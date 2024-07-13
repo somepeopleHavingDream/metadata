@@ -14,9 +14,11 @@ npm install
 npm uninstall node-sass
 npm uninstall -g @vue/cli-service-global
 
+npm run dev
+npm run serve
+
 npm cache clean -f
 npm init -y
-npm run dev
 npm start
 npm list -g
 npm --version
