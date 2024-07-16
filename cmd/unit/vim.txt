@@ -1,6 +1,7 @@
 set list
 set nolist
 set nu
+set tabstop=4
 
 2dd
 G
@@ -12,3 +13,5 @@ p
 v
 y
 :95
+
+vi --version

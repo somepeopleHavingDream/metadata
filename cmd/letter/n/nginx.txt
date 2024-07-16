@@ -1,0 +1,2 @@
+nginx -t -c /root/for-docker/nginx-test/nginx.conf
+nginx -s reload
