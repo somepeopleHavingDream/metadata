@@ -55,3 +55,4 @@ ftp 192.168.1.107 8090
 nproc
 cp -r shell-project shell-project-bak
 journalctl -u prometheus.service -b
+crontab -l
