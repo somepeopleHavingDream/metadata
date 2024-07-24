@@ -55,3 +55,8 @@ ftp 192.168.1.107 8090
 nproc
 cp -r shell-project shell-project-bak
 journalctl -u prometheus.service -b
+uptime
+exit
+make install
+sshpass -p 123456 ssh -o StrictHostKeyChecking=no root@192.168.1.109 "df -h"
+su - test01
