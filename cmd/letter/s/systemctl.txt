@@ -3,3 +3,5 @@ systemctl status docker
 systemctl start docker
 systemctl daemon-reload
 systemctl restart NetworkManager
+systemctl disable firewalld
+systemctl enable firewalld
