@@ -12,6 +12,8 @@ git reset
 
 git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
+git config --global user.name "yangxin"
+git config --global user.email "1393003255@qq.com"
 
 git config --global --get http.proxy
 git config --global --get https.proxy

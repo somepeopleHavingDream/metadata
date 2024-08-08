@@ -7,13 +7,11 @@ chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 export GO111MODULE=off​​
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
-tar -zxvf go1.20.1.linux-amd64.tar.gz -C /usr/local/
 source /etc/profile
 ifconfig -a
 sysctl -p
 pidof nginx
 ifup ens160
-setenforce 0
 modprobe ip_vs
 reboot
 find / -name redis.conf
@@ -50,9 +48,13 @@ unzip -o -q ${PROJECT_PATH}/webapps/ROOT.war -d ${PROJECT_PATH}/webapps/ROOT
 clear
 watch ls logs
 chown -R ftpuser.ftpuser /data/ftp_sources/
-getenforce
 ftp 192.168.1.107 8090
 nproc
 cp -r shell-project shell-project-bak
 journalctl -u prometheus.service -b
+uptime
+exit
+make install
+sshpass -p 123456 ssh -o StrictHostKeyChecking=no root@192.168.1.109 "df -h"
+su - test01
 crontab -l

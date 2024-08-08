@@ -6,6 +6,7 @@ cat /proc/cpuinfo | grep processor
 cat /etc/redhat-release
 cat /etc/os-release
 cat /etc/centos-release
+cat /etc/passwd
 
 cat base.log | grep /pay/payermax/charge/list | grep -E ',"time":[0-9]{5},' | awk -F'countryCode=' '{print $2}' | awk -F'&' '{print $1}' | sort | uniq
 cat base.log | grep -A10 4a1d27f8670143df8fc82a7bae2e2f7b
