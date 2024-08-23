@@ -1,4 +1,9 @@
+nvm node_mirror https://npm.taobao.org/mirrors/node/
+nvm node_mirror https://nodejs.org/dist/
+
+nvm npm_mirror https://npmmirror.com/mirrors/npm/
 nvm list
 nvm install v10.24.0
 nvm uninstall v10.24.0
 nvm use 10.24.0
+nvm proxy
