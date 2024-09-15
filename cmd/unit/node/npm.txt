@@ -11,8 +11,10 @@ npm config list -g
 npm install eslint@5.16.0 --save-dev
 npm install @vue/cli-service --save-dev
 
-npm install node-gyp -g
 npm install -g npm
+npm install -g npm@10.8.3
+
+npm install node-gyp -g
 npm install
 
 npm uninstall node-sass
@@ -21,11 +23,13 @@ npm uninstall -g @vue/cli-service-global
 npm run dev
 npm run serve
 
+npm i
+npm i cz-customizable --save-dev --legacy-peer-deps
+
 npm cache clean -f
 npm init -y
 npm start
 npm list -g
 npm --version
-npm i
 npm root -g
 npm prune
