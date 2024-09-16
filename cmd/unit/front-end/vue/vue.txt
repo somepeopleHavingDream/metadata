@@ -1,0 +1,3 @@
+vue -V
+vue create test
+vue add element-plus

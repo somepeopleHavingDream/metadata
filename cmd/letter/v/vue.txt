@@ -1,2 +1,0 @@
-vue -V
-vue create test

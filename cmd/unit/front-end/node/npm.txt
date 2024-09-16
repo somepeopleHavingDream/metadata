@@ -8,12 +8,15 @@ npm config set https-proxy http://127.0.0.1:7890
 npm config get registry
 npm config list -g
 
-npm install eslint@5.16.0 --save-dev
 npm install @vue/cli-service --save-dev
+npm install @element-plus/icons-vue --save
 
 npm install -g npm
 npm install -g npm@10.8.3
 
+npm install element-plus@latest
+npm install element-plus
+npm install eslint@5.16.0 --save-dev
 npm install node-gyp -g
 npm install
 
@@ -25,6 +28,7 @@ npm run serve
 
 npm i
 npm i cz-customizable --save-dev --legacy-peer-deps
+npm i -g @vue/cli
 
 npm cache clean -f
 npm init -y
@@ -33,3 +37,4 @@ npm list -g
 npm --version
 npm root -g
 npm prune
+npm show @element-plus/icons-vue version

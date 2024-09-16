@@ -1,8 +1,0 @@
-cnpm run build
-cnpm run serve
-
-cnpm i -g @vue/cli
-cnpm i --save epubjs
-cnpm i --save-dev node-sass sass-loader
-
-cnpm install -g @vue/cli
