@@ -29,6 +29,7 @@ npm run serve
 npm i
 npm i cz-customizable --save-dev --legacy-peer-deps
 npm i -g @vue/cli
+npm i --save-dev svg-sprite-loader@6.0.9
 
 npm cache clean -f
 npm init -y
