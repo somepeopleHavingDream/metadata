@@ -20,6 +20,7 @@ npm install element-plus
 
 npm install eslint@5.16.0 --save-dev
 npm install node-gyp -g
+npm install vue-i18n@next
 npm install
 
 npm uninstall node-sass
