@@ -19,6 +19,8 @@ git config --global --get http.proxy
 git config --global --get https.proxy
 
 git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
+git remote -v
+
 git stash drop stash@`{0`}
 git init
 git add -A
