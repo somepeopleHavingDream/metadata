@@ -4,6 +4,9 @@ mvn clean package
 mvn clean install
 mvn clean install -U
 
+mvn dependency:resolve
 mvn dependency:resolve -Dclassifier=sources
+
 mvn tomcat7:run
 mvn -v
+mvn help:effective-pom
