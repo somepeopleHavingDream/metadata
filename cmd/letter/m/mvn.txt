@@ -3,6 +3,7 @@ mvn clean package
 
 mvn clean install
 mvn clean install -U
+mvn clean install -U -DskipTests
 
 mvn dependency:resolve
 mvn dependency:resolve -Dclassifier=sources
