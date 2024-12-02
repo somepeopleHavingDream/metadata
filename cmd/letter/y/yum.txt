@@ -3,3 +3,4 @@ yum makecache
 yum -y update
 yum install -y keepalived
 yum info sshpass
+yum groupinstall "Development Tools"

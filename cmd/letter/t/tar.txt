@@ -1,2 +1,4 @@
 tar -zxvf go1.20.1.linux-amd64.tar.gz -C /usr/local/
+tar -zxvf keepalived-2.3.2.tar.gz
+
 tar ztf apache-zookeeper-3.8.0-bin.tar.gz

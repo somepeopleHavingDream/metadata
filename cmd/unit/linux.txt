@@ -57,3 +57,4 @@ make install
 sshpass -p 123456 ssh -o StrictHostKeyChecking=no root@192.168.1.109 "df -h"
 su - test01
 crontab -l
+whereis keepalived
