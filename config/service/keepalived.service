@@ -1,0 +1,12 @@
+[Unit]
+Description=Keepalived Service
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/keepalived/sbin/keepalived -D
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStop=/bin/kill $MAINPID
+
+[Install]
+WantedBy=multi-user.target

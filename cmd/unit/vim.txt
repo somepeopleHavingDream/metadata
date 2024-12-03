@@ -12,6 +12,8 @@ yy
 p
 v
 y
+
 :95
+:%d
 
 vi --version

@@ -5,3 +5,4 @@ systemctl daemon-reload
 systemctl restart NetworkManager
 systemctl disable firewalld
 systemctl enable firewalld
+systemctl is-enabled firewalld
