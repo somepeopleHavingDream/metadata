@@ -1,2 +1,3 @@
 ulimit -n
 ulimit -a
+ulimit -u

@@ -1,0 +1,2 @@
+chown -R ftpuser.ftpuser /data/ftp_sources/
+chown -R esuser:esuser /usr/local/elasticsearch-8.17.0

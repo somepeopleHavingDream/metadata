@@ -46,7 +46,6 @@ dos2unix ${TOMCAT_CONF}
 unzip -o -q ${PROJECT_PATH}/webapps/ROOT.war -d ${PROJECT_PATH}/webapps/ROOT
 clear
 watch ls logs
-chown -R ftpuser.ftpuser /data/ftp_sources/
 ftp 192.168.1.107 8090
 nproc
 cp -r shell-project shell-project-bak
@@ -55,6 +54,6 @@ uptime
 exit
 make install
 sshpass -p 123456 ssh -o StrictHostKeyChecking=no root@192.168.1.109 "df -h"
-su - test01
 crontab -l
 whereis keepalived
+whoami
