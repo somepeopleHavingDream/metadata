@@ -1,1 +1,2 @@
 ls /
+get /dubbo/org.yangxin.dubbo.service.HelloServiceAPI/providers
