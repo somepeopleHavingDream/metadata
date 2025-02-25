@@ -1,0 +1,20 @@
+watch org.yangxin.usercenter.controller.user.UserController findById '{params,returnObj}' -n 5 -x 3
+watch org.yangxin.usercenter.controller.user.UserController findById '{params,returnObj,throwExp}' -n 5 -x 3
+
+dashboard
+dashboard -h
+
+thread
+thread 38
+thread -n 1
+thread -b
+
+tt -t org.yangxin.usercenter.controller.user.UserController findById
+tt -i 1000
+tt -i 1000 -p
+
+help
+jad org.yangxin.usercenter.controller.user.UserController
+trace org.yangxin.usercenter.controller.user.UserController findById -n 5 --skipJDKMethod false
+stack org.yangxin.usercenter.controller.user.UserController findById -n 5
+monitor org.yangxin.usercenter.controller.user.UserController findById -n 10 --cycle 10
