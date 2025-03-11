@@ -1,10 +1,12 @@
-grep 原因:>401:没有权限 error-bak.log
-grep /laborUnion/center/income/agent/deduct base.*.log | grep 5140
 grep 2e8b69d13c7b4a4abaf5149f724a4fef -A 5 base.log
 grep b11137aac2564b979e2eacce6796814d base.0.log
 grep -A 5 b11137aac2564b979e2eacce6796814d base.0.log
+grep bf6c2e010f1d4403b2f4de915d18e654 base.log -A 10
+grep consumeAudienceExitRoomEvent weparty-room.log -B 20
+
+grep 原因:>401:没有权限 error-bak.log
+grep /laborUnion/center/income/agent/deduct base.*.log | grep 5140
 grep -E ,time:[0-9]{5}, base.log | wc -l
 grep -r /laborUnion/center/income/agent/deduct base.*.log | grep 5140
-grep bf6c2e010f1d4403b2f4de915d18e654 base.log -A 10
 grep "room level up" base.log | grep 50002012
 grep -c ^processor /proc/cpuinfo

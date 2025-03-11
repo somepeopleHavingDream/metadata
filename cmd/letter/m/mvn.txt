@@ -4,6 +4,7 @@ mvn clean package
 mvn clean install
 mvn clean install -U
 mvn clean install -U -DskipTests
+mvn clean install -rf :weparty-activity
 
 mvn dependency:resolve
 mvn dependency:resolve -Dclassifier=sources
