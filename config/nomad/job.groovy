@@ -78,31 +78,6 @@ job "xxx" {
 
       // 环境变量
       env {
-        TZ                 = "Asia/Shanghai"
-        SPRING_PROFILES_ACTIVE = "dev"
-        ENV = "dev"
-        JAVA_OPTS          = "-Xmx512m -Xms512m"
-        MYSQL_ADDR         = "172.23.177.158:3306"
-        MYSQL_USERNAME     = "root"
-        MYSQL_PASSWORD     = "Lama@20210609D#"
-        REDIS_HOST         = "172.23.177.158"
-        REDIS_PORT         = "6379"
-        REDIS_PASSWORD     = "yoki123"
-        COMMON_REDIS_HOST  = "43.134.222.242"
-        COMMON_REDIS_PORT  = "6379"
-        COMMON_REDIS_PASSWORD = "lama123"
-        REDIS_READ_ONLY_PASSWORD = "yoki123"
-        MQ_ADDR                         = "172.23.177.158:9876"
-        NACOS_SERVER_ADDR  = "172.23.177.158:8848"
-        CLICKHOUSE_ADDR    = "clickhouse:8123"
-        CLICKHOUSE_USERNAME = "default"
-        CLICKHOUSE_PASSWORD = "lama1314"
-        CLICKHOUSE_URL = "jdbc:clickhouse://172.23.177.158:8123/default"
-        KEEWIDB_HOST       = "172.23.177.158"
-        KEEWIDB_PORT       = "6379"
-        KEEWIDB_PASSWORD   = "yoki123"
-        DATACENTER_ID      = 1
-        WORKER_ID          = 1
       }
 
       // 模板
