@@ -12,3 +12,4 @@ mvn dependency:resolve -Dclassifier=sources
 mvn tomcat7:run
 mvn -v
 mvn help:effective-pom
+mvn protobuf:compile

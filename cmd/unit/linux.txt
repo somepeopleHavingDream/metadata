@@ -57,3 +57,4 @@ sshpass -p 123456 ssh -o StrictHostKeyChecking=no root@192.168.1.109 "df -h"
 crontab -l
 whereis keepalived
 whoami
+protoc --version
