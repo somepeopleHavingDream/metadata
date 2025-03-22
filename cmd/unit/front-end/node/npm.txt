@@ -32,6 +32,7 @@ npm run serve
 npm i -g @vue/cli
 npm i -g nrm
 npm i -g yarn pnpm
+npm i -g @nestjs/cli
 
 npm i
 npm i cz-customizable --save-dev --legacy-peer-deps
