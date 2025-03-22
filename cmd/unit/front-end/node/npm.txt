@@ -29,10 +29,13 @@ npm uninstall -g @vue/cli-service-global
 npm run dev
 npm run serve
 
+npm i -g @vue/cli
+npm i -g nrm
+npm i -g yarn pnpm
+
 npm i
 npm i cz-customizable --save-dev --legacy-peer-deps
 npm i element-ui -S
-npm i -g @vue/cli
 npm i --save-dev svg-sprite-loader@6.0.9
 npm i --save axios
 npm i driver.js
