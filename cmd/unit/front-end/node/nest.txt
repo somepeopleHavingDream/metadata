@@ -1,1 +1,3 @@
 nest --version
+nest new nestjs-demo
+nest --help

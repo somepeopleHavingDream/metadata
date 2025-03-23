@@ -1,0 +1,2 @@
+tsc -v
+tsc .\greeter.ts
