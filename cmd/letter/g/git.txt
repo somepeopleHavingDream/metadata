@@ -1,4 +1,5 @@
 git clone https://github.com/somepeopleHavingDream/python-project.git
+git clone https://github.com/alexjoverm/typescript-library-starter.git ts-axios
 git clone -b imooc-island https://gitee.com/talelin/lin-cms-vue.git
 
 git push
@@ -26,3 +27,5 @@ git stash drop stash@`{0`}
 git init
 git add -A
 git commit -m "初始化运维相关"
+git branch
+

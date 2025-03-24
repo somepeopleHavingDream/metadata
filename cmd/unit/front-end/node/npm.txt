@@ -28,6 +28,7 @@ npm uninstall -g @vue/cli-service-global
 
 npm run dev
 npm run serve
+npm run commit
 
 npm i -g @vue/cli
 npm i -g nrm
