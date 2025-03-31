@@ -9,6 +9,7 @@ java -XX:+PrintFlagsFinal -version
 jinfo -flag MaxHeapSize 150040
 jinfo -flag ThreadStackSize 150040
 jinfo -flags 150040
+jinfo 18224 | grep "java.class.path"
 
 jps
 jps -l

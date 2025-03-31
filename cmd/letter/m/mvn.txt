@@ -9,6 +9,8 @@ mvn clean install -rf :weparty-activity
 mvn dependency:resolve
 mvn dependency:resolve -Dclassifier=sources
 
+mvn dependency:tree
+
 mvn tomcat7:run
 mvn -v
 mvn help:effective-pom
