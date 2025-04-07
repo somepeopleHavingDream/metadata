@@ -1,1 +1,3 @@
 pnpm i
+pnpm -v
+pnpm start:dev
