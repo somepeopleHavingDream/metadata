@@ -1,0 +1,8 @@
+yarn config set registry https://registry.npmirror.com
+yarn config list
+yarn config get registry
+
+yarn --version
+yarn dev
+yarn add -D style-loader css-loader
+yarn list jest
