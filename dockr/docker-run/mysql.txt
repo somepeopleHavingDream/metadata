@@ -1,1 +1,2 @@
 docker run --name mysql1 -e MYSQL_ROOT_PASSWORD=123456 -d mysql
+docker run -p 3306:3306 --name mysql -v ~/docker-service/mysql/logs:/logs -v ~/docker-service/mysql/data:/mysql_data -e MYSQL_ROOT_PASSWORD=Wing1Q2W#E -d mysql:8.0

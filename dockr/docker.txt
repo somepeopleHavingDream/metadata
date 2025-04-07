@@ -40,6 +40,9 @@ docker network inspect net1
 docker build -t yangxin/nginx:v1.0 -f nginx .
 docker build -t some-content-nginx .
 
+docker info
+docker info | grep "Docker Root Dir"
+
 docker logs 7c4162a8250f
 docker images
 docker image prune -a
