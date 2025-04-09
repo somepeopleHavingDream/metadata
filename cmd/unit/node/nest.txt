@@ -1,13 +1,15 @@
 nest --version
 nest --help
 
-nest g controller user --no-spec -d
-nest g controller user --no-spec
+nest g co user --no-spec -d
+nest g co user --no-spec
 
-nest g service user --no-spec -d
-nest g service user --no-spec
+nest g s user --no-spec -d
+nest g s user --no-spec
+nest g s common/redis --flat --no-spec
+nest g s test-grpc rpc/services --no-spec --flat
 
-nest g module user
+nest g mo user
 
 nest new nestjs-demo
 nest -v
