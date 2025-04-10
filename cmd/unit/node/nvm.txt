@@ -3,6 +3,7 @@ nvm node_mirror https://nodejs.org/dist/
 
 nvm install v10.24.0
 nvm install lts
+nvm install --lts
 
 nvm npm_mirror https://npmmirror.com/mirrors/npm/
 nvm list
