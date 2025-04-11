@@ -1,3 +1,8 @@
 pnpm i
+pnpm i --save @nestjs/config
+pnpm i -D cross-env
+pnpm i dotenv
+
 pnpm -v
 pnpm start:dev
+pnpm setup
