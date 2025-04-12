@@ -1,0 +1,17 @@
+{
+  "extensions.ignoreRecommendations": true,
+  // 显式禁用常见插件（可选）
+  "eslint.enable": false,
+  "prettier.enable": false,
+  "typescript.validate.enable": false,
+
+  "editor.codeActionsOnSave": {
+    // 当显示保存时自动处理导入
+    "source.organizeImports": "explicit"
+  },
+
+  // 限制标签栏显示的标签页数量（超出部分会被隐藏）
+  "workbench.editor.limit.enabled": true,
+  // 启用多行标签栏
+  "workbench.editor.wrapTabs": true
+}
