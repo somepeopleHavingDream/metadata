@@ -1,3 +1,5 @@
 {
-    "workbench.editor.wrapTabs": true
+    "workbench.editor.wrapTabs": true,
+    // 限制标签栏显示的标签页数量（超出部分会被隐藏）
+  "workbench.editor.limit.enabled": true,
 }

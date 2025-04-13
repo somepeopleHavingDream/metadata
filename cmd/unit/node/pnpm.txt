@@ -6,3 +6,4 @@ pnpm i dotenv
 pnpm -v
 pnpm start:dev
 pnpm setup
+pnpm rm @hapi/joi

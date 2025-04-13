@@ -10,6 +10,8 @@ nest g s common/redis --flat --no-spec
 nest g s test-grpc rpc/services --no-spec --flat
 
 nest g mo user
+nest g cl user/user.entity --no-spec --flat
 
 nest new nestjs-demo
 nest -v
+nest -h
