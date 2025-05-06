@@ -22,6 +22,7 @@ git config --global --get https.proxy
 
 git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
 git remote -v
+git remote set-url origin https://github.com/somepeopleHavingDream/metadata.git
 
 git stash drop stash@`{0`}
 git init

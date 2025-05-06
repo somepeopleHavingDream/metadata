@@ -2,4 +2,6 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop000
 ssh-copy-id root@192.168.1.107
 
 ssh-keygen -t rsa
+ssh-keygen -lf ~/.ssh/id_rsa.pub
+
 ssh root@192.168.1.109
