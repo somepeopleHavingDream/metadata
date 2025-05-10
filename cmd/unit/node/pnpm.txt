@@ -2,6 +2,7 @@ pnpm i
 pnpm i --save @nestjs/config
 pnpm i -D cross-env
 pnpm i dotenv
+pnpm i pactum -D
 
 pnpm -v
 pnpm start:dev
