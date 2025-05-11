@@ -6,3 +6,4 @@ pm2 stop app
 pm2 delete app
 pm2 log app
 pm2 logs im-svr_3006
+pm2 -v
