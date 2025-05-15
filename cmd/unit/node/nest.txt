@@ -15,6 +15,7 @@ nest g f filters/typeorm --flat --no-spec
 nest g itc interceptors/serialize --no-spec --flat
 nest g res module/roles --no-spec
 nest g pi pipe/page --no-spec --flat
+nest g mi middleware/req-context --no-spec --flat
 
 nest new nestjs-demo
 nest -v
