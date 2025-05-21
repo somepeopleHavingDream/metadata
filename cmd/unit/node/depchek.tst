@@ -1,0 +1,1 @@
+depcheck --ignores="*.spec.ts,*.e2e.ts,dist/*"
