@@ -4,9 +4,13 @@ pnpm i -D cross-env
 pnpm i dotenv
 pnpm i pactum -D
 
+pnpm add nnrm -g
+pnpm add hono@latest @hono/node-server
+pnpm add -D typescript @types/node
+
 pnpm -v
 pnpm start:dev
 pnpm setup
 pnpm rm @hapi/joi
-pnpm add nnrm -g
 pnpm init
+pnpm --package=typescript dlx tsc --init
