@@ -52,3 +52,4 @@ npm root -g
 npm prune
 npm show @element-plus/icons-vue version
 npm create hono@latest hono-demo
+npm update --save --save-dev --latest

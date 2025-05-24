@@ -8,9 +8,15 @@ pnpm add nnrm -g
 pnpm add hono@latest @hono/node-server
 pnpm add -D typescript @types/node
 
+pnpm config list
+pnpm config get store-dir
+pnpm config set store-dir "C:\Users\yangxin\.pnpm-store" --global
+
 pnpm -v
 pnpm start:dev
 pnpm setup
 pnpm rm @hapi/joi
 pnpm init
 pnpm --package=typescript dlx tsc --init
+pnpm store prune
+pnpm self-update
