@@ -13,5 +13,7 @@
   // 限制标签栏显示的标签页数量（超出部分会被隐藏）
   "workbench.editor.limit.enabled": true,
   // 启用多行标签栏
-  "workbench.editor.wrapTabs": true
+  "workbench.editor.wrapTabs": true,
+  // 新增此行，设置最大标签页数量为20
+  "workbench.editor.limit.value": 20
 }
