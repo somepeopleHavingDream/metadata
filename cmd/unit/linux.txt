@@ -58,3 +58,4 @@ crontab -l
 whereis keepalived
 whoami
 protoc --version
+openssl rand -base64 32
