@@ -20,3 +20,4 @@ pnpm init
 pnpm --package=typescript dlx tsc --init
 pnpm store prune
 pnpm self-update
+pnpm dlx create-next-app@latest --ts --tailwind --eslint  --app  --src-dir --use-pnpm --turbopack --import-alias "@/*"
