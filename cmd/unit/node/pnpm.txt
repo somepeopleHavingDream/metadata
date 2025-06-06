@@ -12,6 +12,9 @@ pnpm config list
 pnpm config get store-dir
 pnpm config set store-dir "C:\Users\yangxin\.pnpm-store" --global
 
+pnpm dlx create-next-app@latest --ts --tailwind --eslint  --app  --src-dir --use-pnpm --turbopack --import-alias "@/*"
+pnpm dlx shadcn@latest add button
+
 pnpm -v
 pnpm start:dev
 pnpm setup
@@ -20,4 +23,3 @@ pnpm init
 pnpm --package=typescript dlx tsc --init
 pnpm store prune
 pnpm self-update
-pnpm dlx create-next-app@latest --ts --tailwind --eslint  --app  --src-dir --use-pnpm --turbopack --import-alias "@/*"
