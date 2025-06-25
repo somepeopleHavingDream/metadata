@@ -3,3 +3,4 @@ netstat -tlnp | grep 8083
 
 netstat -anltp | grep 8090
 netstat -apn | grep :::8080
+netstat -ano | findstr "8000"
