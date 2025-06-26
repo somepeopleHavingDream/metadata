@@ -1,0 +1,5 @@
+docker-compose -f mysql.yaml up -d
+docker-compose -f 'tmp/docker-compose.yml' up -d rocketmq-namesrv rocketmq-broker rocketmq-console
+
+docker-compose up -d
+docker-coompose --version

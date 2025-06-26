@@ -3,7 +3,6 @@
 
 history
 ps aux | grep nginx
-chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 export GO111MODULE=off​​
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz

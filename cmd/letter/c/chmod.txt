@@ -1,0 +1,2 @@
+chmod +x /usr/local/bin/docker-compose
+chmod -R 777 data

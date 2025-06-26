@@ -1,2 +1,0 @@
-docker run -it --rm haproxy bash
-docker run -it -d -p 4001:8888 -p 4002:3306 -v /root/for-docker/haproxy:/usr/local/etc/haproxy --name h1 --privileged --net=net1 --ip 172.18.0.7 haproxy:1.6.15 bash

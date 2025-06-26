@@ -44,6 +44,8 @@ docker info
 docker info | grep "Docker Root Dir"
 
 docker logs 7c4162a8250f
+docker logs rocketmq-broker
+
 docker images
 docker image prune -a
 docker save openjdk > ~/compressfiles/java.tar.gz

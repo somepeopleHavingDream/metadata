@@ -1,3 +1,0 @@
-docker-compose up -d
-docker-compose -f mysql.yaml up -d
-docker-coompose --version
