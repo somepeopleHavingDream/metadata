@@ -1,2 +1,3 @@
 top
 top -p 1935 -H
+top -pid 17660 -stats pid,command,cpu,th

@@ -1,0 +1,3 @@
+htop
+htop -p 17660
+htop -p 17660 -t

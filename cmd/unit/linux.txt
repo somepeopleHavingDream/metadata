@@ -8,7 +8,6 @@ export GO111MODULE=off​​
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 source /etc/profile
 ifconfig -a
-sysctl -p
 pidof nginx
 ifup ens160
 modprobe ip_vs
@@ -58,3 +57,4 @@ whereis keepalived
 whoami
 protoc --version
 openssl rand -base64 32
+glances

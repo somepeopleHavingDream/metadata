@@ -4,6 +4,9 @@ watch org.yangxin.usercenter.controller.user.UserController findById '{params,re
 dashboard
 dashboard -h
 
+thread | grep 'redisson'
+thread | grep 'redisson' | wc -l
+thread | grep -E 'redisson-netty' | wc -l
 thread
 thread 38
 thread -n 1
@@ -13,8 +16,13 @@ tt -t org.yangxin.usercenter.controller.user.UserController findById
 tt -i 1000
 tt -i 1000 -p
 
+sc -d org.redisson.connection.ConnectionManager
+sc -d org.redisson.connection.ConnectionManager | grep classLoaderHash
+sc org.redisson.connection.*ConnectionManager
+
 help
 jad org.yangxin.usercenter.controller.user.UserController
 trace org.yangxin.usercenter.controller.user.UserController findById -n 5 --skipJDKMethod false
 stack org.yangxin.usercenter.controller.user.UserController findById -n 5
 monitor org.yangxin.usercenter.controller.user.UserController findById -n 10 --cycle 10
+sm org.redisson.connection.*ConnectionManager *
