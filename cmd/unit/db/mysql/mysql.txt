@@ -1,0 +1,3 @@
+SHOW STATUS LIKE 'Threads_connected';
+SHOW VARIABLES LIKE 'max_connections';
+SHOW PROCESSLIST;
