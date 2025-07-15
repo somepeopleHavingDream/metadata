@@ -58,3 +58,4 @@ whoami
 protoc --version
 openssl rand -base64 32
 glances
+networkQuality
