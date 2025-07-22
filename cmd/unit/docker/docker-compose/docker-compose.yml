@@ -31,5 +31,20 @@ services:
     ports:
       - "8848:8848"
       - "9848:9848"
+      - "8081:8080"
     environment:
       MODE: standalone
+      NACOS_AUTH_TOKEN: dGhpc19pc19hX3ZlcnlfbG9uZ19zZWNyZXRfa2V5XzEyMzQ1Ng==
+      NACOS_AUTH_IDENTITY_KEY: serverIdentity
+      NACOS_AUTH_IDENTITY_VALUE: security
+  dubbo-admin:
+    image: apache/dubbo-admin
+    container_name: dubbo-admin
+    ports:
+      - "8082:38080"
+    environment:
+      - admin.registry.address=nacos://nacos:8848
+      - admin.config-center=nacos://nacos:8848
+      - admin.metadata-report.address=nacos://nacos:8848
+    depends_on:
+      - nacos
