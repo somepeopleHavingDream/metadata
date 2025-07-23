@@ -43,8 +43,14 @@ services:
     ports:
       - "8082:38080"
     environment:
-      - admin.registry.address=nacos://nacos:8848
-      - admin.config-center=nacos://nacos:8848
-      - admin.metadata-report.address=nacos://nacos:8848
+      - admin.registry.address=zookeeper://zookeeper:2181
+      - admin.config-center=zookeeper://zookeeper:2181
+      - admin.metadata-report.address=zookeeper://zookeeper:2181
     depends_on:
-      - nacos
+      - zookeeper
+    # environment:
+    #   - admin.registry.address=nacos://nacos:8848
+    #   - admin.config-center=nacos://nacos:8848
+    #   - admin.metadata-report.address=nacos://nacos:8848
+    # depends_on:
+    #   - nacos

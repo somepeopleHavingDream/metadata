@@ -1,6 +1,7 @@
 git clone https://github.com/somepeopleHavingDream/python-project.git
 git clone https://github.com/alexjoverm/typescript-library-starter.git ts-axios
 git clone -b imooc-island https://gitee.com/talelin/lin-cms-vue.git
+git clone --depth 1 https://github.com/apache/dubbo.git
 
 git push
 git push -u origin master
