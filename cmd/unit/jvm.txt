@@ -25,3 +25,5 @@ jar xvf im-user-starter-1.0.0-SNAPSHOT.jar
 
 jstack 16608 > 16608.txt
 jstack 17660 | grep "java.lang.Thread.State" | sort | uniq -c
+
+-Duser.timezone
