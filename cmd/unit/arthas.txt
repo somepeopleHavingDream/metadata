@@ -26,3 +26,4 @@ trace org.yangxin.usercenter.controller.user.UserController findById -n 5 --skip
 stack org.yangxin.usercenter.controller.user.UserController findById -n 5
 monitor org.yangxin.usercenter.controller.user.UserController findById -n 10 --cycle 10
 sm org.redisson.connection.*ConnectionManager *
+jvm
