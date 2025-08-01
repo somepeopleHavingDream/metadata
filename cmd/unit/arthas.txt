@@ -20,6 +20,9 @@ sc -d org.redisson.connection.ConnectionManager
 sc -d org.redisson.connection.ConnectionManager | grep classLoaderHash
 sc org.redisson.connection.*ConnectionManager
 
+heapdump dump.hprof
+heapdump arthas-output/dump.hprof
+
 help
 jad org.yangxin.usercenter.controller.user.UserController
 trace org.yangxin.usercenter.controller.user.UserController findById -n 5 --skipJDKMethod false
