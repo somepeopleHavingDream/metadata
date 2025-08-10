@@ -54,3 +54,10 @@ services:
     #   - admin.metadata-report.address=nacos://nacos:8848
     # depends_on:
     #   - nacos
+  sentinel-dashboard:
+    image: bladex/sentinel-dashboard
+    container_name: sentinel-dashboard
+    ports:
+      - "8858:8858"
+    environment:
+      - JAVA_OPTS=-Dserver.port=8858
