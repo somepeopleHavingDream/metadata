@@ -32,6 +32,8 @@ docker volume prune
 
 docker exec -it 7c4162a8250f bash
 docker exec -it h1 bash
+docker exec -it rocketmq-broker cat /home/rocketmq/conf/broker.conf
+docker exec -it rocketmq-namesrv sh mqadmin clusterList -n rocketmq-namesrv:9876
 
 docker network create --subnet=172.18.0.0/24 net1
 docker network ls
