@@ -101,6 +101,11 @@ services:
       - rocketmq-namesrv
     networks:
       - rocketmq-net
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
 networks:
   rocketmq-net:
     driver: bridge
