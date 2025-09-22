@@ -5,3 +5,9 @@ SHOW PROCESSLIST;
 SELECT @@global.time_zone;
 SELECT @@session.time_zone;
 SELECT @@system_time_zone;
+
+alter table im_session add index app_key_target_id_type(app_key, target_id, type);
+alter table im_session drop column uid2;
+alter table im_session rename column uid1 to uid;
+
+drop index app_key_2 on im_session;
