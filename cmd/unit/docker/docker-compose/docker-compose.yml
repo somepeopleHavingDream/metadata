@@ -54,3 +54,58 @@ services:
     #   - admin.metadata-report.address=nacos://nacos:8848
     # depends_on:
     #   - nacos
+  sentinel-dashboard:
+    image: bladex/sentinel-dashboard
+    container_name: sentinel-dashboard
+    ports:
+      - "8858:8858"
+    environment:
+      - JAVA_OPTS=-Dserver.port=8858
+  rocketmq-namesrv:
+    image: apache/rocketmq:4.5.1
+    container_name: rocketmq-namesrv
+    command: sh mqnamesrv
+    ports:
+      - "9876:9876"  # NameServer 默认端口
+    volumes:
+      - D:/data/rocketmq/namesrv/logs:/home/rocketmq/logs
+    environment:
+      - JAVA_OPT_EXT=-Xms512m -Xmx512m  # JVM内存配置
+    networks:
+      - rocketmq-net
+  rocketmq-broker:
+    image: apache/rocketmq:4.5.1
+    container_name: rocketmq-broker
+    command: sh mqbroker -n rocketmq-namesrv:9876 -c /home/rocketmq/conf/broker.conf
+    ports:
+      - "10909:10909"  # Broker监听端口
+      - "10911:10911"  # Broker主端口
+      - "10912:10912"  # HA端口
+    volumes:
+      - D:/data/rocketmq/broker/logs:/home/rocketmq/logs
+      - D:/data/rocketmq/conf/broker.conf:/home/rocketmq/conf/broker.conf  # 挂载自定义配置
+    environment:
+      - JAVA_OPT_EXT=-Xms1g -Xmx1g
+    depends_on:
+      - rocketmq-namesrv
+    networks:
+      - rocketmq-net
+  rocketmq-dashboard:
+    image: styletang/rocketmq-console-ng:1.0.0  # 4.x配套控制台镜像
+    container_name: rocketmq-dashboard
+    ports:
+      - "8080:8080"  # 控制台端口
+    environment:
+      - NAMESRV_ADDR=rocketmq-namesrv:9876
+    depends_on:
+      - rocketmq-namesrv
+    networks:
+      - rocketmq-net
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+networks:
+  rocketmq-net:
+    driver: bridge
