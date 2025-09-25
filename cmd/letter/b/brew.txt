@@ -1,2 +1,7 @@
 brew update
+brew update-reset
+
 brew install maven
+brew config
+
+http_proxy="http://127.0.0.1:7897" https_proxy="http://127.0.0.1:7897" brew install jmeter

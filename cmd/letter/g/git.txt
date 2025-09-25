@@ -26,10 +26,11 @@ git remote add origin https://github.com/somepeopleHavingDream/jvmgo.git
 git remote -v
 git remote set-url origin https://github.com/somepeopleHavingDream/metadata.git
 
+git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+git -C "$(brew --repo)" remote -v
+
 git stash drop stash@`{0`}
 git init
 git add -A
 git commit -m "初始化运维相关"
 git branch
-git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
-
