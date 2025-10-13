@@ -10,6 +10,7 @@ mvn dependency:resolve
 mvn dependency:resolve -Dclassifier=sources
 
 mvn dependency:tree
+mvn -s /Users/choupi/Documents/company/data/settings-v-im.xml dependency:tree
 
 mvn tomcat7:run
 mvn -v
