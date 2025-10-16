@@ -5,6 +5,7 @@ SHOW PROCESSLIST;
 SELECT @@global.time_zone;
 SELECT @@session.time_zone;
 SELECT @@system_time_zone;
+SELECT * FROM information_schema.INNODB_TRX WHERE trx_state = 'LOCK WAIT';
 
 alter table im_session add index app_key_target_id_type(app_key, target_id, type);
 alter table im_session drop column uid2;
