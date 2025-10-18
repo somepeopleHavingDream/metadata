@@ -1,5 +1,7 @@
 kafka-topics --bootstrap-server localhost:9092 --create --topic test-topic --partitions 1 --replication-factor 1
 kafka-topics --bootstrap-server localhost:9092 --list
+kafka-topics --bootstrap-server localhost:9092 --describe
+kafka-topics --bootstrap-server localhost:9092 --alter --topic kafka_topic --partitions 2
 
 kafka-console-producer --broker-list localhost:9092 --topic test-topic
 kafka-console-consumer --bootstrap-server localhost:9092 --topic test-topic --from-beginning
