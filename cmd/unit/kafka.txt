@@ -5,3 +5,4 @@ kafka-topics --bootstrap-server localhost:9092 --alter --topic kafka_topic --par
 
 kafka-console-producer --broker-list localhost:9092 --topic test-topic
 kafka-console-consumer --bootstrap-server localhost:9092 --topic test-topic --from-beginning
+kafka-console-consumer --bootstrap-server localhost:9092 --topic stream-out --property print.key=true --property print.value=true --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer --from-beginning
