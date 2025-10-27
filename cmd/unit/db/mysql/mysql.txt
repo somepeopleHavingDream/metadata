@@ -18,3 +18,10 @@ alter table im_session rename column uid1 to uid;
 
 drop index app_key_2 on im_session;
 SET @@GLOBAL.max_execution_time = 30000;
+
+START TRANSACTION;
+SELECT * FROM im_user_token_1111_1
+WHERE app_key = '1111' AND user_id = '37143715' AND expired_at > 1761300328184 ;
+DELETE FROM im_user_token_1111_1
+WHERE app_key = '1111' AND user_id IN ('37143715') AND create_time <= 1761300328654;
+COMMIT;
