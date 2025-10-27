@@ -51,5 +51,5 @@
       - org.apache.shardingsphere.sharding.route.strategy.type.complex.ComplexShardingStrategy#doSharding
         - org.apache.shardingsphere.sharding.algorithm.sharding.classbased.ClassBasedShardingAlgorithm#doSharding(java.util.Collection<java.lang.String>, org.apache.shardingsphere.sharding.api.sharding.complex.ComplexKeysShardingValue<java.lang.Comparable<?>>)
 
-
+- org.apache.shardingsphere.infra.binder.engine.segment.dml.expression.type.ColumnSegmentBinder#findInputColumnSegment
 #
