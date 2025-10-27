@@ -1,0 +1,23 @@
+- org.apache.dubbo.registry.integration.DynamicDirectory#doList
+
+
+- org.apache.dubbo.registry.nacos.NacosServiceDiscovery.NacosEventListener#onEvent
+  - org.apache.dubbo.registry.nacos.NacosServiceDiscovery#handleEvent
+    - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#onEvent
+      - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#doOnEvent
+        - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#refreshInstance
+        - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#parseMetadata
+        - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#getServiceUrlsCache
+        - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener.ProtocolServiceKeyWithUrls#ProtocolServiceKeyWithUrls
+        - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#notifyAddressChanged
+          - org.apache.dubbo.metrics.event.MetricsEventBus#post(org.apache.dubbo.metrics.event.MetricsEvent, java.util.function.Supplier<T>)
+            - org.apache.dubbo.metrics.event.MetricsEventBus#post(org.apache.dubbo.metrics.event.MetricsEvent, java.util.function.Supplier<T>, java.util.function.Function<T,java.lang.Boolean>)
+              - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#getAddresses
+              - org.apache.dubbo.registry.client.event.listener.ServiceInstancesChangedListener#toUrlsWithEmpty
+              - org.apache.dubbo.registry.client.ServiceDiscoveryRegistryDirectory#notify
+                - org.apache.dubbo.registry.client.ServiceDiscoveryRegistryDirectory#refreshOverrideAndInvoker
+                  - org.apache.dubbo.registry.client.ServiceDiscoveryRegistryDirectory#refreshInvoker
+                    - org.apache.dubbo.rpc.cluster.directory.AbstractDirectory#refreshRouter
+                      - org.apache.dubbo.rpc.cluster.RouterChain#setInvokers
+
+#

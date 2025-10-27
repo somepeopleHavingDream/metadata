@@ -1,14 +1,20 @@
-SHOW STATUS LIKE 'Threads_connected';
 SHOW VARIABLES LIKE 'max_connections';
+SHOW VARIABLES LIKE 'max_execution_time';
+
+SHOW STATUS LIKE 'Threads_connected';
 SHOW PROCESSLIST;
 
+SELECT * FROM information_schema.INNODB_TRX WHERE trx_state = 'LOCK WAIT';
+SELECT * FROM sys.innodb_lock_waits;
+SELECT * FROM information_schema.innodb_trxWHERE trx_started < NOW() - INTERVAL 5 MINUTE ORDER BY trx_started;
+
+SELECT @@system_time_zone;
 SELECT @@global.time_zone;
 SELECT @@session.time_zone;
-SELECT @@system_time_zone;
-SELECT * FROM information_schema.INNODB_TRX WHERE trx_state = 'LOCK WAIT';
 
 alter table im_session add index app_key_target_id_type(app_key, target_id, type);
 alter table im_session drop column uid2;
 alter table im_session rename column uid1 to uid;
 
 drop index app_key_2 on im_session;
+SET @@GLOBAL.max_execution_time = 30000;
