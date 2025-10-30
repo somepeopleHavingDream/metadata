@@ -1,5 +1,8 @@
 SHOW VARIABLES LIKE 'max_connections';
 SHOW VARIABLES LIKE 'max_execution_time';
+SHOW VARIABLES LIKE 'character_set%';
+SHOW VARIABLES LIKE 'collation%';
+SHOW VARIABLES LIKE 'character_set_server';
 
 SHOW STATUS LIKE 'Threads_connected';
 SHOW PROCESSLIST;
