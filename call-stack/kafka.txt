@@ -1,0 +1,108 @@
+- org.apache.kafka.clients.producer.KafkaProducer#send(org.apache.kafka.clients.producer.ProducerRecord<K,V>)
+  - org.apache.kafka.clients.producer.KafkaProducer#send(org.apache.kafka.clients.producer.ProducerRecord<K,V>, org.apache.kafka.clients.producer.Callback)
+    - org.apache.kafka.clients.producer.KafkaProducer#doSend
+      - org.apache.kafka.clients.producer.KafkaProducer#throwIfProducerClosed
+      - org.apache.kafka.common.utils.SystemTime#milliseconds
+      - org.apache.kafka.clients.producer.KafkaProducer#waitOnMetadata
+        - org.apache.kafka.clients.Metadata#fetch
+          - org.apache.kafka.clients.MetadataCache#cluster
+        - org.apache.kafka.clients.producer.internals.ProducerMetadata#add
+          - org.apache.kafka.clients.Metadata#requestUpdateForNewTopics
+        - org.apache.kafka.common.Cluster#partitionCountForTopic
+        - org.apache.kafka.clients.producer.internals.ProducerMetadata#requestUpdateForTopic
+        - org.apache.kafka.clients.producer.internals.Sender#wakeup
+          - org.apache.kafka.clients.NetworkClient#wakeup
+            - org.apache.kafka.common.network.Selector#wakeup
+        - org.apache.kafka.clients.producer.KafkaProducer.ClusterAndWaitTime#ClusterAndWaitTime
+      - org.apache.kafka.clients.producer.internals.RecordAccumulator#append
+        - org.apache.kafka.clients.producer.internals.RecordAccumulator#getOrCreateDeque
+        - org.apache.kafka.clients.producer.internals.RecordAccumulator#tryAppend
+        - org.apache.kafka.clients.producer.internals.RecordAccumulator.RecordAppendResult#RecordAppendResult
+        - org.apache.kafka.clients.ApiVersions#maxUsableProduceMagic
+        - org.apache.kafka.common.record.AbstractRecords#estimateSizeInBytesUpperBound(byte, org.apache.kafka.common.record.CompressionType, byte[], byte[], org.apache.kafka.common.header.Header[])
+          - org.apache.kafka.common.record.AbstractRecords#estimateSizeInBytesUpperBound(byte, org.apache.kafka.common.record.CompressionType, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+            - org.apache.kafka.common.record.DefaultRecordBatch#estimateBatchSizeUpperBound
+              - org.apache.kafka.common.record.DefaultRecord#recordSizeUpperBound
+        - org.apache.kafka.clients.producer.internals.BufferPool#allocate
+          - org.apache.kafka.clients.producer.internals.BufferPool#freeSize
+        - org.apache.kafka.clients.producer.internals.RecordAccumulator#recordsBuilder
+          - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long)
+            - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, int)
+              - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int)
+                - org.apache.kafka.common.record.MemoryRecordsBuilder#MemoryRecordsBuilder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int, int)
+                  - org.apache.kafka.common.utils.ByteBufferOutputStream#ByteBufferOutputStream(java.nio.ByteBuffer)
+
+- org.apache.kafka.clients.producer.KafkaProducer#KafkaProducer(java.util.Properties)
+  - org.apache.kafka.clients.producer.KafkaProducer#KafkaProducer(java.util.Map<java.lang.String,java.lang.Object>, org.apache.kafka.common.serialization.Serializer<K>, org.apache.kafka.common.serialization.Serializer<V>, org.apache.kafka.clients.producer.internals.ProducerMetadata, org.apache.kafka.clients.KafkaClient, org.apache.kafka.clients.producer.internals.ProducerInterceptors<K,V>, org.apache.kafka.common.utils.Time)
+    - org.apache.kafka.clients.producer.ProducerConfig
+    - org.apache.kafka.common.config.AbstractConfig#getInt
+      - org.apache.kafka.common.config.AbstractConfig#get
+    - org.apache.kafka.clients.producer.internals.BufferPool#BufferPool
+    - org.apache.kafka.clients.producer.internals.RecordAccumulator#RecordAccumulator
+    - org.apache.kafka.clients.producer.internals.ProducerMetadata#ProducerMetadata
+      - org.apache.kafka.clients.Metadata#Metadata
+    - org.apache.kafka.clients.Metadata#bootstrap
+    - org.apache.kafka.clients.producer.KafkaProducer#newSender
+      - org.apache.kafka.clients.producer.internals.Sender#Sender
+
+- org.apache.kafka.clients.MetadataCache#empty
+  - org.apache.kafka.clients.MetadataCache#MetadataCache(java.lang.String, java.util.Map<java.lang.Integer,org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.requests.MetadataResponse.PartitionMetadata>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node, org.apache.kafka.common.Cluster)
+
+- org.apache.kafka.clients.producer.internals.ProducerMetadata#ProducerMetadata
+  - org.apache.kafka.clients.Metadata#Metadata
+
+- org.apache.kafka.common.network.Selector#Selector(int, long, int, org.apache.kafka.common.metrics.Metrics, org.apache.kafka.common.utils.Time, java.lang.String, java.util.Map<java.lang.String,java.lang.String>, boolean, boolean, org.apache.kafka.common.network.ChannelBuilder, org.apache.kafka.common.memory.MemoryPool, org.apache.kafka.common.utils.LogContext)
+
+- org.apache.kafka.clients.producer.internals.Sender#run
+  - org.apache.kafka.clients.producer.internals.Sender#runOnce
+    - org.apache.kafka.clients.producer.internals.Sender#sendProducerData
+      - org.apache.kafka.clients.Metadata#fetch
+      - org.apache.kafka.clients.producer.internals.RecordAccumulator#ready
+        - org.apache.kafka.clients.producer.internals.BufferPool#queued
+    - org.apache.kafka.clients.NetworkClient#poll
+      - org.apache.kafka.clients.NetworkClient#completeResponses
+        - org.apache.kafka.clients.ClientResponse#onComplete
+          - org.apache.kafka.clients.producer.internals.Sender#handleProduceResponse
+            - org.apache.kafka.clients.producer.internals.Sender#completeBatch(org.apache.kafka.clients.producer.internals.ProducerBatch, org.apache.kafka.common.requests.ProduceResponse.PartitionResponse, long, long)
+              - org.apache.kafka.clients.producer.internals.Sender#completeBatch(org.apache.kafka.clients.producer.internals.ProducerBatch, org.apache.kafka.common.requests.ProduceResponse.PartitionResponse)
+                - org.apache.kafka.clients.producer.internals.Sender#maybeRemoveAndDeallocateBatch
+                  - org.apache.kafka.clients.producer.internals.RecordAccumulator#deallocate
+                    - org.apache.kafka.clients.producer.internals.BufferPool#deallocate(java.nio.ByteBuffer, int)
+      - org.apache.kafka.common.network.Selector#poll
+        - org.apache.kafka.common.network.Selector#select
+
+- org.apache.kafka.common.config.AbstractConfig#AbstractConfig(org.apache.kafka.common.config.ConfigDef, java.util.Map<?,?>, java.util.Map<java.lang.String,?>, boolean)
+  - org.apache.kafka.common.config.ConfigDef#parse
+    - org.apache.kafka.common.config.ConfigDef#parseValue
+      - org.apache.kafka.common.config.ConfigDef#parseType
+
+- org.apache.kafka.clients.NetworkClient#poll
+
+- org.apache.kafka.common.record.DefaultRecord#writeTo
+  - org.apache.kafka.common.record.DefaultRecord#sizeOfBodyInBytes(int, long, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+    - org.apache.kafka.common.utils.ByteUtils#sizeOfVarint
+    - org.apache.kafka.common.record.DefaultRecord#sizeOf
+  - org.apache.kafka.common.utils.ByteUtils#writeVarint(int, java.io.DataOutput)
+    - org.apache.kafka.common.utils.ByteUtils#writeUnsignedVarint(int, java.io.DataOutput)
+      - org.apache.kafka.common.utils.ByteBufferOutputStream#write(int)
+
+org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long)
+org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, int)
+org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int)
+org.apache.kafka.common.utils.ByteUtils#sizeOfVarlong
+org.apache.kafka.common.utils.ByteUtils#sizeOfVarint
+org.apache.kafka.common.record.DefaultRecord#writeTo
+org.apache.kafka.common.utils.ByteUtils#writeVarint(int, java.io.DataOutput)
+org.apache.kafka.common.utils.ByteUtils#writeUnsignedVarint(int, java.io.DataOutput)
+java.io.DataOutputStream#writeByte
+org.apache.kafka.common.Cluster#empty
+org.apache.kafka.clients.producer.internals.ProducerMetadata#add
+org.apache.kafka.clients.Metadata#requestUpdateForNewTopics
+org.apache.kafka.clients.producer.internals.ProducerMetadata#requestUpdateForTopic
+org.apache.kafka.clients.Metadata#bootstrap
+org.apache.kafka.clients.ApiVersions#maxUsableProduceMagic
+org.apache.kafka.common.config.ConfigDef#parseType
+org.apache.kafka.common.record.AbstractRecords#estimateSizeInBytesUpperBound(byte, org.apache.kafka.common.record.CompressionType, byte[], byte[], org.apache.kafka.common.header.Header[])
+org.apache.kafka.common.record.AbstractRecords#estimateSizeInBytesUpperBound(byte, org.apache.kafka.common.record.CompressionType, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+
+#
