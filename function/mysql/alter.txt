@@ -1,1 +1,0 @@
-alter table daily_report_gold drop column status_str40;

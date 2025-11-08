@@ -1,5 +1,8 @@
 SHOW VARIABLES LIKE 'max_connections';
 SHOW VARIABLES LIKE 'max_execution_time';
+SHOW VARIABLES LIKE 'character_set%';
+SHOW VARIABLES LIKE 'collation%';
+SHOW VARIABLES LIKE 'character_set_server';
 
 SHOW STATUS LIKE 'Threads_connected';
 SHOW PROCESSLIST;
@@ -16,6 +19,10 @@ alter table im_session add index app_key_target_id_type(app_key, target_id, type
 alter table im_session drop column uid2;
 alter table im_session rename column uid1 to uid;
 
+create index idx_uid on users_selfie(uid);
+create user 'haproxy'@'%' identified by '';
+create unique index a on im_user_conversation_1111_0 (app_key, user_id, target_id, type);
+
 drop index app_key_2 on im_session;
 SET @@GLOBAL.max_execution_time = 30000;
 
@@ -25,3 +32,22 @@ WHERE app_key = '1111' AND user_id = '37143715' AND expired_at > 1761300328184 ;
 DELETE FROM im_user_token_1111_1
 WHERE app_key = '1111' AND user_id IN ('37143715') AND create_time <= 1761300328654;
 COMMIT;
+
+SELECT
+    CONCAT(
+        DATE_FORMAT(create_time, '%Y-%m-%d %H'),
+        IF(MINUTE(create_time) < 30, ':00', ':30')
+    ) AS half_hour,
+    COUNT(*) AS record_count
+FROM
+    user_gold_record_3
+where
+    create_time between '2024-03-19 00:00:00'
+    and '2024-03-19 23:59:59'
+GROUP BY
+    CONCAT(
+        DATE_FORMAT(create_time, '%Y-%m-%d %H'),
+        IF(MINUTE(create_time) < 30, ':00', ':30')
+    )
+ORDER BY
+    half_hour desc;
