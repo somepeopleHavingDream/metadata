@@ -25,12 +25,17 @@
               - org.apache.kafka.common.record.DefaultRecord#recordSizeUpperBound
         - org.apache.kafka.clients.producer.internals.BufferPool#allocate
           - org.apache.kafka.clients.producer.internals.BufferPool#freeSize
+          - org.apache.kafka.clients.producer.internals.BufferPool#freeUp
+          - org.apache.kafka.clients.producer.internals.BufferPool#safeAllocateByteBuffer
+            - org.apache.kafka.clients.producer.internals.BufferPool#allocateByteBuffer
         - org.apache.kafka.clients.producer.internals.RecordAccumulator#recordsBuilder
           - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long)
             - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, int)
               - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int)
                 - org.apache.kafka.common.record.MemoryRecordsBuilder#MemoryRecordsBuilder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int, int)
                   - org.apache.kafka.common.utils.ByteBufferOutputStream#ByteBufferOutputStream(java.nio.ByteBuffer)
+        - org.apache.kafka.clients.producer.internals.ProducerBatch#ProducerBatch(org.apache.kafka.common.TopicPartition, org.apache.kafka.common.record.MemoryRecordsBuilder, long)
+          - org.apache.kafka.clients.producer.internals.ProducerBatch#ProducerBatch(org.apache.kafka.common.TopicPartition, org.apache.kafka.common.record.MemoryRecordsBuilder, long, boolean)
 
 - org.apache.kafka.clients.producer.KafkaProducer#KafkaProducer(java.util.Properties)
   - org.apache.kafka.clients.producer.KafkaProducer#KafkaProducer(java.util.Map<java.lang.String,java.lang.Object>, org.apache.kafka.common.serialization.Serializer<K>, org.apache.kafka.common.serialization.Serializer<V>, org.apache.kafka.clients.producer.internals.ProducerMetadata, org.apache.kafka.clients.KafkaClient, org.apache.kafka.clients.producer.internals.ProducerInterceptors<K,V>, org.apache.kafka.common.utils.Time)
@@ -39,10 +44,19 @@
       - org.apache.kafka.common.config.AbstractConfig#get
     - org.apache.kafka.clients.producer.internals.BufferPool#BufferPool
     - org.apache.kafka.clients.producer.internals.RecordAccumulator#RecordAccumulator
+    - org.apache.kafka.clients.ClientUtils#parseAndValidateAddresses(java.util.List<java.lang.String>, java.lang.String)
+      - org.apache.kafka.clients.ClientUtils#parseAndValidateAddresses(java.util.List<java.lang.String>, org.apache.kafka.clients.ClientDnsLookup)
     - org.apache.kafka.clients.producer.internals.ProducerMetadata#ProducerMetadata
       - org.apache.kafka.clients.Metadata#Metadata
     - org.apache.kafka.clients.Metadata#bootstrap
+      - org.apache.kafka.clients.MetadataCache#bootstrap
+        - org.apache.kafka.common.Cluster#bootstrap
+          - org.apache.kafka.common.Cluster#Cluster(java.lang.String, boolean, java.util.Collection<org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.PartitionInfo>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node)
     - org.apache.kafka.clients.producer.KafkaProducer#newSender
+      - org.apache.kafka.common.network.Selector#Selector(long, org.apache.kafka.common.metrics.Metrics, org.apache.kafka.common.utils.Time, java.lang.String, org.apache.kafka.common.network.ChannelBuilder, org.apache.kafka.common.utils.LogContext)
+        - org.apache.kafka.common.network.Selector#Selector(int, long, org.apache.kafka.common.metrics.Metrics, org.apache.kafka.common.utils.Time, java.lang.String, java.util.Map<java.lang.String,java.lang.String>, boolean, org.apache.kafka.common.network.ChannelBuilder, org.apache.kafka.common.utils.LogContext)
+          - org.apache.kafka.common.network.Selector#Selector(int, long, int, org.apache.kafka.common.metrics.Metrics, org.apache.kafka.common.utils.Time, java.lang.String, java.util.Map<java.lang.String,java.lang.String>, boolean, org.apache.kafka.common.network.ChannelBuilder, org.apache.kafka.common.utils.LogContext)
+            - org.apache.kafka.common.network.Selector#Selector(int, long, int, org.apache.kafka.common.metrics.Metrics, org.apache.kafka.common.utils.Time, java.lang.String, java.util.Map<java.lang.String,java.lang.String>, boolean, boolean, org.apache.kafka.common.network.ChannelBuilder, org.apache.kafka.common.memory.MemoryPool, org.apache.kafka.common.utils.LogContext)
       - org.apache.kafka.clients.producer.internals.Sender#Sender
 
 - org.apache.kafka.clients.MetadataCache#empty
@@ -51,15 +65,39 @@
 - org.apache.kafka.clients.producer.internals.ProducerMetadata#ProducerMetadata
   - org.apache.kafka.clients.Metadata#Metadata
 
-- org.apache.kafka.common.network.Selector#Selector(int, long, int, org.apache.kafka.common.metrics.Metrics, org.apache.kafka.common.utils.Time, java.lang.String, java.util.Map<java.lang.String,java.lang.String>, boolean, boolean, org.apache.kafka.common.network.ChannelBuilder, org.apache.kafka.common.memory.MemoryPool, org.apache.kafka.common.utils.LogContext)
-
 - org.apache.kafka.clients.producer.internals.Sender#run
   - org.apache.kafka.clients.producer.internals.Sender#runOnce
     - org.apache.kafka.clients.producer.internals.Sender#sendProducerData
       - org.apache.kafka.clients.Metadata#fetch
       - org.apache.kafka.clients.producer.internals.RecordAccumulator#ready
         - org.apache.kafka.clients.producer.internals.BufferPool#queued
+      - org.apache.kafka.clients.producer.internals.RecordAccumulator#drain
+        - org.apache.kafka.clients.producer.internals.RecordAccumulator#drainBatchesForOneNode
+          - org.apache.kafka.common.Cluster#partitionsForNode
+      - org.apache.kafka.clients.producer.internals.Sender#sendProduceRequests
+        - org.apache.kafka.clients.producer.internals.Sender#sendProduceRequest
     - org.apache.kafka.clients.NetworkClient#poll
+      - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#maybeUpdate(long)
+        - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#maybeUpdate(long, org.apache.kafka.common.Node)
+          - org.apache.kafka.clients.ClusterConnectionStates#canConnect
+          - org.apache.kafka.clients.NetworkClient#initiateConnect
+            - org.apache.kafka.common.network.Selector#connect
+              - org.apache.kafka.common.network.Selector#configureSocketChannel
+              - org.apache.kafka.common.network.Selector#doConnect
+              - org.apache.kafka.common.network.Selector#registerChannel
+      - org.apache.kafka.common.network.Selector#poll
+        - org.apache.kafka.common.network.Selector#clear
+        - org.apache.kafka.common.network.Selector#select
+        - org.apache.kafka.common.network.Selector#pollSelectionKeys
+          - org.apache.kafka.common.network.Selector#determineHandlingOrder
+          - org.apache.kafka.common.network.Selector#channel(java.nio.channels.SelectionKey)
+          - org.apache.kafka.common.network.Selector#attemptRead
+            - org.apache.kafka.common.network.Selector#addToCompletedReceives
+      - org.apache.kafka.clients.NetworkClient#handleCompletedReceives
+        - org.apache.kafka.common.network.Selector#completedReceives
+        - org.apache.kafka.common.requests.AbstractResponse#parseResponse
+          - org.apache.kafka.common.requests.MetadataResponse#MetadataResponse(org.apache.kafka.common.protocol.types.Struct, short)
+            - org.apache.kafka.common.requests.MetadataResponse#MetadataResponse(org.apache.kafka.common.message.MetadataResponseData, boolean)
       - org.apache.kafka.clients.NetworkClient#completeResponses
         - org.apache.kafka.clients.ClientResponse#onComplete
           - org.apache.kafka.clients.producer.internals.Sender#handleProduceResponse
@@ -68,15 +106,11 @@
                 - org.apache.kafka.clients.producer.internals.Sender#maybeRemoveAndDeallocateBatch
                   - org.apache.kafka.clients.producer.internals.RecordAccumulator#deallocate
                     - org.apache.kafka.clients.producer.internals.BufferPool#deallocate(java.nio.ByteBuffer, int)
-      - org.apache.kafka.common.network.Selector#poll
-        - org.apache.kafka.common.network.Selector#select
 
 - org.apache.kafka.common.config.AbstractConfig#AbstractConfig(org.apache.kafka.common.config.ConfigDef, java.util.Map<?,?>, java.util.Map<java.lang.String,?>, boolean)
   - org.apache.kafka.common.config.ConfigDef#parse
     - org.apache.kafka.common.config.ConfigDef#parseValue
       - org.apache.kafka.common.config.ConfigDef#parseType
-
-- org.apache.kafka.clients.NetworkClient#poll
 
 - org.apache.kafka.common.record.DefaultRecord#writeTo
   - org.apache.kafka.common.record.DefaultRecord#sizeOfBodyInBytes(int, long, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
@@ -86,6 +120,25 @@
     - org.apache.kafka.common.utils.ByteUtils#writeUnsignedVarint(int, java.io.DataOutput)
       - org.apache.kafka.common.utils.ByteBufferOutputStream#write(int)
 
+- org.apache.kafka.clients.MetadataCache#computeClusterView
+  - org.apache.kafka.common.Cluster#Cluster(java.lang.String, java.util.Collection<org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.PartitionInfo>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node)
+    - org.apache.kafka.common.Cluster#Cluster(java.lang.String, boolean, java.util.Collection<org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.PartitionInfo>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node)
+
+- org.apache.kafka.clients.Metadata#handleMetadataResponse
+  - org.apache.kafka.clients.Metadata#updateLatestMetadata
+  - org.apache.kafka.clients.MetadataCache#MetadataCache(java.lang.String, java.util.Map<java.lang.Integer,org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.requests.MetadataResponse.PartitionMetadata>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node)
+    - org.apache.kafka.clients.MetadataCache#MetadataCache(java.lang.String, java.util.Map<java.lang.Integer,org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.requests.MetadataResponse.PartitionMetadata>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node, org.apache.kafka.common.Cluster)
+
+- org.apache.kafka.common.requests.MetadataResponse.Holder#Holder
+  - org.apache.kafka.common.requests.MetadataResponse.Holder#createTopicMetadata
+    - org.apache.kafka.common.requests.MetadataResponse.TopicMetadata#TopicMetadata(org.apache.kafka.common.protocol.Errors, java.lang.String, boolean, java.util.List<org.apache.kafka.common.requests.MetadataResponse.PartitionMetadata>, int)
+
+
+
+org.apache.kafka.common.utils.Utils#min(long, long...)
+org.apache.kafka.clients.ClientUtils#parseAndValidateAddresses(java.util.List<java.lang.String>, org.apache.kafka.clients.ClientDnsLookup)
+org.apache.kafka.clients.ClientUtils#parseAndValidateAddresses(java.util.List<java.lang.String>, java.lang.String)
+org.apache.kafka.common.Cluster#bootstrap
 org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long)
 org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, int)
 org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int)
