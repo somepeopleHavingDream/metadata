@@ -1,0 +1,52 @@
+- org.springframework.cloud.gateway.discovery.DiscoveryLocatorProperties#setEnabled
+
+- org.springframework.cloud.gateway.discovery.GatewayDiscoveryClientAutoConfiguration#discoveryLocatorProperties
+  - org.springframework.cloud.gateway.discovery.GatewayDiscoveryClientAutoConfiguration#initFilters
+
+- org.springframework.cloud.gateway.discovery.GatewayDiscoveryClientAutoConfiguration.ReactiveDiscoveryClientRouteDefinitionLocatorConfiguration#discoveryClientRouteDefinitionLocator
+  - org.springframework.cloud.gateway.discovery.DiscoveryClientRouteDefinitionLocator#DiscoveryClientRouteDefinitionLocator(org.springframework.cloud.client.discovery.ReactiveDiscoveryClient, org.springframework.cloud.gateway.discovery.DiscoveryLocatorProperties)
+    - org.springframework.cloud.gateway.discovery.DiscoveryClientRouteDefinitionLocator#DiscoveryClientRouteDefinitionLocator(java.lang.String, org.springframework.cloud.gateway.discovery.DiscoveryLocatorProperties)
+
+- org.springframework.cloud.gateway.route.RouteDefinition#getPredicates
+
+- org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#convertToRoute
+  - org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#getFilters
+    - org.springframework.cloud.gateway.route.RouteDefinition#getFilters
+    - org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#loadGatewayFilters
+      - org.springframework.cloud.gateway.support.ConfigurationService.AbstractBuilder#bind
+        - org.springframework.cloud.gateway.support.ConfigurationService.ConfigurableBuilder#normalizeProperties
+          - org.springframework.cloud.gateway.support.ShortcutConfigurable.ShortcutType#normalize
+            - org.springframework.cloud.gateway.support.ShortcutConfigurable#normalizeKey
+              - org.springframework.cloud.gateway.filter.factory.RewritePathGatewayFilterFactory#shortcutFieldOrder
+      - org.springframework.cloud.gateway.filter.factory.RewritePathGatewayFilterFactory#apply
+  - org.springframework.cloud.gateway.route.Route#async(org.springframework.cloud.gateway.route.RouteDefinition)
+    - org.springframework.cloud.gateway.route.RouteDefinition#getUri
+
+- org.springframework.cloud.gateway.config.GatewayAutoConfiguration#rewritePathGatewayFilterFactory
+  - org.springframework.cloud.gateway.filter.factory.RewritePathGatewayFilterFactory#RewritePathGatewayFilterFactory
+
+- org.springframework.cloud.gateway.filter.GatewayFilter#filter
+  - org.springframework.cloud.gateway.support.ServerWebExchangeUtils#addOriginalRequestUrl
+    - org.springframework.web.server.ServerWebExchangeDecorator#getAttributes
+      - org.springframework.web.server.ServerWebExchangeDecorator#getDelegate
+      - org.springframework.web.server.adapter.DefaultServerWebExchange#getAttributes
+
+- org.springframework.web.server.DefaultServerWebExchangeBuilder#build
+  - org.springframework.web.server.DefaultServerWebExchangeBuilder.MutativeDecorator#MutativeDecorator
+    - org.springframework.web.server.ServerWebExchangeDecorator#ServerWebExchangeDecorator
+
+- org.springframework.web.server.ServerWebExchange#mutate
+  - org.springframework.web.server.DefaultServerWebExchangeBuilder#DefaultServerWebExchangeBuilder
+
+- org.springframework.cloud.gateway.config.GatewayAutoConfiguration#routeDefinitionLocator
+  - org.springframework.cloud.gateway.route.CompositeRouteDefinitionLocator#CompositeRouteDefinitionLocator(reactor.core.publisher.Flux<org.springframework.cloud.gateway.route.RouteDefinitionLocator>)
+    - org.springframework.cloud.gateway.route.CompositeRouteDefinitionLocator#CompositeRouteDefinitionLocator(reactor.core.publisher.Flux<org.springframework.cloud.gateway.route.RouteDefinitionLocator>, org.springframework.util.IdGenerator)
+
+- org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#getRoutes()
+
+- org.springframework.cloud.gateway.config.PropertiesRouteDefinitionLocator#getRouteDefinitions
+
+org.springframework.cloud.gateway.route.Route#async(org.springframework.cloud.gateway.route.RouteDefinition)
+org.springframework.cloud.gateway.support.ServerWebExchangeUtils#addOriginalRequestUrl
+org.springframework.cloud.gateway.discovery.GatewayDiscoveryClientAutoConfiguration#initFilters
+#
