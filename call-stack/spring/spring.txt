@@ -1,0 +1,52 @@
+- org.springframework.beans.factory.support.ConstructorResolver#instantiateUsingFactoryMethod
+  - org.springframework.beans.factory.support.ConstructorResolver#createArgumentArray
+    - org.springframework.beans.factory.support.ConstructorResolver#resolveAutowiredArgument
+      - org.springframework.beans.factory.support.DefaultListableBeanFactory#resolveDependency
+        - org.springframework.beans.factory.support.DefaultListableBeanFactory#doResolveDependency
+          - org.springframework.beans.factory.config.DependencyDescriptor#resolveCandidate
+            - org.springframework.beans.factory.support.AbstractBeanFactory#getBean(java.lang.String)
+              - org.springframework.beans.factory.support.AbstractBeanFactory#doGetBean
+                - org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String)
+                  - org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, boolean)
+
+- org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, org.springframework.beans.factory.ObjectFactory<?>)
+  - org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#createBean(java.lang.String, org.springframework.beans.factory.support.RootBeanDefinition, java.lang.Object[])
+    - org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#doCreateBean
+      - org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#initializeBean(java.lang.String, java.lang.Object, org.springframework.beans.factory.support.RootBeanDefinition)
+        - org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory#applyBeanPostProcessorsBeforeInitialization
+          - org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor#postProcessBeforeInitialization
+            - org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor#bind
+              - org.springframework.boot.context.properties.ConfigurationPropertiesBinder#bind
+                - org.springframework.boot.context.properties.bind.Binder#bind(java.lang.String, org.springframework.boot.context.properties.bind.Bindable<T>, org.springframework.boot.context.properties.bind.BindHandler)
+                  - org.springframework.boot.context.properties.bind.Binder#bind(org.springframework.boot.context.properties.source.ConfigurationPropertyName, org.springframework.boot.context.properties.bind.Bindable<T>, org.springframework.boot.context.properties.bind.BindHandler)
+                    - org.springframework.boot.context.properties.bind.Binder#bind(org.springframework.boot.context.properties.source.ConfigurationPropertyName, org.springframework.boot.context.properties.bind.Bindable<T>, org.springframework.boot.context.properties.bind.BindHandler, boolean)
+                      - org.springframework.boot.context.properties.bind.Binder#bind(org.springframework.boot.context.properties.source.ConfigurationPropertyName, org.springframework.boot.context.properties.bind.Bindable<T>, org.springframework.boot.context.properties.bind.BindHandler, org.springframework.boot.context.properties.bind.Binder.Context, boolean, boolean)
+                        - org.springframework.boot.context.properties.bind.Binder#bindObject
+                          - org.springframework.boot.context.properties.bind.Binder#bindProperty
+                            - org.springframework.boot.context.properties.source.ConfigurationProperty#getValue
+                          - org.springframework.boot.context.properties.bind.Binder#bindDataObject
+                            - org.springframework.boot.context.properties.bind.Binder.Context#withDataObject
+                              - org.springframework.boot.context.properties.bind.Binder.Context#withIncreasedDepth
+                                - org.springframework.boot.context.properties.bind.JavaBeanBinder#bind(org.springframework.boot.context.properties.source.ConfigurationPropertyName, org.springframework.boot.context.properties.bind.Bindable<T>, org.springframework.boot.context.properties.bind.Binder.Context, org.springframework.boot.context.properties.bind.DataObjectPropertyBinder)
+                                  - org.springframework.boot.context.properties.bind.JavaBeanBinder#bind(org.springframework.boot.context.properties.bind.DataObjectPropertyBinder, org.springframework.boot.context.properties.bind.JavaBeanBinder.Bean<T>, org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanSupplier<T>, org.springframework.boot.context.properties.bind.Binder.Context)
+                                    - org.springframework.boot.context.properties.bind.JavaBeanBinder#bind(org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanSupplier<T>, org.springframework.boot.context.properties.bind.DataObjectPropertyBinder, org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanProperty)
+                                      - org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanProperty#setValue
+                                        - org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanSupplier#get
+                                  - org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanSupplier#get
+
+- org.springframework.boot.autoconfigure.condition.OnPropertyCondition.Spec#collectProperties
+  - org.springframework.core.env.AbstractEnvironment#containsProperty
+    - org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver#containsProperty
+      - org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource#findConfigurationProperty(org.springframework.boot.context.properties.source.ConfigurationPropertyName)
+        - org.springframework.boot.context.properties.source.SpringIterableConfigurationPropertySource#getConfigurationProperty
+          - org.springframework.boot.context.properties.source.SpringConfigurationPropertySource#getConfigurationProperty
+            - org.springframework.boot.context.properties.source.ConfigurationProperty#of(org.springframework.boot.context.properties.source.ConfigurationPropertySource, org.springframework.boot.context.properties.source.ConfigurationPropertyName, java.lang.Object, org.springframework.boot.origin.Origin)
+              - org.springframework.boot.context.properties.source.ConfigurationProperty#ConfigurationProperty(org.springframework.boot.context.properties.source.ConfigurationPropertySource, org.springframework.boot.context.properties.source.ConfigurationPropertyName, java.lang.Object, org.springframework.boot.origin.Origin)
+
+- org.springframework.boot.autoconfigure.condition.OnPropertyCondition#getMatchOutcome
+  - org.springframework.boot.autoconfigure.condition.OnPropertyCondition#determineOutcome
+    - org.springframework.boot.autoconfigure.condition.OnPropertyCondition.Spec#Spec
+
+org.springframework.core.annotation.MergedAnnotationPredicates#unique
+org.springframework.boot.context.properties.source.ConfigurationPropertyName#of(java.lang.CharSequence)
+#
