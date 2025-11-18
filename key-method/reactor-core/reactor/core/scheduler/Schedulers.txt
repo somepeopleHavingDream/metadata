@@ -1,0 +1,8 @@
+- reactor.core.scheduler.Schedulers#parallel
+
+- reactor.core.scheduler.Schedulers.CachedScheduler#schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)
+  - reactor.core.scheduler.ParallelScheduler#schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)
+    - reactor.core.scheduler.Schedulers#directSchedule
+
+reactor.core.scheduler.Schedulers#parallel
+#

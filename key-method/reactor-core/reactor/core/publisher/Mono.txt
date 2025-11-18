@@ -1,0 +1,10 @@
+- reactor.core.publisher.Mono#just
+
+- reactor.core.publisher.Mono#delayElement(java.time.Duration)
+  - reactor.core.publisher.Mono#delayElement(java.time.Duration, reactor.core.scheduler.Scheduler)
+
+- reactor.core.publisher.Mono#subscribe(org.reactivestreams.Subscriber<? super T>)
+
+reactor.core.publisher.Mono#delayElement(java.time.Duration)
+reactor.core.publisher.Mono#just
+#

@@ -1,0 +1,7 @@
+- reactor.core.publisher.MonoDelayElement#subscribe
+  - reactor.core.publisher.MonoDelayElement.DelayElementSubscriber#DelayElementSubscriber
+
+- reactor.core.publisher.MonoDelayElement.DelayElementSubscriber#onSubscribe
+
+- reactor.core.publisher.MonoDelayElement.DelayElementSubscriber#onNext
+#

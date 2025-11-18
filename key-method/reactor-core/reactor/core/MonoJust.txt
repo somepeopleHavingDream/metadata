@@ -1,0 +1,4 @@
+- reactor.core.publisher.MonoJust#subscribe
+
+- reactor.core.publisher.MonoJust#MonoJust
+#

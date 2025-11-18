@@ -1,0 +1,6 @@
+- reactor.core.publisher.FluxArray#subscribe(reactor.core.CoreSubscriber<? super T>)
+  - reactor.core.publisher.FluxArray#subscribe(reactor.core.CoreSubscriber<? super T>, T[])
+
+- reactor.core.publisher.FluxArray.ArraySubscription#request
+  - reactor.core.publisher.FluxArray.ArraySubscription#slowPath
+#
