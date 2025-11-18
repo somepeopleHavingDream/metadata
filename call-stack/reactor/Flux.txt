@@ -1,0 +1,8 @@
+- reactor.core.publisher.Flux#just(T)
+
+- reactor.core.publisher.Flux#subscribe(java.util.function.Consumer<? super T>)
+  - reactor.core.publisher.Flux#subscribe(java.util.function.Consumer<? super T>, java.util.function.Consumer<? super java.lang.Throwable>, java.lang.Runnable)
+    - reactor.core.publisher.Flux#subscribe(java.util.function.Consumer<? super T>, java.util.function.Consumer<? super java.lang.Throwable>, java.lang.Runnable, java.util.function.Consumer<? super org.reactivestreams.Subscription>)
+      - reactor.core.publisher.Flux#subscribeWith
+        - reactor.core.publisher.Flux#subscribe(org.reactivestreams.Subscriber<? super T>)
+#

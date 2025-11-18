@@ -1,0 +1,6 @@
+- reactor.core.publisher.LambdaSubscriber#onSubscribe
+
+- reactor.core.publisher.LambdaSubscriber#onNext
+
+- reactor.core.publisher.LambdaSubscriber#onComplete
+#

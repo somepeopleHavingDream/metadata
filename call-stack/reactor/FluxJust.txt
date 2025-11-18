@@ -1,0 +1,4 @@
+- reactor.core.publisher.FluxJust#subscribe
+
+- reactor.core.publisher.FluxJust.WeakScalarSubscription#request
+#
