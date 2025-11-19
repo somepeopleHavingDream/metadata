@@ -3,4 +3,6 @@
 
 - reactor.core.publisher.FluxArray.ArraySubscription#request
   - reactor.core.publisher.FluxArray.ArraySubscription#slowPath
+
+- reactor.core.publisher.FluxArray.ArraySubscription#ArraySubscription
 #

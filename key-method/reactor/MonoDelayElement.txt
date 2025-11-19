@@ -4,4 +4,6 @@
 - reactor.core.publisher.MonoDelayElement.DelayElementSubscriber#onSubscribe
 
 - reactor.core.publisher.MonoDelayElement.DelayElementSubscriber#onNext
+
+- reactor.core.publisher.MonoDelayElement.DelayElementSubscriber#onComplete
 #
