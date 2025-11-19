@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.route.RouteRefreshListener#onApplicationEvent
+  - org.springframework.cloud.gateway.route.RouteRefreshListener#resetIfNeeded
+    - org.springframework.cloud.gateway.route.RouteRefreshListener#reset
+#

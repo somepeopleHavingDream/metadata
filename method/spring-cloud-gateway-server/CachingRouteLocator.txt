@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.route.CachingRouteLocator#onApplicationEvent
+
+- org.springframework.cloud.gateway.route.CachingRouteLocator#fetch()
+#

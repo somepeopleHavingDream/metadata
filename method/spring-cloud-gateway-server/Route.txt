@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.route.Route#async(org.springframework.cloud.gateway.route.RouteDefinition)
+
+org.springframework.cloud.gateway.route.Route#async(org.springframework.cloud.gateway.route.RouteDefinition)
+#

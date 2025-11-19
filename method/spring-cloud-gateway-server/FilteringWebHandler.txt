@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.handler.FilteringWebHandler.DefaultGatewayFilterChain#filter
+
+- org.springframework.cloud.gateway.handler.FilteringWebHandler.DefaultGatewayFilterChain#DefaultGatewayFilterChain(java.util.List<org.springframework.cloud.gateway.filter.GatewayFilter>)
+#

@@ -1,0 +1,8 @@
+- org.springframework.boot.SpringApplication#run(java.lang.Class<?>, java.lang.String...)
+  - org.springframework.boot.SpringApplication#run(java.lang.Class<?>[], java.lang.String[])
+    - org.springframework.boot.SpringApplication#run(java.lang.String...)
+      - org.springframework.boot.SpringApplication#refreshContext
+        - org.springframework.boot.SpringApplication#refresh
+
+org.springframework.boot.SpringApplication#run(java.lang.Class<?>[], java.lang.String[])
+#

@@ -1,0 +1,6 @@
+- org.springframework.context.support.AbstractApplicationContext#publishEvent(org.springframework.context.ApplicationEvent)
+  - org.springframework.context.support.AbstractApplicationContext#publishEvent(java.lang.Object, org.springframework.core.ResolvableType)
+
+- org.springframework.context.support.AbstractApplicationContext#refresh
+  - org.springframework.context.support.AbstractApplicationContext#finishRefresh
+#

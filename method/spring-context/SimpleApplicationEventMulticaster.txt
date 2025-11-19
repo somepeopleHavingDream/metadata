@@ -1,0 +1,4 @@
+- org.springframework.context.event.SimpleApplicationEventMulticaster#multicastEvent(org.springframework.context.ApplicationEvent, org.springframework.core.ResolvableType)
+  - org.springframework.context.event.SimpleApplicationEventMulticaster#invokeListener
+    - org.springframework.context.event.SimpleApplicationEventMulticaster#doInvokeListener
+#

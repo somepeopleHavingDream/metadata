@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.config.GatewayProperties#getRoutes
+
+- org.springframework.cloud.gateway.config.GatewayProperties#setRoutes
+#

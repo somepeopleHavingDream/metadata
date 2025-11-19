@@ -1,0 +1,5 @@
+- org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#convertToRoute
+
+- org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#getRoutes()
+  - org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#getRoutes(reactor.core.publisher.Flux<org.springframework.cloud.gateway.route.RouteDefinition>)
+#

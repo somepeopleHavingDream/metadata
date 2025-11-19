@@ -1,0 +1,5 @@
+- org.springframework.context.support.DefaultLifecycleProcessor#onRefresh
+  - org.springframework.context.support.DefaultLifecycleProcessor#startBeans
+    - org.springframework.context.support.DefaultLifecycleProcessor.LifecycleGroup#start
+      - org.springframework.context.support.DefaultLifecycleProcessor#doStart
+#

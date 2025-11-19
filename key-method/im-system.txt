@@ -1,4 +1,0 @@
-- org.yangxin.im.service.group.mq.GroupChatOperateReceiver#onChatMessage
-  - org.yangxin.im.service.message.service.MessageSyncService#groupReadMark
-    - org.yangxin.im.service.conversation.service.ConversationService#messageMarkRead
-#

@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.route.CompositeRouteLocator#getRoutes
+
+- org.springframework.cloud.gateway.route.CompositeRouteLocator#CompositeRouteLocator
+#

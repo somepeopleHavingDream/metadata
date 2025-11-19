@@ -1,0 +1,3 @@
+- org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#scheduleWithFixedDelay(java.lang.Runnable, java.time.Duration)
+  - org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#errorHandlingTask
+#

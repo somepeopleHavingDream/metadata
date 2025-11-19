@@ -1,0 +1,4 @@
+- com.alibaba.cloud.nacos.discovery.NacosDiscoveryHeartBeatPublisher#publishHeartBeat
+
+- com.alibaba.cloud.nacos.discovery.NacosDiscoveryHeartBeatPublisher#start
+#
