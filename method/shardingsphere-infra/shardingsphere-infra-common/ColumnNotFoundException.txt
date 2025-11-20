@@ -1,0 +1,2 @@
+- org.apache.shardingsphere.infra.exception.kernel.metadata.ColumnNotFoundException#ColumnNotFoundException
+#

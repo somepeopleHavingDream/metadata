@@ -1,0 +1,4 @@
+- org.apache.shardingsphere.infra.exception.core.ShardingSpherePreconditions#checkState
+
+org.apache.shardingsphere.infra.exception.core.ShardingSpherePreconditions#checkState
+#
