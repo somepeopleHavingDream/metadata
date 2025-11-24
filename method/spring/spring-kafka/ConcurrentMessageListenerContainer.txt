@@ -1,0 +1,5 @@
+- org.springframework.kafka.listener.ConcurrentMessageListenerContainer#doStart
+  - org.springframework.kafka.listener.ConcurrentMessageListenerContainer#configureChildContainer
+
+- org.springframework.kafka.listener.ConcurrentMessageListenerContainer#setConcurrency
+#

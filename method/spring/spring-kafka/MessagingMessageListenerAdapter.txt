@@ -1,0 +1,2 @@
+- org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#invokeHandler
+#

@@ -1,0 +1,6 @@
+- org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory#createContainerInstance
+
+- org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory#initializeContainer
+
+- org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory#setConcurrency
+#

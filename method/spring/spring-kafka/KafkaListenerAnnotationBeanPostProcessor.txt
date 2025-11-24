@@ -1,0 +1,8 @@
+- org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#postProcessAfterInitialization
+  - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#findListenerAnnotations(java.lang.Class<?>)
+
+org.springframework.core.annotation.AnnotationUtils#findAnnotation(java.lang.Class<?>, java.lang.Class<A>)
+org.springframework.core.annotation.AnnotatedElementUtils#findMergedAnnotation
+org.springframework.core.MethodIntrospector.MetadataLookup#inspect
+org.springframework.core.MethodIntrospector#selectMethods(java.lang.Class<?>, org.springframework.core.MethodIntrospector.MetadataLookup<T>)
+#

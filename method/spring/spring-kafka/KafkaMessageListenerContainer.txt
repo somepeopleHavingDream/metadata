@@ -1,0 +1,12 @@
+- org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#run
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollAndInvoke
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeIfHaveRecords
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeListener
+        - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchListener
+          - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchListener
+            - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessage
+              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessageWithRecordsOrList
+                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchOnMessage
+
+- org.springframework.kafka.listener.KafkaMessageListenerContainer#doStart
+#

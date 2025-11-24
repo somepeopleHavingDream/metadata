@@ -1,0 +1,2 @@
+- org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration#kafkaConsumerFactory
+#

@@ -1,0 +1,11 @@
+- org.springframework.kafka.config.KafkaListenerEndpointRegistry#start
+  - org.springframework.kafka.config.KafkaListenerEndpointRegistry#getListenerContainers
+  - org.springframework.kafka.config.KafkaListenerEndpointRegistry#startIfNecessary
+
+- org.springframework.kafka.config.KafkaListenerEndpointRegistrar#registerAllEndpoints
+  - org.springframework.kafka.config.KafkaListenerEndpointRegistry#registerListenerContainer(org.springframework.kafka.config.KafkaListenerEndpoint, org.springframework.kafka.config.KafkaListenerContainerFactory<?>)
+    - org.springframework.kafka.config.KafkaListenerEndpointRegistry#registerListenerContainer(org.springframework.kafka.config.KafkaListenerEndpoint, org.springframework.kafka.config.KafkaListenerContainerFactory<?>, boolean)
+      - org.springframework.kafka.config.KafkaListenerEndpointRegistry#createListenerContainer
+
+- org.springframework.kafka.config.KafkaListenerEndpointRegistrar#registerEndpoint(org.springframework.kafka.config.KafkaListenerEndpoint, org.springframework.kafka.config.KafkaListenerContainerFactory<?>)
+#
