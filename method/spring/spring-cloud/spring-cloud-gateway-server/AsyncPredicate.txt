@@ -1,0 +1,3 @@
+- org.springframework.cloud.gateway.handler.AsyncPredicate#from
+  - org.springframework.cloud.gateway.handler.AsyncPredicate.DefaultAsyncPredicate#DefaultAsyncPredicate
+#

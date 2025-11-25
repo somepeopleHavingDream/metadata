@@ -1,4 +1,10 @@
 - org.springframework.cloud.gateway.support.ServerWebExchangeUtils#addOriginalRequestUrl
 
+- org.springframework.cloud.gateway.support.ServerWebExchangeUtils#isAlreadyRouted
+
+- org.springframework.cloud.gateway.support.ServerWebExchangeUtils#toAsyncPredicate
+
+org.springframework.cloud.gateway.support.ServerWebExchangeUtils#toAsyncPredicate
+org.springframework.cloud.gateway.support.ServerWebExchangeUtils#isAlreadyRouted
 org.springframework.cloud.gateway.support.ServerWebExchangeUtils#addOriginalRequestUrl
 #

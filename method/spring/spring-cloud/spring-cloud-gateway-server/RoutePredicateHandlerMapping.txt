@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping#getHandlerInternal
+
+- org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping#lookupRoute
+#
