@@ -1,0 +1,4 @@
+- com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean#getObject
+  - com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean#afterPropertiesSet
+    - com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean#buildSqlSessionFactory
+#

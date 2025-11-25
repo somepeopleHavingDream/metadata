@@ -1,0 +1,2 @@
+- com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration#sqlSessionFactory
+#

@@ -1,0 +1,8 @@
+- com.baomidou.mybatisplus.core.toolkit.Sequence#nextId
+
+- com.baomidou.mybatisplus.core.toolkit.Sequence#Sequence(java.net.InetAddress)
+  - com.baomidou.mybatisplus.core.toolkit.Sequence#getDatacenterId
+
+- com.baomidou.mybatisplus.core.incrementer.DefaultIdentifierGenerator#DefaultIdentifierGenerator(long, long)
+  - com.baomidou.mybatisplus.core.toolkit.Sequence#Sequence(long, long)
+#

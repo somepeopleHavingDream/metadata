@@ -1,0 +1,4 @@
+- com.baomidou.mybatisplus.core.toolkit.IdWorker#initSequence
+
+com.baomidou.mybatisplus.core.toolkit.IdWorker#initSequence
+#

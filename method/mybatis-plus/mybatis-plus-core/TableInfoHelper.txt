@@ -1,0 +1,7 @@
+- com.baomidou.mybatisplus.core.metadata.TableInfoHelper#initTableFields
+
+- com.baomidou.mybatisplus.core.metadata.TableInfoHelper#initTableFields
+  - com.baomidou.mybatisplus.core.metadata.TableInfoHelper#isExistTableId(java.util.List<java.lang.reflect.Field>, com.baomidou.mybatisplus.core.handlers.AnnotationHandler)
+
+com.baomidou.mybatisplus.core.metadata.TableInfoHelper#isExistTableId(java.util.List<java.lang.reflect.Field>, com.baomidou.mybatisplus.core.handlers.AnnotationHandler)
+#

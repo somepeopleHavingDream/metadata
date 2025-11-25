@@ -1,0 +1,4 @@
+- com.baomidou.mybatisplus.core.incrementer.DefaultIdentifierGenerator#getInstance
+
+- com.baomidou.mybatisplus.core.incrementer.DefaultIdentifierGenerator#nextId
+#
