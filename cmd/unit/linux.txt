@@ -13,7 +13,6 @@ ifup ens160
 modprobe ip_vs
 reboot
 find / -name redis.conf
-jmeter.sh -n -t goods_list.jmx -l result.jtl
 virtualenv test_env
 deactivate
 du -sh anaconda3
