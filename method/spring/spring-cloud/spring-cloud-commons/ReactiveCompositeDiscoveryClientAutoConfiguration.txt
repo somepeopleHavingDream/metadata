@@ -1,0 +1,2 @@
+- org.springframework.cloud.client.discovery.composite.reactive.ReactiveCompositeDiscoveryClientAutoConfiguration#reactiveCompositeDiscoveryClient
+#

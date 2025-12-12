@@ -1,0 +1,4 @@
+- io.netty.channel.CombinedChannelDuplexHandler.DelegatingChannelHandlerContext#connect(java.net.SocketAddress, java.net.SocketAddress, io.netty.channel.ChannelPromise)
+
+- io.netty.channel.CombinedChannelDuplexHandler#connect
+#

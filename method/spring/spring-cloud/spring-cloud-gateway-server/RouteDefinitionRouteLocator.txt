@@ -2,4 +2,8 @@
 
 - org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#getRoutes()
   - org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#getRoutes(reactor.core.publisher.Flux<org.springframework.cloud.gateway.route.RouteDefinition>)
+
+- org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#lookup
+
+- org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator#combinePredicates
 #

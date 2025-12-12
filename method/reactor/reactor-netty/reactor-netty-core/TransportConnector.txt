@@ -1,0 +1,7 @@
+- reactor.netty.transport.TransportConnector#doResolveAndConnect
+  - reactor.netty.transport.TransportConnector#doConnect
+
+- reactor.netty.transport.TransportConnector#connect(reactor.netty.transport.TransportConfig, java.net.SocketAddress, io.netty.resolver.AddressResolverGroup<?>, io.netty.channel.ChannelInitializer<io.netty.channel.Channel>, io.netty.channel.EventLoop, reactor.util.context.ContextView)
+
+reactor.netty.transport.TransportConnector#connect(reactor.netty.transport.TransportConfig, java.net.SocketAddress, io.netty.resolver.AddressResolverGroup<?>, io.netty.channel.ChannelInitializer<io.netty.channel.Channel>, io.netty.channel.EventLoop, reactor.util.context.ContextView)
+#

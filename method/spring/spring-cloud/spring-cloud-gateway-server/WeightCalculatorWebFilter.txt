@@ -1,0 +1,3 @@
+- org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter#filter
+  - org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter#getWeights
+#

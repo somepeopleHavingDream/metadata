@@ -1,0 +1,4 @@
+- org.springframework.cloud.client.discovery.composite.reactive.ReactiveCompositeDiscoveryClient#getInstances
+
+- org.springframework.cloud.client.discovery.composite.reactive.ReactiveCompositeDiscoveryClient#ReactiveCompositeDiscoveryClient
+#

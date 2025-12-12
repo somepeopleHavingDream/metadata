@@ -1,0 +1,3 @@
+- reactor.netty.http.client.HttpClientFinalizer#duplicate
+  - reactor.netty.http.client.HttpClientFinalizer#HttpClientFinalizer
+#

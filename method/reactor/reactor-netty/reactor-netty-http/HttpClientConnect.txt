@@ -1,0 +1,8 @@
+- reactor.netty.http.client.HttpClientConnect.MonoHttpConnect#subscribe
+
+- reactor.netty.http.client.HttpClientConnect#connect
+  - reactor.netty.http.client.HttpClientConnect#configuration
+  - reactor.netty.http.client.HttpClientConnect.MonoHttpConnect#MonoHttpConnect
+
+- reactor.netty.http.client.HttpClientConnect#HttpClientConnect(reactor.netty.http.client.HttpConnectionProvider)
+#

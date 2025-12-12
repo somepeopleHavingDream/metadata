@@ -1,0 +1,5 @@
+- io.netty.channel.AbstractChannel.AbstractUnsafe#annotateConnectException
+  - io.netty.channel.AbstractChannel.AnnotatedConnectException#AnnotatedConnectException
+
+- io.netty.channel.AbstractChannel#connect(java.net.SocketAddress)
+#

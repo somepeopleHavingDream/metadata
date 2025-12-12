@@ -1,0 +1,11 @@
+- org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting.FirstNonEmptyEmittingSubscriber#onComplete
+
+- org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting.FirstNonEmptyEmittingSubscriber#onNext
+  - org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting.RaceCoordinator#tryWin
+
+- org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting#subscribe
+  - org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting.RaceCoordinator#subscribe
+    - org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting.FirstNonEmptyEmittingSubscriber#FirstNonEmptyEmittingSubscriber
+
+- org.springframework.cloud.commons.publisher.FluxFirstNonEmptyEmitting#FluxFirstNonEmptyEmitting(java.lang.Iterable<? extends org.reactivestreams.Publisher<? extends T>>)
+#

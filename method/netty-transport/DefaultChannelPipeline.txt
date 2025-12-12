@@ -1,0 +1,4 @@
+- io.netty.channel.DefaultChannelPipeline.HeadContext#connect
+
+- io.netty.channel.DefaultChannelPipeline#connect(java.net.SocketAddress)
+#

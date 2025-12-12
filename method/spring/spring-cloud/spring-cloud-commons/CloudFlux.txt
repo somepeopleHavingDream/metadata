@@ -1,0 +1,4 @@
+- org.springframework.cloud.commons.publisher.CloudFlux#firstNonEmpty(java.lang.Iterable<? extends org.reactivestreams.Publisher<? extends I>>)
+
+org.springframework.cloud.commons.publisher.CloudFlux#firstNonEmpty(java.lang.Iterable<? extends org.reactivestreams.Publisher<? extends I>>)
+#

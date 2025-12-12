@@ -1,0 +1,7 @@
+- io.netty.channel.AbstractChannelHandlerContext#connect(java.net.SocketAddress)
+  - io.netty.channel.AbstractChannelHandlerContext#connect(java.net.SocketAddress, io.netty.channel.ChannelPromise)
+    - io.netty.channel.AbstractChannelHandlerContext#connect(java.net.SocketAddress, java.net.SocketAddress, io.netty.channel.ChannelPromise)
+      - io.netty.channel.AbstractChannelHandlerContext#invokeConnect
+
+- io.netty.channel.AbstractChannelHandlerContext#invokeConnect
+#

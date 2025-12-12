@@ -1,0 +1,3 @@
+- reactor.netty.resources.DefaultPooledConnectionProvider#createPool
+  - reactor.netty.resources.DefaultPooledConnectionProvider.PooledConnectionAllocator#PooledConnectionAllocator
+#
