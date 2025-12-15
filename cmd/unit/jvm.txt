@@ -20,6 +20,9 @@ jstat -gc 1782767
 
 jmap -help
 jmap -dump:format=b,file=heap.hprof 16608
+jmap -clstats 4697
+
+jcmd 4697 GC.class_histogram
 
 jar tf im-user-starter-1.0.0-SNAPSHOT.jar | grep "swagger-ui"
 jar xvf im-user-starter-1.0.0-SNAPSHOT.jar
