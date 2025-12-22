@@ -1,0 +1,3 @@
+- org.apache.kafka.common.network.PlaintextChannelBuilder#buildChannel(java.lang.String, java.nio.channels.SelectionKey, int, org.apache.kafka.common.memory.MemoryPool, org.apache.kafka.common.network.ChannelMetadataRegistry)
+  - org.apache.kafka.common.network.PlaintextChannelBuilder#buildChannel(java.lang.String, org.apache.kafka.common.network.TransportLayer, java.util.function.Supplier<org.apache.kafka.common.network.Authenticator>, int, org.apache.kafka.common.memory.MemoryPool, org.apache.kafka.common.network.ChannelMetadataRegistry)
+#

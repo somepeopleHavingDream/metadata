@@ -1,0 +1,7 @@
+- org.apache.kafka.common.network.KafkaChannel#KafkaChannel
+
+- org.apache.kafka.common.network.KafkaChannel#maybeCompleteReceive
+
+- org.apache.kafka.common.network.KafkaChannel#read
+  - org.apache.kafka.common.network.KafkaChannel#receive
+#

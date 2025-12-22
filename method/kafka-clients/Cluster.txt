@@ -1,0 +1,4 @@
+- org.apache.kafka.common.Cluster#partitionCountForTopic
+
+- org.apache.kafka.common.Cluster#nodes
+#

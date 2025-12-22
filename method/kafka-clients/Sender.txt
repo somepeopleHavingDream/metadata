@@ -1,0 +1,8 @@
+- org.apache.kafka.clients.producer.internals.Sender#wakeup
+
+- org.apache.kafka.clients.producer.internals.Sender#Sender
+
+- org.apache.kafka.clients.producer.internals.Sender#runOnce
+  - org.apache.kafka.clients.producer.internals.Sender#sendProducerData
+  - org.apache.kafka.clients.NetworkClient#poll
+#

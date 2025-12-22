@@ -1,0 +1,8 @@
+- org.apache.kafka.clients.producer.internals.ProducerMetadata#add
+
+- org.apache.kafka.clients.producer.internals.ProducerMetadata#requestUpdateForTopic
+
+- org.apache.kafka.clients.producer.internals.ProducerMetadata#awaitUpdate
+
+- org.apache.kafka.clients.producer.internals.ProducerMetadata#update
+#
