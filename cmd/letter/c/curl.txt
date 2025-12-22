@@ -2,3 +2,7 @@ curl -L https://get.daocloud.io/docker/compose/releases/download/v2.15.1/docker-
 curl -s https://mirror.go-repo.io/centos/go-repo.repo | tee /etc/yum.repos.d/go-repo.repo
 curl www.baidu.com
 curl -I -v www.baidu.com
+
+curl -v -X POST http://localhost:8802/im-os-user/group/member/query \
+  -H "Content-Type: application/json" \
+  -d '{"appKey":"1111"}'
