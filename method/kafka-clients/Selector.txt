@@ -1,0 +1,15 @@
+- org.apache.kafka.common.network.Selector#Selector(int, long, int, org.apache.kafka.common.metrics.Metrics, org.apache.kafka.common.utils.Time, java.lang.String, java.util.Map<java.lang.String,java.lang.String>, boolean, boolean, org.apache.kafka.common.network.ChannelBuilder, org.apache.kafka.common.memory.MemoryPool, org.apache.kafka.common.utils.LogContext)
+
+- org.apache.kafka.common.network.Selector#registerChannel
+  - org.apache.kafka.common.network.Selector#buildAndAttachKafkaChannel
+
+- org.apache.kafka.common.network.Selector#wakeup
+
+- org.apache.kafka.common.network.Selector#poll
+  - org.apache.kafka.common.network.Selector#select
+  - org.apache.kafka.common.network.Selector#pollSelectionKeys
+    - org.apache.kafka.common.network.Selector#attemptRead
+      - org.apache.kafka.common.network.Selector#addToCompletedReceives
+
+- org.apache.kafka.clients.NetworkClient#handleCompletedReceives
+#

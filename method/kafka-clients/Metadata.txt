@@ -1,0 +1,16 @@
+- org.apache.kafka.clients.Metadata#fetch
+
+- org.apache.kafka.clients.Metadata#requestUpdateForNewTopics
+
+- org.apache.kafka.clients.Metadata#bootstrap
+
+- org.apache.kafka.clients.Metadata#maybeThrowFatalException
+
+- org.apache.kafka.clients.Metadata#updateVersion
+
+- org.apache.kafka.clients.Metadata#isClosed
+
+- org.apache.kafka.clients.Metadata#timeToNextUpdate
+
+- org.apache.kafka.clients.Metadata#update
+#

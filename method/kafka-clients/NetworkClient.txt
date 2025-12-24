@@ -1,0 +1,14 @@
+- org.apache.kafka.clients.NetworkClient#wakeup
+
+- org.apache.kafka.clients.NetworkClient#NetworkClient(org.apache.kafka.common.network.Selectable, org.apache.kafka.clients.Metadata, java.lang.String, int, long, long, int, int, int, long, long, org.apache.kafka.clients.ClientDnsLookup, org.apache.kafka.common.utils.Time, boolean, org.apache.kafka.clients.ApiVersions, org.apache.kafka.common.metrics.Sensor, org.apache.kafka.common.utils.LogContext)
+  - org.apache.kafka.clients.NetworkClient#NetworkClient(org.apache.kafka.clients.MetadataUpdater, org.apache.kafka.clients.Metadata, org.apache.kafka.common.network.Selectable, java.lang.String, int, long, long, int, int, int, long, long, org.apache.kafka.clients.ClientDnsLookup, org.apache.kafka.common.utils.Time, boolean, org.apache.kafka.clients.ApiVersions, org.apache.kafka.common.metrics.Sensor, org.apache.kafka.common.utils.LogContext)
+    - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#DefaultMetadataUpdater
+
+- org.apache.kafka.clients.NetworkClient#poll
+  - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#maybeUpdate(long)
+    - org.apache.kafka.clients.NetworkClient#leastLoadedNode
+      - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#fetchNodes
+      - org.apache.kafka.clients.NetworkClient#canSendRequest
+  - org.apache.kafka.clients.NetworkClient#handleCompletedReceives
+    - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#handleSuccessfulResponse
+#

@@ -1,0 +1,10 @@
+- org.apache.kafka.clients.producer.KafkaProducer#send(org.apache.kafka.clients.producer.ProducerRecord<K,V>)
+  - org.apache.kafka.clients.producer.KafkaProducer#send(org.apache.kafka.clients.producer.ProducerRecord<K,V>, org.apache.kafka.clients.producer.Callback)
+    - org.apache.kafka.clients.producer.KafkaProducer#doSend
+      - org.apache.kafka.clients.producer.KafkaProducer#waitOnMetadata
+
+- org.apache.kafka.clients.producer.KafkaProducer#KafkaProducer(java.util.Properties)
+  - org.apache.kafka.clients.producer.KafkaProducer#KafkaProducer(java.util.Map<java.lang.String,java.lang.Object>, org.apache.kafka.common.serialization.Serializer<K>, org.apache.kafka.common.serialization.Serializer<V>, org.apache.kafka.clients.producer.internals.ProducerMetadata, org.apache.kafka.clients.KafkaClient, org.apache.kafka.clients.producer.internals.ProducerInterceptors<K,V>, org.apache.kafka.common.utils.Time)
+
+- org.apache.kafka.clients.producer.KafkaProducer#newSender
+#
