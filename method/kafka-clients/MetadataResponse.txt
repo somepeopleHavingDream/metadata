@@ -1,0 +1,9 @@
+- org.apache.kafka.common.requests.MetadataResponse#MetadataResponse(org.apache.kafka.common.protocol.types.Struct, short)
+  - org.apache.kafka.common.requests.MetadataResponse#MetadataResponse(org.apache.kafka.common.message.MetadataResponseData, boolean)
+
+- org.apache.kafka.common.requests.MetadataResponse#topicMetadata
+  - org.apache.kafka.common.requests.MetadataResponse#holder
+    - org.apache.kafka.common.requests.MetadataResponse.Holder#Holder
+      - org.apache.kafka.common.requests.MetadataResponse.Holder#createTopicMetadata
+        - org.apache.kafka.common.requests.MetadataResponse.TopicMetadata#TopicMetadata(org.apache.kafka.common.protocol.Errors, java.lang.String, boolean, java.util.List<org.apache.kafka.common.requests.MetadataResponse.PartitionMetadata>, int)
+#

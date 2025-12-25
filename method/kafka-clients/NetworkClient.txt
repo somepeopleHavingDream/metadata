@@ -10,5 +10,8 @@
       - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#fetchNodes
       - org.apache.kafka.clients.NetworkClient#canSendRequest
   - org.apache.kafka.clients.NetworkClient#handleCompletedReceives
+    - org.apache.kafka.clients.NetworkClient#parseStructMaybeUpdateThrottleTimeMetrics
     - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#handleSuccessfulResponse
+
+- org.apache.kafka.clients.NetworkClient#doSend(org.apache.kafka.clients.ClientRequest, boolean, long, org.apache.kafka.common.requests.AbstractRequest)
 #

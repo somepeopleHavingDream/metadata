@@ -1,0 +1,5 @@
+- org.apache.kafka.clients.InFlightRequests#completeNext
+  - org.apache.kafka.clients.InFlightRequests#requestQueue
+
+- org.apache.kafka.clients.InFlightRequests#add
+#
