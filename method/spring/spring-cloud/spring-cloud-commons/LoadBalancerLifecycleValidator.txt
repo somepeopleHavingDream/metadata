@@ -1,0 +1,2 @@
+- org.springframework.cloud.client.loadbalancer.LoadBalancerLifecycleValidator#getSupportedLifecycleProcessors
+#

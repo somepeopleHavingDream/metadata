@@ -1,0 +1,4 @@
+- org.springframework.beans.factory.config.NamedBeanHolder#getBeanInstance
+
+- org.springframework.beans.factory.config.NamedBeanHolder#NamedBeanHolder
+#

@@ -1,0 +1,4 @@
+- org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientConfiguration#reactorServiceInstanceLoadBalancer
+
+- org.springframework.cloud.loadbalancer.annotation.LoadBalancerClientConfiguration.ReactiveSupportConfiguration#discoveryClientServiceInstanceListSupplier
+#

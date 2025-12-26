@@ -13,7 +13,5 @@
   - reactor.core.publisher.Flux#flatMap(java.util.function.Function<? super T,? extends org.reactivestreams.Publisher<? extends V>>, int, int)
     - reactor.core.publisher.Flux#flatMap(java.util.function.Function<? super T,? extends org.reactivestreams.Publisher<? extends V>>, boolean, int, int)
 
-reactor.core.publisher.Flux#fromArray
-reactor.core.publisher.Flux#just(T...)
-reactor.core.publisher.Flux#just(T)
+- reactor.core.publisher.Flux#next
 #

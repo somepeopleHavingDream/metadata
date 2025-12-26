@@ -1,0 +1,2 @@
+- reactor.cache.CacheFlux#lookup(java.util.function.Function<KEY,reactor.core.publisher.Mono<java.util.List<reactor.core.publisher.Signal<VALUE>>>>, KEY)
+#

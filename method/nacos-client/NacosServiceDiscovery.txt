@@ -1,0 +1,3 @@
+- org.apache.dubbo.registry.nacos.NacosServiceDiscovery.NacosEventListener#onEvent
+  - org.apache.dubbo.registry.nacos.NacosServiceDiscovery#handleEvent
+#

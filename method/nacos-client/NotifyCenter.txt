@@ -1,0 +1,4 @@
+
+- com.alibaba.nacos.common.notify.NotifyCenter#publishEvent(com.alibaba.nacos.common.notify.Event)
+  - com.alibaba.nacos.common.notify.NotifyCenter#publishEvent(java.lang.Class<? extends com.alibaba.nacos.common.notify.Event>, com.alibaba.nacos.common.notify.Event)
+#

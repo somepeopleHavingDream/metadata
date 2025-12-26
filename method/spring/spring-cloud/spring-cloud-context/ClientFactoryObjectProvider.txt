@@ -1,0 +1,3 @@
+- org.springframework.cloud.context.named.ClientFactoryObjectProvider#getIfAvailable(java.util.function.Supplier<T>)
+  - org.springframework.cloud.context.named.ClientFactoryObjectProvider#delegate
+#

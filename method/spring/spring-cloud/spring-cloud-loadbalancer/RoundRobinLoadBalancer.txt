@@ -1,0 +1,5 @@
+- org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer#choose
+
+- org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer#processInstanceResponse
+  - org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer#getInstanceResponse
+#

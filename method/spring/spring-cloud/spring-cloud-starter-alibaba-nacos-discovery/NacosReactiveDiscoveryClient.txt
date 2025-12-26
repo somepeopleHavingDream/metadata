@@ -1,0 +1,4 @@
+- com.alibaba.cloud.nacos.discovery.reactive.NacosReactiveDiscoveryClient#getInstances
+
+- com.alibaba.cloud.nacos.discovery.reactive.NacosReactiveDiscoveryClient#loadInstancesFromNacos
+#

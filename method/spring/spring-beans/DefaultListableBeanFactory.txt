@@ -1,0 +1,10 @@
+- org.springframework.beans.factory.support.DefaultListableBeanFactory#getBean(java.lang.Class<T>)
+  - org.springframework.beans.factory.support.DefaultListableBeanFactory#getBean(java.lang.Class<T>, java.lang.Object...)
+    - org.springframework.beans.factory.support.DefaultListableBeanFactory#resolveBean
+
+- org.springframework.beans.factory.support.DefaultListableBeanFactory#resolveNamedBean(java.lang.String, org.springframework.core.ResolvableType, java.lang.Object[])
+
+- org.springframework.beans.factory.support.DefaultListableBeanFactory.BeanObjectProvider#getIfAvailable
+  - org.springframework.beans.factory.support.DefaultListableBeanFactory#resolveBean
+
+#

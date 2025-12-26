@@ -1,0 +1,3 @@
+- com.alibaba.nacos.shaded.io.grpc.stub.StreamObserver#onNext
+  - com.alibaba.nacos.common.remote.client.RpcClient#handleServerRequest
+#

@@ -1,0 +1,5 @@
+- org.springframework.beans.factory.support.AbstractBeanFactory#adaptBeanInstance
+
+- org.springframework.beans.factory.support.AbstractBeanFactory#getBean(java.lang.String, java.lang.Class<T>, java.lang.Object...)
+  - org.springframework.beans.factory.support.AbstractBeanFactory#doGetBean
+#

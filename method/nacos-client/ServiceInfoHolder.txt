@@ -1,0 +1,3 @@
+- com.alibaba.nacos.client.naming.cache.ServiceInfoHolder#processServiceInfo(com.alibaba.nacos.api.naming.pojo.ServiceInfo)
+  - com.alibaba.nacos.client.naming.cache.ServiceInfoHolder#isChangedServiceInfo
+#

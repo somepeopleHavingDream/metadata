@@ -1,0 +1,6 @@
+- org.springframework.cloud.context.named.NamedContextFactory#getInstances
+  - org.springframework.cloud.context.named.NamedContextFactory#getContext
+    - org.springframework.cloud.context.named.NamedContextFactory#createContext
+      - org.springframework.cloud.context.named.NamedContextFactory#buildContext
+      - org.springframework.cloud.context.named.NamedContextFactory#registerBeans
+#

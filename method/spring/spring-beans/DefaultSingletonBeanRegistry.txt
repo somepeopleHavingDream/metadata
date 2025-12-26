@@ -1,0 +1,6 @@
+- org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String)
+  - org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, boolean)
+
+- org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#getSingleton(java.lang.String, org.springframework.beans.factory.ObjectFactory<?>)
+  - org.springframework.beans.factory.support.DefaultSingletonBeanRegistry#addSingleton
+#
