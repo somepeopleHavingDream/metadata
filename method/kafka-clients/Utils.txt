@@ -1,0 +1,2 @@
+- org.apache.kafka.common.utils.Utils#closeQuietly(java.lang.AutoCloseable, java.lang.String, java.util.concurrent.atomic.AtomicReference<java.lang.Throwable>)
+#

@@ -12,4 +12,8 @@
       - org.apache.kafka.common.network.Selector#addToCompletedReceives
 
 - org.apache.kafka.clients.NetworkClient#handleCompletedReceives
+
+- org.apache.kafka.common.network.Selector#close()
+
+- org.apache.kafka.common.network.Selector#completedReceives
 #

@@ -1,0 +1,3 @@
+- org.apache.kafka.common.protocol.ApiKeys#parseResponse
+  - org.apache.kafka.common.protocol.ApiKeys#parseResponse(short, java.nio.ByteBuffer, short)
+#
