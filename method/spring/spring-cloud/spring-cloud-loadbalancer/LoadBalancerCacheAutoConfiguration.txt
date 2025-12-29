@@ -1,0 +1,2 @@
+- org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration.CaffeineLoadBalancerCacheManagerConfiguration#caffeineLoadBalancerCacheManager
+#

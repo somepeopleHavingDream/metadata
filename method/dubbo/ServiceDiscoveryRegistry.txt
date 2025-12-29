@@ -1,0 +1,4 @@
+- org.apache.dubbo.registry.client.ServiceDiscoveryRegistry#subscribe
+  - org.apache.dubbo.registry.client.ServiceDiscoveryRegistry#doSubscribe
+    - org.apache.dubbo.registry.client.ServiceDiscoveryRegistry#subscribeURLs
+#

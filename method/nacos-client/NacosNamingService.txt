@@ -1,0 +1,4 @@
+- com.alibaba.nacos.client.naming.NacosNamingService#subscribe(java.lang.String, java.lang.String, java.util.List<java.lang.String>, com.alibaba.nacos.api.naming.listener.EventListener)
+
+- com.alibaba.nacos.client.naming.NacosNamingService#init
+#

@@ -3,4 +3,6 @@
 - com.alibaba.nacos.common.notify.DefaultPublisher#openEventHandler
   - com.alibaba.nacos.common.notify.DefaultPublisher#receiveEvent
     - com.alibaba.nacos.common.notify.DefaultPublisher#notifySubscriber
+
+- com.alibaba.nacos.common.notify.DefaultPublisher#addSubscriber
 #

@@ -1,0 +1,3 @@
+- org.springframework.cloud.loadbalancer.core.ServiceInstanceListSupplierBuilder#build
+  - org.springframework.cloud.loadbalancer.core.ServiceInstanceListSupplierBuilder#withCaching
+#
