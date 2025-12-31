@@ -1,0 +1,8 @@
+- org.apache.kafka.clients.producer.internals.RecordAccumulator#drain
+  - org.apache.kafka.clients.producer.internals.RecordAccumulator#drainBatchesForOneNode
+
+- org.apache.kafka.clients.producer.internals.RecordAccumulator#ready
+
+- org.apache.kafka.clients.producer.internals.RecordAccumulator#append
+  - org.apache.kafka.clients.producer.internals.RecordAccumulator#getOrCreateDeque
+#
