@@ -1,0 +1,2 @@
+- org.apache.dubbo.registry.ListenerRegistryWrapper#subscribe
+#

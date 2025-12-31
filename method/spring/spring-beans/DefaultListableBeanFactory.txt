@@ -7,4 +7,9 @@
 - org.springframework.beans.factory.support.DefaultListableBeanFactory.BeanObjectProvider#getIfAvailable
   - org.springframework.beans.factory.support.DefaultListableBeanFactory#resolveBean
 
+- org.springframework.beans.factory.support.DefaultListableBeanFactory#resolveDependency
+  - org.springframework.beans.factory.support.DefaultListableBeanFactory#doResolveDependency
+    - org.springframework.beans.factory.support.DefaultListableBeanFactory#findAutowireCandidates
+
+- org.springframework.beans.factory.support.DefaultListableBeanFactory#registerResolvableDependency
 #

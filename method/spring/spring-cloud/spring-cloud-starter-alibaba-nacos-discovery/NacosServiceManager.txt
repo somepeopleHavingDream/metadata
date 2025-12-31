@@ -1,0 +1,4 @@
+- com.alibaba.cloud.nacos.NacosServiceManager#getNamingService()
+  - com.alibaba.cloud.nacos.NacosServiceManager#buildNamingService
+    - com.alibaba.cloud.nacos.NacosServiceManager#createNewNamingService
+#

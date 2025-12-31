@@ -1,2 +1,4 @@
 - org.springframework.beans.factory.support.ConstructorResolver#instantiateUsingFactoryMethod
+  - org.springframework.beans.factory.support.ConstructorResolver#createArgumentArray
+    - org.springframework.beans.factory.support.ConstructorResolver#resolveAutowiredArgument
 #

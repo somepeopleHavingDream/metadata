@@ -1,4 +1,8 @@
 
 - com.alibaba.nacos.common.notify.NotifyCenter#publishEvent(com.alibaba.nacos.common.notify.Event)
   - com.alibaba.nacos.common.notify.NotifyCenter#publishEvent(java.lang.Class<? extends com.alibaba.nacos.common.notify.Event>, com.alibaba.nacos.common.notify.Event)
+
+- com.alibaba.nacos.common.notify.NotifyCenter#registerSubscriber(com.alibaba.nacos.common.notify.listener.Subscriber)
+  - com.alibaba.nacos.common.notify.NotifyCenter#registerSubscriber(com.alibaba.nacos.common.notify.listener.Subscriber, com.alibaba.nacos.common.notify.EventPublisherFactory)
+    - com.alibaba.nacos.common.notify.NotifyCenter#addSubscriber
 #

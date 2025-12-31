@@ -1,0 +1,4 @@
+- com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService#cacheSubscriberForRedo
+
+- com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService#subscriberRegistered
+#

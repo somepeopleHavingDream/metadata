@@ -5,4 +5,7 @@
   - org.springframework.context.support.AbstractApplicationContext#finishRefresh
 
 - org.springframework.context.support.AbstractApplicationContext#getBean(java.lang.Class<T>)
+
+- org.springframework.context.support.AbstractApplicationContext#refresh
+  - org.springframework.context.support.AbstractApplicationContext#prepareBeanFactory
 #
