@@ -1,0 +1,4 @@
+- org.apache.kafka.clients.producer.internals.ProducerBatch#ProducerBatch(org.apache.kafka.common.TopicPartition, org.apache.kafka.common.record.MemoryRecordsBuilder, long)
+
+- org.apache.kafka.clients.producer.internals.ProducerBatch#tryAppend
+#

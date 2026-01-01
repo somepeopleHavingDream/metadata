@@ -1,0 +1,3 @@
+- org.apache.kafka.common.record.AbstractRecords#estimateSizeInBytesUpperBound(byte, org.apache.kafka.common.record.CompressionType, byte[], byte[], org.apache.kafka.common.header.Header[])
+  - org.apache.kafka.common.record.AbstractRecords#estimateSizeInBytesUpperBound(byte, org.apache.kafka.common.record.CompressionType, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+#

@@ -4,5 +4,7 @@
 
 - org.apache.kafka.clients.producer.internals.Sender#runOnce
   - org.apache.kafka.clients.producer.internals.Sender#sendProducerData
-  - org.apache.kafka.clients.NetworkClient#poll
+    - org.apache.kafka.clients.producer.internals.Sender#addToInflightBatches(java.util.Map<java.lang.Integer,java.util.List<org.apache.kafka.clients.producer.internals.ProducerBatch>>)
+    - org.apache.kafka.clients.producer.internals.Sender.SenderMetrics#updateProduceRequestMetrics
+    - org.apache.kafka.clients.producer.internals.Sender#sendProduceRequests
 #

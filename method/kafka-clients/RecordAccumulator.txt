@@ -5,4 +5,11 @@
 
 - org.apache.kafka.clients.producer.internals.RecordAccumulator#append
   - org.apache.kafka.clients.producer.internals.RecordAccumulator#getOrCreateDeque
+  - org.apache.kafka.clients.producer.internals.RecordAccumulator#tryAppend
+  - org.apache.kafka.clients.producer.internals.RecordAccumulator.RecordAppendResult#RecordAppendResult
+  - org.apache.kafka.clients.producer.internals.RecordAccumulator#recordsBuilder
+
+- org.apache.kafka.clients.producer.internals.RecordAccumulator#resetNextBatchExpiryTime
+
+- org.apache.kafka.clients.producer.internals.RecordAccumulator#expiredBatches
 #

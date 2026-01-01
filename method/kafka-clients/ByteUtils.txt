@@ -1,0 +1,3 @@
+- org.apache.kafka.common.utils.ByteUtils#sizeOfVarint
+  - org.apache.kafka.common.utils.ByteUtils#sizeOfUnsignedVarint
+#

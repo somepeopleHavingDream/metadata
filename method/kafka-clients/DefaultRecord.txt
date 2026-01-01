@@ -1,0 +1,3 @@
+- org.apache.kafka.common.record.DefaultRecord#recordSizeUpperBound
+  - org.apache.kafka.common.record.DefaultRecord#sizeOf
+#

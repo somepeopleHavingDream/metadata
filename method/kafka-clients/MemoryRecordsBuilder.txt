@@ -1,0 +1,15 @@
+- org.apache.kafka.common.record.MemoryRecordsBuilder#MemoryRecordsBuilder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int, int)
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#MemoryRecordsBuilder(org.apache.kafka.common.utils.ByteBufferOutputStream, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int, int)
+
+- org.apache.kafka.common.record.MemoryRecordsBuilder#hasRoomFor(long, byte[], byte[], org.apache.kafka.common.header.Header[])
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#hasRoomFor(long, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+
+- org.apache.kafka.common.record.MemoryRecordsBuilder#append(long, byte[], byte[], org.apache.kafka.common.header.Header[])
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#append(long, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+    - org.apache.kafka.common.record.MemoryRecordsBuilder#nextSequentialOffset
+    - org.apache.kafka.common.record.MemoryRecordsBuilder#appendWithOffset(long, long, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+      - org.apache.kafka.common.record.MemoryRecordsBuilder#appendWithOffset(long, boolean, long, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
+        - org.apache.kafka.common.record.MemoryRecordsBuilder#appendDefaultRecord
+          - org.apache.kafka.common.record.MemoryRecordsBuilder#ensureOpenForRecordAppend
+
+#
