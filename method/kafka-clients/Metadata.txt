@@ -13,4 +13,6 @@
 - org.apache.kafka.clients.Metadata#timeToNextUpdate
 
 - org.apache.kafka.clients.Metadata#update
+  - org.apache.kafka.clients.Metadata#handleMetadataResponse
+    - org.apache.kafka.clients.Metadata#updateLatestMetadata
 #

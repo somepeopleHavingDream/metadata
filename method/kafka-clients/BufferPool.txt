@@ -1,0 +1,5 @@
+- org.apache.kafka.clients.producer.internals.BufferPool#allocate
+  - org.apache.kafka.clients.producer.internals.BufferPool#freeUp
+  - org.apache.kafka.clients.producer.internals.BufferPool#safeAllocateByteBuffer
+    - org.apache.kafka.clients.producer.internals.BufferPool#allocateByteBuffer
+#
