@@ -1,0 +1,3 @@
+- org.apache.dubbo.rpc.protocol.AbstractInvoker#invoke
+  - org.apache.dubbo.rpc.protocol.AbstractInvoker#waitForResultIfSync
+#
