@@ -1,0 +1,2 @@
+- org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator#doTranslate
+#
