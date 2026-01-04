@@ -1,0 +1,3 @@
+- com.baomidou.mybatisplus.extension.toolkit.SqlHelper#executeBatch(org.apache.ibatis.session.SqlSessionFactory, org.apache.ibatis.logging.Log, java.util.Collection<E>, int, java.util.function.BiConsumer<org.apache.ibatis.session.SqlSession,E>)
+  - com.baomidou.mybatisplus.extension.toolkit.SqlHelper#executeBatch(org.apache.ibatis.session.SqlSessionFactory, org.apache.ibatis.logging.Log, java.util.function.Consumer<org.apache.ibatis.session.SqlSession>)
+#

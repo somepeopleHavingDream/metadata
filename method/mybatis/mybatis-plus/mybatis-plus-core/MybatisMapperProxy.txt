@@ -1,0 +1,3 @@
+- com.baomidou.mybatisplus.core.override.MybatisMapperProxy#invoke
+  - com.baomidou.mybatisplus.core.override.MybatisMapperProxy.PlainMethodInvoker#invoke
+#
