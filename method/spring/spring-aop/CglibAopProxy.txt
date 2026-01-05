@@ -1,0 +1,3 @@
+- org.springframework.aop.framework.CglibAopProxy.DynamicAdvisedInterceptor#intercept
+  - org.springframework.aop.framework.CglibAopProxy.CglibMethodInvocation#CglibMethodInvocation
+#

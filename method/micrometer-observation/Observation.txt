@@ -1,0 +1,2 @@
+- io.micrometer.observation.Observation#observe(java.util.function.Supplier<T>)
+#
