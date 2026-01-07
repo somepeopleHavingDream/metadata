@@ -1,0 +1,5 @@
+- org.springframework.web.server.ServerWebExchange#mutate
+
+- org.springframework.web.server.ServerWebExchange#getRequiredAttribute
+  - org.springframework.web.server.ServerWebExchange#getAttribute
+#

@@ -1,6 +1,15 @@
 - org.springframework.cloud.gateway.handler.FilteringWebHandler.DefaultGatewayFilterChain#filter
 
-- org.springframework.cloud.gateway.handler.FilteringWebHandler.DefaultGatewayFilterChain#DefaultGatewayFilterChain(java.util.List<org.springframework.cloud.gateway.filter.GatewayFilter>)
+- org.springframework.cloud.gateway.handler.FilteringWebHandler#handle
+  - org.springframework.cloud.gateway.handler.FilteringWebHandler.DefaultGatewayFilterChain#DefaultGatewayFilterChain(java.util.List<org.springframework.cloud.gateway.filter.GatewayFilter>)
 
-- org.springframework.cloud.gateway.handler.FilteringWebHandler.GatewayFilterAdapter#filter
+- org.springframework.cloud.gateway.filter.OrderedGatewayFilter#filter
+  - org.springframework.cloud.gateway.handler.FilteringWebHandler.GatewayFilterAdapter#filter
+
+- org.springframework.cloud.gateway.handler.FilteringWebHandler.GatewayFilterAdapter#GatewayFilterAdapter
+
+- org.springframework.cloud.gateway.handler.FilteringWebHandler#FilteringWebHandler
+  - org.springframework.cloud.gateway.handler.FilteringWebHandler#loadFilters
+
+- org.springframework.cloud.gateway.handler.FilteringWebHandler.DefaultGatewayFilterChain#DefaultGatewayFilterChain(org.springframework.cloud.gateway.handler.FilteringWebHandler.DefaultGatewayFilterChain, int)
 #
