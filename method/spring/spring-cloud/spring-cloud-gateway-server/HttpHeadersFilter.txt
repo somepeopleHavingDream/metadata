@@ -1,0 +1,2 @@
+- org.springframework.cloud.gateway.filter.headers.HttpHeadersFilter#filter(java.util.List<org.springframework.cloud.gateway.filter.headers.HttpHeadersFilter>, org.springframework.http.HttpHeaders, org.springframework.web.server.ServerWebExchange, org.springframework.cloud.gateway.filter.headers.HttpHeadersFilter.Type)
+#
