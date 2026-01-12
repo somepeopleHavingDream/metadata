@@ -1,3 +1,5 @@
 - org.apache.kafka.common.utils.ByteUtils#sizeOfVarint
   - org.apache.kafka.common.utils.ByteUtils#sizeOfUnsignedVarint
+
+- org.apache.kafka.common.utils.ByteUtils#writeVarint(int, java.io.DataOutput)
 #

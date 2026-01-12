@@ -11,4 +11,5 @@
       - org.apache.kafka.common.record.MemoryRecordsBuilder#appendWithOffset(long, boolean, long, java.nio.ByteBuffer, java.nio.ByteBuffer, org.apache.kafka.common.header.Header[])
         - org.apache.kafka.common.record.MemoryRecordsBuilder#appendDefaultRecord
           - org.apache.kafka.common.record.MemoryRecordsBuilder#ensureOpenForRecordAppend
+          - org.apache.kafka.common.record.MemoryRecordsBuilder#recordWritten
 #

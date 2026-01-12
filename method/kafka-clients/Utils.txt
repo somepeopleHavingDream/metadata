@@ -3,4 +3,6 @@
 - org.apache.kafka.common.utils.Utils#murmur2
 
 - org.apache.kafka.common.utils.Utils#toPositive
+
+- org.apache.kafka.common.utils.Utils#writeTo
 #
