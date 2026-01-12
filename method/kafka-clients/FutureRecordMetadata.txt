@@ -1,2 +1,7 @@
 - org.apache.kafka.clients.producer.internals.FutureRecordMetadata#get()
+
+- org.apache.kafka.clients.producer.internals.FutureRecordMetadata#valueOrError
+  - org.apache.kafka.clients.producer.internals.FutureRecordMetadata#value
+
+- org.apache.kafka.clients.producer.internals.FutureRecordMetadata#FutureRecordMetadata
 #

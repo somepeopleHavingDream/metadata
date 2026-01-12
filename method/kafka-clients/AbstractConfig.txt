@@ -1,0 +1,5 @@
+- org.apache.kafka.common.config.AbstractConfig#getInt
+  - org.apache.kafka.common.config.AbstractConfig#get
+
+- org.apache.kafka.common.config.AbstractConfig#AbstractConfig(org.apache.kafka.common.config.ConfigDef, java.util.Map<?,?>, java.util.Map<java.lang.String,?>, boolean)
+#

@@ -1,0 +1,9 @@
+- org.apache.kafka.common.config.ConfigDef#parse
+  - org.apache.kafka.common.config.ConfigDef#undefinedDependentConfigs
+
+- org.apache.kafka.common.config.ConfigDef#define(java.lang.String, org.apache.kafka.common.config.ConfigDef.Type, java.lang.Object, org.apache.kafka.common.config.ConfigDef.Validator, org.apache.kafka.common.config.ConfigDef.Importance, java.lang.String)
+  - org.apache.kafka.common.config.ConfigDef#define(java.lang.String, org.apache.kafka.common.config.ConfigDef.Type, java.lang.Object, org.apache.kafka.common.config.ConfigDef.Validator, org.apache.kafka.common.config.ConfigDef.Importance, java.lang.String, java.lang.String, int, org.apache.kafka.common.config.ConfigDef.Width, java.lang.String)
+    - org.apache.kafka.common.config.ConfigDef#define(java.lang.String, org.apache.kafka.common.config.ConfigDef.Type, java.lang.Object, org.apache.kafka.common.config.ConfigDef.Validator, org.apache.kafka.common.config.ConfigDef.Importance, java.lang.String, java.lang.String, int, org.apache.kafka.common.config.ConfigDef.Width, java.lang.String, java.util.List<java.lang.String>)
+      - org.apache.kafka.common.config.ConfigDef#define(java.lang.String, org.apache.kafka.common.config.ConfigDef.Type, java.lang.Object, org.apache.kafka.common.config.ConfigDef.Validator, org.apache.kafka.common.config.ConfigDef.Importance, java.lang.String, java.lang.String, int, org.apache.kafka.common.config.ConfigDef.Width, java.lang.String, java.util.List<java.lang.String>, org.apache.kafka.common.config.ConfigDef.Recommender)
+        - org.apache.kafka.common.config.ConfigDef#define(org.apache.kafka.common.config.ConfigDef.ConfigKey)
+#
