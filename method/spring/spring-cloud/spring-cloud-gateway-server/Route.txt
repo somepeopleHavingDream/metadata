@@ -2,5 +2,8 @@
 
 - org.springframework.cloud.gateway.route.Route#getPredicate
 
-org.springframework.cloud.gateway.route.Route#async(org.springframework.cloud.gateway.route.RouteDefinition)
+- org.springframework.cloud.gateway.route.Route.AbstractBuilder#build
+  - org.springframework.cloud.gateway.route.Route#Route
+
+- org.springframework.cloud.gateway.route.Route.AbstractBuilder#replaceFilters
 #

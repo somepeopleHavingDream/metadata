@@ -1,4 +1,6 @@
 - org.springframework.cloud.gateway.config.GatewayAutoConfiguration#cachedCompositeRouteLocator
 
 - org.springframework.cloud.gateway.config.GatewayAutoConfiguration#routeDefinitionRouteLocator
+
+- org.springframework.cloud.gateway.config.GatewayAutoConfiguration#filteringWebHandler
 #
