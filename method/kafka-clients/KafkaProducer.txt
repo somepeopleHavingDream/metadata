@@ -3,6 +3,8 @@
     - org.apache.kafka.clients.producer.KafkaProducer#doSend
       - org.apache.kafka.clients.producer.KafkaProducer#waitOnMetadata
       - org.apache.kafka.clients.producer.KafkaProducer#partition
+      - org.apache.kafka.clients.producer.KafkaProducer#setReadOnly
+      - org.apache.kafka.clients.producer.KafkaProducer#ensureValidRecordSize
       - org.apache.kafka.clients.producer.KafkaProducer.InterceptorCallback#InterceptorCallback
 
 - org.apache.kafka.clients.producer.KafkaProducer#KafkaProducer(java.util.Properties)
@@ -11,4 +13,6 @@
 - org.apache.kafka.clients.producer.KafkaProducer#newSender
 
 - org.apache.kafka.clients.producer.KafkaProducer.InterceptorCallback#onCompletion
+
+
 #

@@ -1,0 +1,2 @@
+- org.apache.kafka.common.Cluster#Cluster(java.lang.String, boolean, java.util.Collection<org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.PartitionInfo>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node)
+#

@@ -12,4 +12,14 @@
         - org.apache.kafka.common.record.MemoryRecordsBuilder#appendDefaultRecord
           - org.apache.kafka.common.record.MemoryRecordsBuilder#ensureOpenForRecordAppend
           - org.apache.kafka.common.record.MemoryRecordsBuilder#recordWritten
+
+- org.apache.kafka.common.record.MemoryRecordsBuilder#isFull
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#estimatedBytesWritten
+
+- org.apache.kafka.common.record.MemoryRecordsBuilder#close
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#validateProducerState
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#closeForRecordAppends
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#buffer
+
+- org.apache.kafka.common.record.MemoryRecordsBuilder#isControlBatch
 #

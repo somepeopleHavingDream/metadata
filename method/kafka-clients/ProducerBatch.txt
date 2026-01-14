@@ -6,4 +6,9 @@
 - org.apache.kafka.clients.producer.internals.ProducerBatch#done
   - org.apache.kafka.clients.producer.internals.ProducerBatch#completeFutureAndFireCallbacks
 
+- org.apache.kafka.clients.producer.internals.ProducerBatch#waitedTimeMs
+
+- org.apache.kafka.clients.producer.internals.ProducerBatch#isFull
+
+- org.apache.kafka.clients.producer.internals.ProducerBatch#close
 #

@@ -1,4 +1,7 @@
 - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long)
   - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, int)
     - org.apache.kafka.common.record.MemoryRecords#builder(java.nio.ByteBuffer, byte, org.apache.kafka.common.record.CompressionType, org.apache.kafka.common.record.TimestampType, long, long, long, short, int, boolean, boolean, int)
+
+- org.apache.kafka.common.record.MemoryRecords#readableRecords
+  - org.apache.kafka.common.record.MemoryRecords#MemoryRecords
 #

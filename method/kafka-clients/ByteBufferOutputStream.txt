@@ -1,2 +1,4 @@
 - org.apache.kafka.common.utils.ByteBufferOutputStream#ByteBufferOutputStream(java.nio.ByteBuffer)
+
+- org.apache.kafka.common.utils.ByteBufferOutputStream#buffer
 #
