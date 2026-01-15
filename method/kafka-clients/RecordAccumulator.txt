@@ -1,5 +1,7 @@
 - org.apache.kafka.clients.producer.internals.RecordAccumulator#drain
   - org.apache.kafka.clients.producer.internals.RecordAccumulator#drainBatchesForOneNode
+    - org.apache.kafka.clients.producer.internals.RecordAccumulator#getDeque
+    - org.apache.kafka.clients.producer.internals.RecordAccumulator#shouldStopDrainBatchesForPartition
 
 - org.apache.kafka.clients.producer.internals.RecordAccumulator#ready
   - org.apache.kafka.clients.producer.internals.RecordAccumulator#isMuted

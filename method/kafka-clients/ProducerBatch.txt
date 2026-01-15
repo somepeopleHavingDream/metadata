@@ -11,4 +11,12 @@
 - org.apache.kafka.clients.producer.internals.ProducerBatch#isFull
 
 - org.apache.kafka.clients.producer.internals.ProducerBatch#close
+
+- org.apache.kafka.clients.producer.internals.ProducerBatch#estimatedSizeInBytes
+
+- org.apache.kafka.clients.producer.internals.ProducerBatch#records
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#build
+    - org.apache.kafka.common.record.MemoryRecordsBuilder#close
+
+- org.apache.kafka.clients.producer.internals.ProducerBatch#drained
 #

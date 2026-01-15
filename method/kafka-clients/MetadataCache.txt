@@ -6,4 +6,6 @@
 - org.apache.kafka.clients.MetadataCache#MetadataCache(java.lang.String, java.util.Map<java.lang.Integer,org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.requests.MetadataResponse.PartitionMetadata>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node)
   - org.apache.kafka.clients.MetadataCache#MetadataCache(java.lang.String, java.util.Map<java.lang.Integer,org.apache.kafka.common.Node>, java.util.Collection<org.apache.kafka.common.requests.MetadataResponse.PartitionMetadata>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, org.apache.kafka.common.Node, org.apache.kafka.common.Cluster)
     - org.apache.kafka.clients.MetadataCache#computeClusterView
+
+- org.apache.kafka.clients.MetadataCache#bootstrap
 #

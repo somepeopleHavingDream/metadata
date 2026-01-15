@@ -22,4 +22,7 @@
   - org.apache.kafka.common.record.MemoryRecordsBuilder#buffer
 
 - org.apache.kafka.common.record.MemoryRecordsBuilder#isControlBatch
+
+- org.apache.kafka.common.record.MemoryRecordsBuilder#estimatedSizeInBytes
+  - org.apache.kafka.common.record.MemoryRecordsBuilder#estimatedBytesWritten
 #

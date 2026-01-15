@@ -4,4 +4,6 @@
 
 - org.apache.kafka.common.record.MemoryRecords#readableRecords
   - org.apache.kafka.common.record.MemoryRecords#MemoryRecords
+
+- org.apache.kafka.common.record.MemoryRecords#sizeInBytes
 #
