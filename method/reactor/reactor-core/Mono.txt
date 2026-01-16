@@ -5,6 +5,13 @@
 
 - reactor.core.publisher.Mono#subscribe(org.reactivestreams.Subscriber<? super T>)
 
-reactor.core.publisher.Mono#delayElement(java.time.Duration)
-reactor.core.publisher.Mono#just
+- reactor.core.publisher.Mono#contextWrite(java.util.function.Function<reactor.util.context.Context,reactor.util.context.Context>)
+
+- reactor.core.publisher.Mono#onAssembly
+
+- reactor.core.publisher.Mono#deferContextual
+
+- reactor.core.publisher.Mono#subscribe()
+  - reactor.core.publisher.Mono#subscribeWith
+    - reactor.core.publisher.Mono#subscribe(org.reactivestreams.Subscriber<? super T>)
 #

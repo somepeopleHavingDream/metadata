@@ -1,2 +1,4 @@
 - reactor.core.publisher.MonoFlatMap.FlatMapMain#onNext
+
+- reactor.core.publisher.MonoFlatMap#MonoFlatMap
 #

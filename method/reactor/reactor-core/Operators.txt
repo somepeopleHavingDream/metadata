@@ -13,9 +13,7 @@
 
 - reactor.core.publisher.Operators.ScalarSubscription#request
 
-reactor.core.publisher.Operators#setOnce
-reactor.core.publisher.Operators#scalarSubscription
-reactor.core.publisher.Operators#addCap(java.util.concurrent.atomic.AtomicLongFieldUpdater<T>, T, long)
-reactor.core.publisher.Operators#validate(org.reactivestreams.Subscription, org.reactivestreams.Subscription)
-reactor.core.publisher.Operators#cancelledSubscription
+- reactor.core.publisher.Operators#onLastAssembly
+
+- reactor.core.publisher.Operators#toCoreSubscriber
 #
