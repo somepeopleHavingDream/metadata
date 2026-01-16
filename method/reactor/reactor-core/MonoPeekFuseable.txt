@@ -1,2 +1,3 @@
 - reactor.core.publisher.MonoPeekFuseable#subscribeOrReturn
+  - reactor.core.publisher.FluxPeekFuseable.PeekFuseableSubscriber#PeekFuseableSubscriber
 #
