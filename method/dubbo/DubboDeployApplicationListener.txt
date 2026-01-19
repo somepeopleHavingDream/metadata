@@ -1,0 +1,9 @@
+- org.apache.dubbo.config.spring.context.DubboDeployApplicationListener#onApplicationEvent
+  - org.apache.dubbo.config.spring.context.DubboDeployApplicationListener#onContextClosedEvent
+
+- org.apache.dubbo.common.deploy.DeployListenerAdapter#onStopping
+  - org.apache.dubbo.config.spring.context.DubboDeployApplicationListener#publishModuleEvent(org.apache.dubbo.common.deploy.DeployState)
+
+- org.apache.dubbo.common.deploy.DeployListenerAdapter#onCompletion
+  - org.apache.dubbo.config.spring.context.DubboDeployApplicationListener#publishApplicationEvent(org.apache.dubbo.common.deploy.DeployState)
+#

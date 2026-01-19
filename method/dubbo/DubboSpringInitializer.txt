@@ -1,0 +1,2 @@
+- org.apache.dubbo.config.spring.context.DubboSpringInitializer#remove(org.springframework.context.ApplicationContext)
+#

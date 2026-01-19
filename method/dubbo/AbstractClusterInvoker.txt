@@ -1,0 +1,6 @@
+- org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#invoke
+  - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#list
+    - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#getDirectory
+
+- org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#destroy
+#

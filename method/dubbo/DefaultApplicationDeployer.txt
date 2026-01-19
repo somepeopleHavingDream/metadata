@@ -1,0 +1,5 @@
+- org.apache.dubbo.config.deploy.DefaultApplicationDeployer#notifyModuleChanged
+  - org.apache.dubbo.config.deploy.DefaultApplicationDeployer#checkState
+    - org.apache.dubbo.config.deploy.DefaultApplicationDeployer#onCompletion
+      - org.apache.dubbo.config.deploy.DefaultApplicationDeployer#completeStartFuture
+#

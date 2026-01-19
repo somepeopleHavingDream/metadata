@@ -1,0 +1,4 @@
+- org.apache.dubbo.common.deploy.AbstractDeployer#setStopping
+
+- org.apache.dubbo.common.deploy.AbstractDeployer#setCompletion
+#

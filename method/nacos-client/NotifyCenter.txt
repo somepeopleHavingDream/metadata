@@ -5,4 +5,6 @@
 - com.alibaba.nacos.common.notify.NotifyCenter#registerSubscriber(com.alibaba.nacos.common.notify.listener.Subscriber)
   - com.alibaba.nacos.common.notify.NotifyCenter#registerSubscriber(com.alibaba.nacos.common.notify.listener.Subscriber, com.alibaba.nacos.common.notify.EventPublisherFactory)
     - com.alibaba.nacos.common.notify.NotifyCenter#addSubscriber
+
+- com.alibaba.nacos.common.notify.NotifyCenter#shutdown
 #

@@ -1,0 +1,4 @@
+- org.apache.dubbo.rpc.model.ModuleModel#onDestroy
+
+- org.apache.dubbo.rpc.model.ModuleModel#getServiceRepository
+#

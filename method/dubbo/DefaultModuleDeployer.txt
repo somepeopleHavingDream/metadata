@@ -1,0 +1,11 @@
+- org.apache.dubbo.config.deploy.DefaultModuleDeployer#preDestroy
+  - org.apache.dubbo.config.deploy.DefaultModuleDeployer#onModuleStopping
+  - org.apache.dubbo.config.deploy.DefaultModuleDeployer#offline
+
+- org.apache.dubbo.config.deploy.DefaultModuleDeployer#start
+  - org.apache.dubbo.config.deploy.DefaultModuleDeployer#startSync
+    - org.apache.dubbo.config.deploy.DefaultModuleDeployer#onModuleCompletion
+
+- org.apache.dubbo.config.deploy.DefaultModuleDeployer#postDestroy
+  - org.apache.dubbo.config.deploy.DefaultModuleDeployer#unreferServices
+#

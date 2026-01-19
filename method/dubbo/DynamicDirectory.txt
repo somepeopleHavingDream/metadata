@@ -1,2 +1,4 @@
 - org.apache.dubbo.registry.integration.DynamicDirectory#subscribe
+
+- org.apache.dubbo.registry.integration.DynamicDirectory#destroy
 #

@@ -1,0 +1,3 @@
+- org.apache.dubbo.config.DubboShutdownHook#run
+  - org.apache.dubbo.config.DubboShutdownHook#doDestroy
+#
