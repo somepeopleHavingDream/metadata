@@ -26,4 +26,11 @@
 
 - org.apache.kafka.clients.NetworkClient#newClientRequest(java.lang.String, org.apache.kafka.common.requests.AbstractRequest.Builder<?>, long, boolean)
   - org.apache.kafka.clients.NetworkClient#newClientRequest(java.lang.String, org.apache.kafka.common.requests.AbstractRequest.Builder<?>, long, boolean, int, org.apache.kafka.clients.RequestCompletionHandler)
+
+- org.apache.kafka.clients.NetworkClient#ready
+  - org.apache.kafka.clients.NetworkClient#isReady
+    - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#isUpdateDue
+      - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#hasFetchInProgress
+    - org.apache.kafka.clients.NetworkClient#canSendRequest
+  - org.apache.kafka.clients.NetworkClient#initiateConnect
 #

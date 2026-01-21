@@ -15,4 +15,6 @@
 - org.apache.kafka.clients.producer.internals.RecordAccumulator#resetNextBatchExpiryTime
 
 - org.apache.kafka.clients.producer.internals.RecordAccumulator#expiredBatches
+
+- org.apache.kafka.clients.producer.internals.RecordAccumulator.ReadyCheckResult#ReadyCheckResult
 #

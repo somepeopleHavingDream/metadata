@@ -5,12 +5,13 @@
 - org.apache.kafka.clients.producer.internals.Sender#runOnce
   - org.apache.kafka.clients.producer.internals.Sender#sendProducerData
     - org.apache.kafka.clients.producer.internals.Sender#addToInflightBatches(java.util.Map<java.lang.Integer,java.util.List<org.apache.kafka.clients.producer.internals.ProducerBatch>>)
+      - org.apache.kafka.clients.producer.internals.Sender#addToInflightBatches(java.util.List<org.apache.kafka.clients.producer.internals.ProducerBatch>)
     - org.apache.kafka.clients.producer.internals.Sender.SenderMetrics#updateProduceRequestMetrics
     - org.apache.kafka.clients.producer.internals.Sender#sendProduceRequests
+      - org.apache.kafka.clients.producer.internals.Sender#sendProduceRequest
 
 - org.apache.kafka.clients.producer.internals.Sender#handleProduceResponse
   - org.apache.kafka.clients.producer.internals.Sender#completeBatch(org.apache.kafka.clients.producer.internals.ProducerBatch, org.apache.kafka.common.requests.ProduceResponse.PartitionResponse, long, long)
     - org.apache.kafka.clients.producer.internals.Sender#completeBatch(org.apache.kafka.clients.producer.internals.ProducerBatch, org.apache.kafka.common.requests.ProduceResponse.PartitionResponse)
 
-- org.apache.kafka.clients.producer.internals.Sender#sendProduceRequest
 #

@@ -11,6 +11,8 @@
 - org.apache.kafka.clients.Metadata#isClosed
 
 - org.apache.kafka.clients.Metadata#timeToNextUpdate
+  - org.apache.kafka.clients.Metadata#updateRequested
+  - org.apache.kafka.clients.Metadata#timeToAllowUpdate
 
 - org.apache.kafka.clients.Metadata#update
   - org.apache.kafka.clients.Metadata#handleMetadataResponse

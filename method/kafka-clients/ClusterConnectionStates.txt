@@ -1,0 +1,3 @@
+- org.apache.kafka.clients.ClusterConnectionStates#isReady(java.lang.String, long)
+  - org.apache.kafka.clients.ClusterConnectionStates#isReady(org.apache.kafka.clients.ClusterConnectionStates.NodeConnectionState, long)
+#
