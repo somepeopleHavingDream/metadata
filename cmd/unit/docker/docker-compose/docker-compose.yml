@@ -14,8 +14,10 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: 123456
   redis:
     image: redis
+    container_name: redis
     ports:
-      - 6379:6379
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass 123456
   rabbitmq:
     image: rabbitmq:management
     ports:
@@ -48,12 +50,6 @@ services:
       - admin.metadata-report.address=zookeeper://zookeeper:2181
     depends_on:
       - zookeeper
-    # environment:
-    #   - admin.registry.address=nacos://nacos:8848
-    #   - admin.config-center=nacos://nacos:8848
-    #   - admin.metadata-report.address=nacos://nacos:8848
-    # depends_on:
-    #   - nacos
   sentinel-dashboard:
     image: bladex/sentinel-dashboard
     container_name: sentinel-dashboard
