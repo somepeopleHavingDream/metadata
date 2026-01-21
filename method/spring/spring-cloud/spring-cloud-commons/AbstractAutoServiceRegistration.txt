@@ -1,0 +1,5 @@
+- org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration#register
+
+- org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration#onApplicationEvent
+  - org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration#start
+#
