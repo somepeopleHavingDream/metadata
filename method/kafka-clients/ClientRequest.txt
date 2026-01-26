@@ -1,2 +1,8 @@
 - org.apache.kafka.clients.ClientRequest#ClientRequest
+
+- org.apache.kafka.clients.ClientRequest#destination
+
+- org.apache.kafka.clients.ClientRequest#requestBuilder
+
+- org.apache.kafka.clients.ClientRequest#makeHeader
 #

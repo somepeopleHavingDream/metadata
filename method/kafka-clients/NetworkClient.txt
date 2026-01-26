@@ -18,14 +18,21 @@
 - org.apache.kafka.clients.NetworkClient#send
   - org.apache.kafka.clients.NetworkClient#doSend(org.apache.kafka.clients.ClientRequest, boolean, long)
     - org.apache.kafka.clients.NetworkClient#doSend(org.apache.kafka.clients.ClientRequest, boolean, long, org.apache.kafka.common.requests.AbstractRequest)
+      - org.apache.kafka.clients.NetworkClient#ensureActive
+        - org.apache.kafka.clients.NetworkClient#active
+      - org.apache.kafka.clients.NetworkClient#canSendRequest
+      - org.apache.kafka.clients.NetworkClient#doSend(org.apache.kafka.clients.ClientRequest, boolean, long, org.apache.kafka.common.requests.AbstractRequest)
+        - org.apache.kafka.clients.NetworkClient.InFlightRequest#InFlightRequest(org.apache.kafka.clients.ClientRequest, org.apache.kafka.common.requests.RequestHeader, boolean, org.apache.kafka.common.requests.AbstractRequest, org.apache.kafka.common.network.Send, long)
+          - org.apache.kafka.clients.NetworkClient.InFlightRequest#InFlightRequest(org.apache.kafka.common.requests.RequestHeader, int, long, java.lang.String, org.apache.kafka.clients.RequestCompletionHandler, boolean, boolean, org.apache.kafka.common.requests.AbstractRequest, org.apache.kafka.common.network.Send, long)
 
 - org.apache.kafka.clients.NetworkClient.InFlightRequest#completed
 
 - org.apache.kafka.clients.NetworkClient.InFlightRequest#InFlightRequest(org.apache.kafka.clients.ClientRequest, org.apache.kafka.common.requests.RequestHeader, boolean, org.apache.kafka.common.requests.AbstractRequest, org.apache.kafka.common.network.Send, long)
   - org.apache.kafka.clients.NetworkClient.InFlightRequest#InFlightRequest(org.apache.kafka.common.requests.RequestHeader, int, long, java.lang.String, org.apache.kafka.clients.RequestCompletionHandler, boolean, boolean, org.apache.kafka.common.requests.AbstractRequest, org.apache.kafka.common.network.Send, long)
 
-- org.apache.kafka.clients.NetworkClient#newClientRequest(java.lang.String, org.apache.kafka.common.requests.AbstractRequest.Builder<?>, long, boolean)
-  - org.apache.kafka.clients.NetworkClient#newClientRequest(java.lang.String, org.apache.kafka.common.requests.AbstractRequest.Builder<?>, long, boolean, int, org.apache.kafka.clients.RequestCompletionHandler)
+- org.apache.kafka.clients.NetworkClient#handleInitiateApiVersionRequests
+  - org.apache.kafka.clients.NetworkClient#newClientRequest(java.lang.String, org.apache.kafka.common.requests.AbstractRequest.Builder<?>, long, boolean)
+    - org.apache.kafka.clients.NetworkClient#newClientRequest(java.lang.String, org.apache.kafka.common.requests.AbstractRequest.Builder<?>, long, boolean, int, org.apache.kafka.clients.RequestCompletionHandler)
 
 - org.apache.kafka.clients.NetworkClient#ready
   - org.apache.kafka.clients.NetworkClient#isReady

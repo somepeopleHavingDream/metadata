@@ -16,4 +16,7 @@
 - org.apache.kafka.common.network.Selector#close()
 
 - org.apache.kafka.common.network.Selector#completedReceives
+
+- org.apache.kafka.common.network.Selector#send
+  - org.apache.kafka.common.network.Selector#openOrClosingChannelOrFail
 #

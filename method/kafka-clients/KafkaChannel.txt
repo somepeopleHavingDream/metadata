@@ -4,4 +4,6 @@
 
 - org.apache.kafka.common.network.KafkaChannel#read
   - org.apache.kafka.common.network.KafkaChannel#receive
+
+- org.apache.kafka.common.network.KafkaChannel#setSend
 #

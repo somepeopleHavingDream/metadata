@@ -1,0 +1,3 @@
+- org.apache.kafka.common.requests.ProduceRequest.Builder#forMagic
+  - org.apache.kafka.common.requests.ProduceRequest.Builder#Builder
+#
