@@ -1,0 +1,7 @@
+- org.apache.kafka.clients.consumer.internals.Fetcher#clearBufferedDataForUnassignedTopics
+  - org.apache.kafka.clients.consumer.internals.Fetcher#clearBufferedDataForUnassignedPartitions
+
+- org.apache.kafka.clients.consumer.internals.Fetcher#fetchedRecords
+
+- org.apache.kafka.clients.consumer.internals.Fetcher#Fetcher
+#

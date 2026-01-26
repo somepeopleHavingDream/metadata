@@ -1,0 +1,2 @@
+- org.apache.kafka.common.metrics.Sensor#record(double)
+#
