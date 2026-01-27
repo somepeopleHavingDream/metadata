@@ -4,4 +4,7 @@
 
 - org.apache.kafka.common.requests.AbstractRequest#toSend
   - org.apache.kafka.common.requests.AbstractRequest#serialize
+
+- org.apache.kafka.common.requests.AbstractRequest.Builder#Builder(org.apache.kafka.common.protocol.ApiKeys)
+  - org.apache.kafka.common.requests.AbstractRequest.Builder#Builder(org.apache.kafka.common.protocol.ApiKeys, short, short)
 #

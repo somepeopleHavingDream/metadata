@@ -1,0 +1,4 @@
+- org.apache.kafka.common.message.FindCoordinatorRequestData#FindCoordinatorRequestData()
+
+- org.apache.kafka.common.requests.FindCoordinatorRequest.CoordinatorType#id
+#

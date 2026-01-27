@@ -1,0 +1,8 @@
+- org.apache.kafka.clients.consumer.internals.RequestFuture#complete
+  - org.apache.kafka.clients.consumer.internals.RequestFuture#fireSuccess
+    - org.apache.kafka.clients.consumer.internals.RequestFuture#value
+      - org.apache.kafka.clients.consumer.internals.RequestFuture#succeeded
+
+- org.apache.kafka.clients.consumer.internals.RequestFuture#compose
+  - org.apache.kafka.clients.consumer.internals.RequestFuture#addListener
+#

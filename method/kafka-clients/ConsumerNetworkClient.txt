@@ -1,2 +1,15 @@
 - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#maybeTriggerWakeup
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#poll(org.apache.kafka.common.utils.Timer, org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.PollCondition)
+  - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#poll(org.apache.kafka.common.utils.Timer, org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.PollCondition, boolean)
+    - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#firePendingCompletedRequests
+      - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.RequestFutureCompletionHandler#fireCompletion
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.RequestFutureCompletionHandler#onComplete
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#send(org.apache.kafka.common.Node, org.apache.kafka.common.requests.AbstractRequest.Builder<?>)
+  - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#send(org.apache.kafka.common.Node, org.apache.kafka.common.requests.AbstractRequest.Builder<?>, int)
+    - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.UnsentRequests#put
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.RequestFutureCompletionHandler#RequestFutureCompletionHandler
 #

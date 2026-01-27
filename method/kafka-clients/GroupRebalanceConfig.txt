@@ -1,0 +1,2 @@
+- org.apache.kafka.clients.GroupRebalanceConfig#GroupRebalanceConfig(org.apache.kafka.common.config.AbstractConfig, org.apache.kafka.clients.GroupRebalanceConfig.ProtocolType)
+#

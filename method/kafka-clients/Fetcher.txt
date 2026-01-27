@@ -4,4 +4,6 @@
 - org.apache.kafka.clients.consumer.internals.Fetcher#fetchedRecords
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#Fetcher
+
+- org.apache.kafka.clients.consumer.internals.RequestFutureListener#onSuccess
 #
