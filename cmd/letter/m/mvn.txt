@@ -16,4 +16,6 @@ mvn tomcat7:run
 mvn -v
 mvn help:effective-pom
 mvn protobuf:compile
-mvn -s /Users/choupi/Documents/company/data/settings-v-im.xml clean 
+
+mvn -s /Users/choupi/Documents/company/data/settings-v-im.xml clean
+mvn -s /Users/choupi/Documents/company/data/settings-v-im.xml install -U -DskipTests
