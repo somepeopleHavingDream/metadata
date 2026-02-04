@@ -1,2 +1,4 @@
 - org.apache.kafka.clients.consumer.ConsumerConfig#appendDeserializerToConfig
+
+- org.apache.kafka.clients.consumer.ConsumerConfig#maybeOverrideEnableAutoCommit
 #

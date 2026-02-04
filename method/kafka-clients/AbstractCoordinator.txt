@@ -1,4 +1,16 @@
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#timeToNextHeartbeat
 
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendFindCoordinatorRequest
+
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator#ensureActiveGroup(org.apache.kafka.common.utils.Timer)
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#joinGroupIfNeeded
+    - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#ensureCoordinatorReady
+      - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#lookupCoordinator
+        - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendFindCoordinatorRequest
+    - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#initiateJoinGroup
+      - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendJoinGroupRequest
+        - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#coordinatorUnknown
+          - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#checkAndGetCoordinator
+
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator#rejoinNeededOrPending
 #

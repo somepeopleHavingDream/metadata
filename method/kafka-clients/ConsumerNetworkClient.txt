@@ -12,4 +12,6 @@
     - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.UnsentRequests#put
 
 - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.RequestFutureCompletionHandler#RequestFutureCompletionHandler
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#leastLoadedNode
 #
