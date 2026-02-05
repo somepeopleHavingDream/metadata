@@ -1,4 +1,6 @@
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#hasAutoAssignedPartitions
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#allConsumed
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#assignFromSubscribed
 #

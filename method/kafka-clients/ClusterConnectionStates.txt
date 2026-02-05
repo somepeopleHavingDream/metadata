@@ -1,3 +1,11 @@
 - org.apache.kafka.clients.ClusterConnectionStates#isReady(java.lang.String, long)
   - org.apache.kafka.clients.ClusterConnectionStates#isReady(org.apache.kafka.clients.ClusterConnectionStates.NodeConnectionState, long)
+
+- org.apache.kafka.clients.ClusterConnectionStates#pollDelayMs
+  - org.apache.kafka.clients.ClusterConnectionStates#throttleDelayMs
+  - org.apache.kafka.clients.ClusterConnectionStates#connectionDelay
+
+- org.apache.kafka.clients.ClusterConnectionStates#isDisconnected
+
+- org.apache.kafka.clients.ClusterConnectionStates#authenticationException
 #

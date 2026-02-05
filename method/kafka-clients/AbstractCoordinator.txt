@@ -11,6 +11,7 @@
       - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendJoinGroupRequest
         - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#coordinatorUnknown
           - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#checkAndGetCoordinator
+    - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinComplete
 
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#rejoinNeededOrPending
 #

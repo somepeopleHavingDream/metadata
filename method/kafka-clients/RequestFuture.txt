@@ -5,4 +5,9 @@
 
 - org.apache.kafka.clients.consumer.internals.RequestFuture#compose
   - org.apache.kafka.clients.consumer.internals.RequestFuture#addListener
+
+- org.apache.kafka.clients.consumer.internals.RequestFuture#value
+
+- org.apache.kafka.clients.consumer.internals.RequestFuture#shouldBlock
+  - org.apache.kafka.clients.consumer.internals.RequestFuture#isDone
 #

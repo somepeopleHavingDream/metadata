@@ -4,4 +4,6 @@
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinPrepare
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#maybeAutoCommitOffsetsSync
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinComplete
 #

@@ -40,4 +40,10 @@
       - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#hasFetchInProgress
     - org.apache.kafka.clients.NetworkClient#canSendRequest
   - org.apache.kafka.clients.NetworkClient#initiateConnect
+
+- org.apache.kafka.clients.NetworkClient#pollDelayMs
+
+- org.apache.kafka.clients.NetworkClient#connectionFailed
+
+- org.apache.kafka.clients.NetworkClient#authenticationException
 #
