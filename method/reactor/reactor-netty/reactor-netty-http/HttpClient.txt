@@ -1,2 +1,6 @@
 - reactor.netty.http.client.HttpClient#request
+
+- reactor.netty.http.client.HttpClient#create(reactor.netty.resources.ConnectionProvider)
+
+- reactor.netty.http.client.HttpClient#httpResponseDecoder
 #

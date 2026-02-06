@@ -1,2 +1,4 @@
 - reactor.netty.http.client.HttpConnectionProvider#acquire
+
+- reactor.netty.http.client.HttpConnectionProvider#HttpConnectionProvider(reactor.netty.resources.ConnectionProvider)
 #

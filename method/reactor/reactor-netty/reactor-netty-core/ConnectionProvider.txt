@@ -1,0 +1,12 @@
+- reactor.netty.resources.ConnectionProvider#builder
+  - reactor.netty.resources.ConnectionProvider.Builder#Builder(java.lang.String)
+    - reactor.netty.resources.ConnectionProvider.ConnectionPoolSpec#ConnectionPoolSpec()
+    - reactor.netty.resources.ConnectionProvider.Builder#name
+
+- reactor.netty.resources.ConnectionProvider.ConnectionPoolSpec#maxConnections
+  - reactor.netty.resources.ConnectionProvider.ConnectionPoolSpec#get
+
+- reactor.netty.resources.ConnectionProvider.ConnectionPoolSpec#pendingAcquireTimeout
+
+- reactor.netty.resources.ConnectionProvider.ConnectionPoolSpec#pendingAcquireMaxCount
+#

@@ -1,0 +1,4 @@
+- org.springframework.cloud.gateway.config.HttpClientProperties.Pool#getMaxIdleTime
+
+- org.springframework.cloud.gateway.config.HttpClientProperties#getPool
+#
