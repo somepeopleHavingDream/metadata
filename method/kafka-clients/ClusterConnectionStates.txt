@@ -8,4 +8,10 @@
 - org.apache.kafka.clients.ClusterConnectionStates#isDisconnected
 
 - org.apache.kafka.clients.ClusterConnectionStates#authenticationException
+
+- org.apache.kafka.clients.ClusterConnectionStates#connecting
+
+- org.apache.kafka.clients.ClusterConnectionStates#currentAddress
+  - org.apache.kafka.clients.ClusterConnectionStates#nodeState
+  - org.apache.kafka.clients.ClusterConnectionStates.NodeConnectionState#currentAddress
 #

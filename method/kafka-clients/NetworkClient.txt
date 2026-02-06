@@ -5,6 +5,7 @@
     - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#DefaultMetadataUpdater
 
 - org.apache.kafka.clients.NetworkClient#poll
+  - org.apache.kafka.clients.NetworkClient#ensureActive
   - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#maybeUpdate(long)
     - org.apache.kafka.clients.NetworkClient#leastLoadedNode
       - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#fetchNodes
