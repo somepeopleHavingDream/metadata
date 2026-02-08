@@ -2,6 +2,7 @@
 
 - org.apache.kafka.common.network.Selector#registerChannel
   - org.apache.kafka.common.network.Selector#buildAndAttachKafkaChannel
+  - org.apache.kafka.common.network.Selector.IdleExpiryManager#update
 
 - org.apache.kafka.common.network.Selector#wakeup
 
@@ -24,4 +25,7 @@
   - org.apache.kafka.common.network.Selector#openOrClosingChannelOrFail
 
 - org.apache.kafka.common.network.Selector#connect
+  - org.apache.kafka.common.network.Selector#ensureNotRegistered
+  - org.apache.kafka.common.network.Selector#configureSocketChannel
+  - org.apache.kafka.common.network.Selector#doConnect
 #
