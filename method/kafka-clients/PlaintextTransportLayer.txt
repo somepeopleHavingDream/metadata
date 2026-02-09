@@ -1,4 +1,10 @@
 - org.apache.kafka.common.network.PlaintextTransportLayer#addInterestOps
 
 - org.apache.kafka.common.network.PlaintextTransportLayer#PlaintextTransportLayer
+
+- org.apache.kafka.common.network.PlaintextTransportLayer#socketChannel
+
+- org.apache.kafka.common.network.PlaintextTransportLayer#finishConnect
+
+- org.apache.kafka.common.network.PlaintextTransportLayer#ready
 #

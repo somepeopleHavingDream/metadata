@@ -6,4 +6,11 @@
   - org.apache.kafka.common.network.KafkaChannel#receive
 
 - org.apache.kafka.common.network.KafkaChannel#setSend
+
+- org.apache.kafka.common.network.KafkaChannel#id
+
+- org.apache.kafka.common.network.KafkaChannel#finishConnect
+  - org.apache.kafka.common.network.KafkaChannel#ready
+
+- org.apache.kafka.common.network.KafkaChannel#pollResponseReceivedDuringReauthentication
 #

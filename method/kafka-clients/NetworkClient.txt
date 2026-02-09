@@ -18,6 +18,7 @@
 
 - org.apache.kafka.clients.NetworkClient#send
   - org.apache.kafka.clients.NetworkClient#doSend(org.apache.kafka.clients.ClientRequest, boolean, long)
+    - org.apache.kafka.clients.NetworkClient#ensureActive
     - org.apache.kafka.clients.NetworkClient#doSend(org.apache.kafka.clients.ClientRequest, boolean, long, org.apache.kafka.common.requests.AbstractRequest)
       - org.apache.kafka.clients.NetworkClient#ensureActive
         - org.apache.kafka.clients.NetworkClient#active

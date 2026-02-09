@@ -10,10 +10,16 @@
   - org.apache.kafka.common.network.Selector#clear
   - org.apache.kafka.common.network.Selector#select
   - org.apache.kafka.common.network.Selector#pollSelectionKeys
+    - org.apache.kafka.common.network.Selector#determineHandlingOrder
+    - org.apache.kafka.common.network.Selector#channel(java.nio.channels.SelectionKey)
+    - org.apache.kafka.common.network.Selector.IdleExpiryManager#update
     - org.apache.kafka.common.network.Selector#attemptRead
       - org.apache.kafka.common.network.Selector#addToCompletedReceives
+    - org.apache.kafka.common.network.Selector#attemptWrite
+    - org.apache.kafka.common.network.Selector#maybeRecordTimePerConnection
   - org.apache.kafka.common.network.Selector#completeDelayedChannelClose
   - org.apache.kafka.common.network.Selector#maybeCloseOldestConnection
+    - org.apache.kafka.common.network.Selector.IdleExpiryManager#pollExpiredConnection
 
 - org.apache.kafka.clients.NetworkClient#handleCompletedReceives
 
