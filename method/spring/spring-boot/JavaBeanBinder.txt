@@ -1,2 +1,3 @@
-- org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanProperty#setValue
+- org.springframework.boot.context.properties.bind.JavaBeanBinder#bind(org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanSupplier<T>, org.springframework.boot.context.properties.bind.DataObjectPropertyBinder, org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanProperty)
+  - org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanProperty#setValue
 #

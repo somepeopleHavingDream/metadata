@@ -1,0 +1,4 @@
+- com.alibaba.druid.util.JdbcUtils#getDbType
+
+- com.alibaba.druid.util.JdbcUtils#createDriver(java.lang.ClassLoader, java.lang.String)
+#

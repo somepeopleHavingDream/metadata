@@ -1,0 +1,8 @@
+- org.springframework.boot.jdbc.DataSourceBuilder#build
+  - org.springframework.boot.jdbc.DataSourceBuilder.ReflectionDataSourceProperties#set
+
+- org.springframework.boot.jdbc.DataSourceBuilder#driverClassName
+  - org.springframework.boot.jdbc.DataSourceBuilder#set
+
+- org.springframework.boot.jdbc.DataSourceBuilder#url
+#

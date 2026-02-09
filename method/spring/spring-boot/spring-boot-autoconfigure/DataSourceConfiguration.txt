@@ -1,0 +1,3 @@
+- org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.Generic#dataSource
+  - org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration#createDataSource
+#

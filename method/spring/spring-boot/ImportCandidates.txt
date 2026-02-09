@@ -1,0 +1,7 @@
+- org.springframework.boot.context.annotation.ImportCandidates#load
+  - org.springframework.boot.context.annotation.ImportCandidates#decideClassloader
+  - org.springframework.boot.context.annotation.ImportCandidates#findUrlsInClasspath
+  - org.springframework.boot.context.annotation.ImportCandidates#readCandidateConfigurations
+
+- org.springframework.boot.context.annotation.ImportCandidates#ImportCandidates
+#

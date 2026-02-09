@@ -1,0 +1,9 @@
+- org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#getAutoConfigurationEntry
+  - org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#getCandidateConfigurations
+  - org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#removeDuplicates
+  - org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#getExclusions
+  - org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#checkExcludedClasses
+  - org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#getConfigurationClassFilter
+    - org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#getAutoConfigurationImportFilters
+  - org.springframework.boot.autoconfigure.AutoConfigurationImportSelector#fireAutoConfigurationImportEvents
+#

@@ -1,0 +1,6 @@
+- com.alibaba.druid.pool.DruidAbstractDataSource#setUrl
+
+- com.alibaba.druid.pool.DruidAbstractDataSource#setInitialSize
+
+- com.alibaba.druid.pool.DruidAbstractDataSource#setConnectionProperties
+#
