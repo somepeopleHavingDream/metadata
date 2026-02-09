@@ -14,4 +14,7 @@
     - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinComplete
 
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#rejoinNeededOrPending
+
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator.FindCoordinatorResponseHandler#onSuccess
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#clearFindCoordinatorFuture
 #

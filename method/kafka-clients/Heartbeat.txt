@@ -1,0 +1,3 @@
+- org.apache.kafka.clients.consumer.internals.Heartbeat#resetSessionTimeout
+  - org.apache.kafka.clients.consumer.internals.Heartbeat#update
+#

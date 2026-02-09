@@ -2,14 +2,18 @@
 
 - org.apache.kafka.common.network.Selector#registerChannel
   - org.apache.kafka.common.network.Selector#buildAndAttachKafkaChannel
+  - org.apache.kafka.common.network.Selector.IdleExpiryManager#update
 
 - org.apache.kafka.common.network.Selector#wakeup
 
 - org.apache.kafka.common.network.Selector#poll
+  - org.apache.kafka.common.network.Selector#clear
   - org.apache.kafka.common.network.Selector#select
   - org.apache.kafka.common.network.Selector#pollSelectionKeys
     - org.apache.kafka.common.network.Selector#attemptRead
       - org.apache.kafka.common.network.Selector#addToCompletedReceives
+  - org.apache.kafka.common.network.Selector#completeDelayedChannelClose
+  - org.apache.kafka.common.network.Selector#maybeCloseOldestConnection
 
 - org.apache.kafka.clients.NetworkClient#handleCompletedReceives
 
@@ -19,4 +23,9 @@
 
 - org.apache.kafka.common.network.Selector#send
   - org.apache.kafka.common.network.Selector#openOrClosingChannelOrFail
+
+- org.apache.kafka.common.network.Selector#connect
+  - org.apache.kafka.common.network.Selector#ensureNotRegistered
+  - org.apache.kafka.common.network.Selector#configureSocketChannel
+  - org.apache.kafka.common.network.Selector#doConnect
 #

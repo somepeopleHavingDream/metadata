@@ -3,6 +3,7 @@
 - org.apache.kafka.common.utils.Time#timer(long)
   - org.apache.kafka.common.utils.Timer#Timer
     - org.apache.kafka.common.utils.Timer#update()
-      - org.apache.kafka.common.utils.Timer#update(long)
     - org.apache.kafka.common.utils.Timer#reset
+
+- org.apache.kafka.common.utils.Timer#update(long)
 #
