@@ -1,2 +1,4 @@
 - org.apache.kafka.common.protocol.types.Schema#read
+
+- org.apache.kafka.common.protocol.types.Schema#get(java.lang.String)
 #

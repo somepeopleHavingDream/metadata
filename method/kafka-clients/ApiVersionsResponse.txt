@@ -1,0 +1,3 @@
+- org.apache.kafka.common.requests.ApiVersionsResponse#fromStruct
+  - org.apache.kafka.common.requests.ApiVersionsResponse#ApiVersionsResponse(org.apache.kafka.common.protocol.types.Struct, short)
+#

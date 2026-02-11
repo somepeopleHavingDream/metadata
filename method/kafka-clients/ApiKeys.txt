@@ -1,3 +1,10 @@
 - org.apache.kafka.common.protocol.ApiKeys#parseResponse
   - org.apache.kafka.common.protocol.ApiKeys#parseResponse(short, java.nio.ByteBuffer, short)
+    - org.apache.kafka.common.protocol.ApiKeys#responseSchema
+      - org.apache.kafka.common.protocol.ApiKeys#schemaFor
+        - org.apache.kafka.common.protocol.ApiKeys#isVersionSupported
+
+- org.apache.kafka.common.protocol.ApiKeys#requestHeaderVersion
+
+- org.apache.kafka.common.protocol.ApiKeys#responseHeaderVersion
 #

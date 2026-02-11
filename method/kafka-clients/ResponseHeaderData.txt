@@ -1,0 +1,3 @@
+- org.apache.kafka.common.message.ResponseHeaderData#ResponseHeaderData(org.apache.kafka.common.protocol.Readable, short)
+  - org.apache.kafka.common.message.ResponseHeaderData#read
+#

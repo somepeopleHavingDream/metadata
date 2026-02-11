@@ -1,0 +1,4 @@
+- org.apache.kafka.common.message.ApiMessageType#fromApiKey
+
+- org.apache.kafka.common.message.ApiMessageType#requestHeaderVersion
+#
