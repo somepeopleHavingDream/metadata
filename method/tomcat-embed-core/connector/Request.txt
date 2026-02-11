@@ -1,0 +1,10 @@
+- org.apache.catalina.connector.Request#getRequestPathMB
+
+- org.apache.catalina.connector.Request#getFilterChain
+
+- org.apache.catalina.connector.Request#getUserPrincipal
+
+- org.apache.catalina.connector.Request#getSessionInternal(boolean)
+  - org.apache.catalina.connector.Request#doGetSession
+    - org.apache.catalina.connector.Request#getContext
+#

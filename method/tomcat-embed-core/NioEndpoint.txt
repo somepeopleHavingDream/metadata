@@ -1,0 +1,5 @@
+- org.apache.tomcat.util.net.NioEndpoint#startInternal
+
+- org.apache.tomcat.util.net.NioEndpoint#bind
+  - org.apache.tomcat.util.net.NioEndpoint#initServerSocket
+#

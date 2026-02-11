@@ -1,0 +1,4 @@
+- org.apache.catalina.connector.Response#sendAcknowledgement
+  - org.apache.catalina.connector.Response#isCommitted
+    - org.apache.catalina.connector.Response#getCoyoteResponse
+#

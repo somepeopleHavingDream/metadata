@@ -1,0 +1,7 @@
+- org.apache.catalina.core.ApplicationFilterChain#doFilter
+  - org.apache.catalina.core.ApplicationFilterChain#internalDoFilter
+
+- org.apache.catalina.core.ApplicationFilterChain#release
+
+- org.apache.catalina.core.ApplicationFilterChain#addFilter
+#

@@ -1,0 +1,4 @@
+- org.apache.catalina.connector.Connector#Connector(java.lang.String)
+
+- org.apache.catalina.connector.Connector#startInternal
+#

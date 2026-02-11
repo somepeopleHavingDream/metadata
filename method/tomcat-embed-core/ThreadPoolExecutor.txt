@@ -1,0 +1,6 @@
+- org.apache.tomcat.util.threads.ThreadPoolExecutor#ThreadPoolExecutor(int, int, long, java.util.concurrent.TimeUnit, java.util.concurrent.BlockingQueue<java.lang.Runnable>, java.util.concurrent.ThreadFactory)
+  - org.apache.tomcat.util.threads.ThreadPoolExecutor#ThreadPoolExecutor(int, int, long, java.util.concurrent.TimeUnit, java.util.concurrent.BlockingQueue<java.lang.Runnable>, java.util.concurrent.ThreadFactory, org.apache.tomcat.util.threads.ThreadPoolExecutor.RejectedExecutionHandler)
+    - org.apache.tomcat.util.threads.ThreadPoolExecutor#prestartAllCoreThreads
+      - org.apache.tomcat.util.threads.ThreadPoolExecutor#addWorker
+        - org.apache.tomcat.util.threads.ThreadPoolExecutor.Worker#Worker
+#

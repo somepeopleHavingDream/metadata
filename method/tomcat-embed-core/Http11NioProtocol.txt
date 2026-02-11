@@ -1,0 +1,3 @@
+- org.apache.coyote.http11.Http11NioProtocol#Http11NioProtocol()
+  - org.apache.coyote.http11.Http11NioProtocol#Http11NioProtocol(org.apache.tomcat.util.net.NioEndpoint)
+#
