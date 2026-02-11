@@ -3,4 +3,8 @@
 - org.apache.tomcat.util.net.AbstractEndpoint#createExecutor
 
 - org.apache.tomcat.util.net.AbstractEndpoint#start
+
+- org.apache.tomcat.util.net.AbstractEndpoint#getPortWithOffset
+  - org.apache.tomcat.util.net.AbstractEndpoint#getPort
+  - org.apache.tomcat.util.net.AbstractEndpoint#getPortOffset
 #
