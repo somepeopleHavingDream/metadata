@@ -1,0 +1,3 @@
+- org.apache.kafka.common.message.ApiVersionsResponseData#ApiVersionsResponseData(org.apache.kafka.common.protocol.types.Struct, short)
+  - org.apache.kafka.common.message.ApiVersionsResponseData#fromStruct
+#

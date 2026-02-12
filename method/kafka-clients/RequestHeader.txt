@@ -1,4 +1,6 @@
 - org.apache.kafka.common.requests.RequestHeader#RequestHeader(org.apache.kafka.common.message.RequestHeaderData, short)
 
 - org.apache.kafka.common.requests.RequestHeader#toStruct
+
+- org.apache.kafka.common.requests.RequestHeader#apiKey
 #

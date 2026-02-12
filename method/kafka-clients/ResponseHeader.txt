@@ -1,0 +1,3 @@
+- org.apache.kafka.common.requests.ResponseHeader#parse
+  - org.apache.kafka.common.requests.ResponseHeader#ResponseHeader(org.apache.kafka.common.message.ResponseHeaderData, short)
+#
