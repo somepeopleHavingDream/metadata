@@ -1,0 +1,9 @@
+- org.apache.tomcat.util.net.SocketProcessorBase#SocketProcessorBase
+  - org.apache.tomcat.util.net.SocketProcessorBase#reset
+
+- org.apache.tomcat.util.net.SocketProcessorBase#run
+
+- org.apache.tomcat.util.net.SocketWrapperBase#getReadTimeout
+
+- org.apache.tomcat.util.net.SocketWrapperBase#setError
+#

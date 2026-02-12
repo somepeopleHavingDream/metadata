@@ -1,2 +1,7 @@
 - org.apache.coyote.http11.Http11InputBuffer#init
+
+- org.apache.coyote.http11.Http11InputBuffer#parseRequestLine
+  - org.apache.coyote.http11.Http11InputBuffer#fill
+
+- org.apache.coyote.http11.Http11InputBuffer#recycle
 #

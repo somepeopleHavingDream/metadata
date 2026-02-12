@@ -3,4 +3,11 @@
 - org.apache.coyote.AbstractProtocol#setPort
 
 - org.apache.coyote.AbstractProtocol#setMinSpareThreads
+
+- org.apache.coyote.AbstractProtocol.ConnectionHandler#process
+  - org.apache.coyote.AbstractProtocol.RecycledProcessors#pop
+  - org.apache.coyote.AbstractProtocol.ConnectionHandler#getProtocol
+  - org.apache.coyote.AbstractProtocol.ConnectionHandler#register
+  - org.apache.coyote.AbstractProtocol.ConnectionHandler#release(org.apache.coyote.Processor)
+    - org.apache.coyote.AbstractProtocol.RecycledProcessors#push
 #

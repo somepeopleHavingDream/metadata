@@ -23,4 +23,7 @@
 - org.apache.tomcat.util.net.AbstractEndpoint#initializeConnectionLatch
 
 - org.apache.tomcat.util.net.AbstractEndpoint#startAcceptorThread
+
+- org.apache.tomcat.util.net.AbstractEndpoint#processSocket
+  - org.apache.tomcat.util.net.AbstractEndpoint#getExecutor
 #

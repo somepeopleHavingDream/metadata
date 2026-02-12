@@ -9,11 +9,35 @@
 - org.apache.tomcat.util.net.NioEndpoint#serverSocketAccept
 
 - org.apache.tomcat.util.net.NioEndpoint#setSocketOptions
+  - org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper#NioSocketWrapper
+    - org.apache.tomcat.util.net.NioEndpoint#getNioChannels
   - org.apache.tomcat.util.net.NioEndpoint.Poller#register
     - org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper#interestOps(int)
-    - org.apache.tomcat.util.net.NioEndpoint.Poller#createPollerEvent
-      - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#PollerEvent
-        - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#reset(org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper, int)
-    - org.apache.tomcat.util.net.NioEndpoint.Poller#addEvent
 
+- org.apache.tomcat.util.net.NioEndpoint.Poller#createPollerEvent
+  - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#PollerEvent
+    - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#reset(org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper, int)
+
+- org.apache.tomcat.util.net.NioEndpoint.Poller#addEvent
+
+- org.apache.tomcat.util.net.NioEndpoint.Poller#run
+  - org.apache.tomcat.util.net.NioEndpoint.Poller#events
+    - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#getSocketWrapper
+    - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#getInterestOps
+    - org.apache.tomcat.util.net.NioEndpoint.Poller#getSelector
+  - org.apache.tomcat.util.net.NioEndpoint.Poller#processKey
+    - org.apache.tomcat.util.net.NioEndpoint.Poller#unreg
+      - org.apache.tomcat.util.net.NioEndpoint.Poller#reg
+        - org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper#interestOps(int)
+  - org.apache.tomcat.util.net.NioEndpoint.Poller#timeout
+    - org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper#getLastRead
+    - org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper#interestOps(int)
+
+- org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper#registerReadInterest
+  - org.apache.tomcat.util.net.NioEndpoint.Poller#add
+
+- org.apache.tomcat.util.net.NioEndpoint#createSocketProcessor
+  - org.apache.tomcat.util.net.NioEndpoint.SocketProcessor#SocketProcessor
+
+- org.apache.tomcat.util.net.NioEndpoint.SocketProcessor#doRun
 #

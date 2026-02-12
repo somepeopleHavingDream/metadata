@@ -1,4 +1,6 @@
 - org.apache.tomcat.util.net.NioChannel#NioChannel
 
 - org.apache.tomcat.util.net.NioChannel#reset
+
+- org.apache.tomcat.util.net.NioChannel#getIOChannel
 #

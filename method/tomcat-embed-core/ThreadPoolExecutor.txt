@@ -3,4 +3,12 @@
     - org.apache.tomcat.util.threads.ThreadPoolExecutor#prestartAllCoreThreads
       - org.apache.tomcat.util.threads.ThreadPoolExecutor#addWorker
         - org.apache.tomcat.util.threads.ThreadPoolExecutor.Worker#Worker
+
+- org.apache.tomcat.util.threads.ThreadPoolExecutor.Worker#run
+  - org.apache.tomcat.util.threads.ThreadPoolExecutor#runWorker
+    - org.apache.tomcat.util.threads.ThreadPoolExecutor.Worker#unlock
+    - org.apache.tomcat.util.threads.ThreadPoolExecutor#getTask
+
+- org.apache.tomcat.util.threads.ThreadPoolExecutor#execute
+  - org.apache.tomcat.util.threads.ThreadPoolExecutor#executeInternal
 #

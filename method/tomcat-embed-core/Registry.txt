@@ -1,0 +1,2 @@
+- org.apache.tomcat.util.modeler.Registry#getRegistry
+#

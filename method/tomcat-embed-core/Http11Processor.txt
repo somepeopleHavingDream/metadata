@@ -3,4 +3,8 @@
 - org.apache.coyote.http11.Http11Processor#service
   - org.apache.coyote.http11.Http11Processor#setSocketWrapper
   - org.apache.coyote.http11.Http11Processor#prepareRequest
+
+- org.apache.coyote.http11.Http11Processor#Http11Processor
+
+- org.apache.coyote.http11.Http11Processor#recycle
 #

@@ -1,0 +1,2 @@
+- org.apache.tomcat.util.modeler.NoDescriptorRegistry#registerComponent(java.lang.Object, javax.management.ObjectName, java.lang.String)
+#

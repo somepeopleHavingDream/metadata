@@ -1,4 +1,12 @@
 - org.apache.tomcat.util.net.SocketWrapperBase#SocketWrapperBase
 
 - org.apache.tomcat.util.net.SocketWrapperBase#setReadTimeout
+
+- org.apache.tomcat.util.net.SocketWrapperBase#getSocket
+
+- org.apache.tomcat.util.net.SocketWrapperBase#takeCurrentProcessor
+
+- org.apache.tomcat.util.net.SocketWrapperBase#getNegotiatedProtocol
+
+- org.apache.tomcat.util.net.SocketWrapperBase#getLock
 #

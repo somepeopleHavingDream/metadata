@@ -1,2 +1,6 @@
 - org.apache.coyote.Request#getRequestProcessor
+
+- org.apache.coyote.Request#Request
+
+- org.apache.coyote.Request#recycle
 #

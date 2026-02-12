@@ -1,2 +1,4 @@
 - org.apache.tomcat.util.collections.SynchronizedQueue#offer
+
+- org.apache.tomcat.util.collections.SynchronizedQueue#size
 #

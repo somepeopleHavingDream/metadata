@@ -1,0 +1,4 @@
+- org.apache.tomcat.util.http.Parameters#setQuery
+
+- org.apache.tomcat.util.http.Parameters#setURLDecoder
+#

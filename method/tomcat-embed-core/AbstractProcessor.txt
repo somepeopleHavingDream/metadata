@@ -1,4 +1,11 @@
 - org.apache.coyote.AbstractProcessor#action
 
 - org.apache.coyote.AbstractProcessor#setSocketWrapper
+
+- org.apache.coyote.AbstractProcessor#AbstractProcessor(org.apache.coyote.Adapter)
+  - org.apache.coyote.AbstractProcessor#AbstractProcessor(org.apache.coyote.Adapter, org.apache.coyote.Request, org.apache.coyote.Response)
+
+- org.apache.coyote.AbstractProcessor#getAdapter
+
+- org.apache.coyote.AbstractProcessor#recycle
 #
