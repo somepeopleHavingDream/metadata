@@ -1,2 +1,6 @@
 - org.apache.coyote.AbstractProtocol#setConnectionTimeout
+
+- org.apache.coyote.AbstractProtocol#setPort
+
+- org.apache.coyote.AbstractProtocol#setMinSpareThreads
 #

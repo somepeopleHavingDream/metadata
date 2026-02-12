@@ -1,0 +1,4 @@
+- org.apache.tomcat.util.net.SocketBufferHandler#SocketBufferHandler
+
+- org.apache.tomcat.util.net.SocketBufferHandler#reset
+#

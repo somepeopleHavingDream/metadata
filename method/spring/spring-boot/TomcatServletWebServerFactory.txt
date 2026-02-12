@@ -1,2 +1,4 @@
 - org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory#getWebServer
+
+- org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory#customizeConnector
 #

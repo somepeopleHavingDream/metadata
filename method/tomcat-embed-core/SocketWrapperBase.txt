@@ -1,0 +1,4 @@
+- org.apache.tomcat.util.net.SocketWrapperBase#SocketWrapperBase
+
+- org.apache.tomcat.util.net.SocketWrapperBase#setReadTimeout
+#

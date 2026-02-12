@@ -1,10 +1,26 @@
 - org.apache.tomcat.util.net.AbstractEndpoint#setConnectionTimeout
 
 - org.apache.tomcat.util.net.AbstractEndpoint#createExecutor
+  - org.apache.tomcat.util.net.AbstractEndpoint#getMinSpareThreads
+    - org.apache.tomcat.util.net.AbstractEndpoint#getMinSpareThreadsInternal
 
 - org.apache.tomcat.util.net.AbstractEndpoint#start
 
 - org.apache.tomcat.util.net.AbstractEndpoint#getPortWithOffset
   - org.apache.tomcat.util.net.AbstractEndpoint#getPort
   - org.apache.tomcat.util.net.AbstractEndpoint#getPortOffset
+
+- org.apache.tomcat.util.net.AbstractEndpoint#setPort
+
+- org.apache.tomcat.util.net.AbstractEndpoint#countUpOrAwaitConnection
+
+- org.apache.tomcat.util.net.AbstractEndpoint#startAcceptorThread
+
+- org.apache.tomcat.util.net.AbstractEndpoint#getExecutor
+
+- org.apache.tomcat.util.net.AbstractEndpoint#setMinSpareThreads
+
+- org.apache.tomcat.util.net.AbstractEndpoint#initializeConnectionLatch
+
+- org.apache.tomcat.util.net.AbstractEndpoint#startAcceptorThread
 #

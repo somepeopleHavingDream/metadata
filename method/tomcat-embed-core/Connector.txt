@@ -1,4 +1,7 @@
 - org.apache.catalina.connector.Connector#Connector(java.lang.String)
 
 - org.apache.catalina.connector.Connector#startInternal
+
+- org.apache.catalina.connector.Connector#setPort
+  - org.apache.catalina.connector.Connector#setProperty
 #

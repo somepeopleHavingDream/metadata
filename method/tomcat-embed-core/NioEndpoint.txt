@@ -1,5 +1,19 @@
 - org.apache.tomcat.util.net.NioEndpoint#startInternal
+  - org.apache.tomcat.util.net.NioEndpoint.Poller#Poller
 
 - org.apache.tomcat.util.net.NioEndpoint#bind
   - org.apache.tomcat.util.net.NioEndpoint#initServerSocket
+  - org.apache.tomcat.util.net.NioEndpoint#setStopLatch
+  - org.apache.tomcat.util.net.AbstractJsseEndpoint#initialiseSsl
+
+- org.apache.tomcat.util.net.NioEndpoint#serverSocketAccept
+
+- org.apache.tomcat.util.net.NioEndpoint#setSocketOptions
+  - org.apache.tomcat.util.net.NioEndpoint.Poller#register
+    - org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper#interestOps(int)
+    - org.apache.tomcat.util.net.NioEndpoint.Poller#createPollerEvent
+      - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#PollerEvent
+        - org.apache.tomcat.util.net.NioEndpoint.PollerEvent#reset(org.apache.tomcat.util.net.NioEndpoint.NioSocketWrapper, int)
+    - org.apache.tomcat.util.net.NioEndpoint.Poller#addEvent
+
 #

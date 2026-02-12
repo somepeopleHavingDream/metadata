@@ -1,0 +1,4 @@
+- org.springframework.boot.web.server.AbstractConfigurableWebServerFactory#getPort
+
+- org.springframework.boot.web.server.AbstractConfigurableWebServerFactory#setPort
+#

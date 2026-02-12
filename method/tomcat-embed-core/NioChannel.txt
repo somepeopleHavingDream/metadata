@@ -1,0 +1,4 @@
+- org.apache.tomcat.util.net.NioChannel#NioChannel
+
+- org.apache.tomcat.util.net.NioChannel#reset
+#

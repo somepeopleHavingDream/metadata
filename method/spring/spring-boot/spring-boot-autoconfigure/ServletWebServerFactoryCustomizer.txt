@@ -1,0 +1,4 @@
+- org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer#customize
+
+- org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer#ServletWebServerFactoryCustomizer(org.springframework.boot.autoconfigure.web.ServerProperties, java.util.List<org.springframework.boot.web.servlet.WebListenerRegistrar>, java.util.List<org.springframework.boot.web.servlet.server.CookieSameSiteSupplier>, org.springframework.boot.ssl.SslBundles)
+#
