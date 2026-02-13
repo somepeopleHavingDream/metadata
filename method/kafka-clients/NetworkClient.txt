@@ -13,6 +13,7 @@
   - org.apache.kafka.clients.NetworkClient#handleCompletedReceives
     - org.apache.kafka.clients.NetworkClient#parseStructMaybeUpdateThrottleTimeMetrics
       - org.apache.kafka.clients.NetworkClient#correlate
+    - org.apache.kafka.clients.NetworkClient#maybeThrottle
     - org.apache.kafka.clients.NetworkClient.DefaultMetadataUpdater#handleSuccessfulResponse
   - org.apache.kafka.clients.NetworkClient#handleTimedOutConnections
   - org.apache.kafka.clients.NetworkClient#completeResponses

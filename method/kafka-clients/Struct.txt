@@ -1,2 +1,5 @@
-- org.apache.kafka.common.protocol.types.Struct#get(java.lang.String)
+- org.apache.kafka.common.protocol.types.Struct#get(org.apache.kafka.common.protocol.types.Field.Int32)
+  - org.apache.kafka.common.protocol.types.Struct#getInt(java.lang.String)
+    - org.apache.kafka.common.protocol.types.Struct#get(java.lang.String)
+      - org.apache.kafka.common.protocol.types.Struct#getFieldOrDefault
 #
