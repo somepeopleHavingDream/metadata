@@ -1,4 +1,6 @@
 - org.apache.kafka.common.protocol.ByteBufferAccessor#ByteBufferAccessor
 
 - org.apache.kafka.common.protocol.ByteBufferAccessor#readInt
+
+- org.apache.kafka.common.protocol.ByteBufferAccessor#readArray
 #

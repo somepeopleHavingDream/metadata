@@ -1,0 +1,5 @@
+- org.apache.kafka.clients.consumer.internals.ConsumerProtocol#deserializeAssignment(java.nio.ByteBuffer)
+  - org.apache.kafka.clients.consumer.internals.ConsumerProtocol#deserializeVersion
+  - org.apache.kafka.clients.consumer.internals.ConsumerProtocol#deserializeAssignment(java.nio.ByteBuffer, short)
+    - org.apache.kafka.clients.consumer.internals.ConsumerProtocol#checkAssignmentVersion
+#

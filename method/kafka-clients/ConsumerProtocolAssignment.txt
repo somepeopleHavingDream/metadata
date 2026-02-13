@@ -1,0 +1,7 @@
+- org.apache.kafka.common.message.ConsumerProtocolAssignment#ConsumerProtocolAssignment(org.apache.kafka.common.protocol.Readable, short)
+  - org.apache.kafka.common.message.ConsumerProtocolAssignment#read
+    - org.apache.kafka.common.message.ConsumerProtocolAssignment.TopicPartition#TopicPartition(org.apache.kafka.common.protocol.Readable, short)
+      - org.apache.kafka.common.message.ConsumerProtocolAssignment.TopicPartition#read
+
+- org.apache.kafka.common.message.ConsumerProtocolAssignment#userData
+#
