@@ -3,6 +3,16 @@
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#allConsumed
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#assignFromSubscribed
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState#hasAutoAssignedPartitions
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#SubscriptionState
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#checkAssignmentMatchedSubscription
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#hasPatternSubscription
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#rebalanceListener
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#subscribe(java.util.Set<java.lang.String>, org.apache.kafka.clients.consumer.ConsumerRebalanceListener)
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState#registerRebalanceListener
 #

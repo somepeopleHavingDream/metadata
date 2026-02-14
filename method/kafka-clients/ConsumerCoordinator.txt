@@ -7,6 +7,8 @@
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinComplete
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#lookupAssignor
+  - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#maybeUpdateJoinedSubscription
+  - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#invokePartitionsAssigned
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#ConsumerCoordinator
 #
