@@ -1,7 +1,5 @@
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#timeToNextHeartbeat
 
-- org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendFindCoordinatorRequest
-
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#ensureActiveGroup(org.apache.kafka.common.utils.Timer)
   - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#joinGroupIfNeeded
     - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#ensureCoordinatorReady
@@ -17,4 +15,12 @@
 
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.FindCoordinatorResponseHandler#onSuccess
   - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#clearFindCoordinatorFuture
+
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator#generationIfStable
+
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator.JoinGroupResponseHandler#handle
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#isProtocolTypeInconsistent
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.HeartbeatThread#enable
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.Generation#Generation
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#onJoinLeader
 #

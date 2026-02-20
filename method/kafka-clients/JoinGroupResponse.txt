@@ -1,0 +1,4 @@
+- org.apache.kafka.common.requests.JoinGroupResponse#data
+
+- org.apache.kafka.common.requests.JoinGroupResponse#isLeader
+#

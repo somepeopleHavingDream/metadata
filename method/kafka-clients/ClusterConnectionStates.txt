@@ -14,4 +14,6 @@
 - org.apache.kafka.clients.ClusterConnectionStates#currentAddress
   - org.apache.kafka.clients.ClusterConnectionStates#nodeState
   - org.apache.kafka.clients.ClusterConnectionStates.NodeConnectionState#currentAddress
+
+- org.apache.kafka.clients.ClusterConnectionStates#canConnect
 #

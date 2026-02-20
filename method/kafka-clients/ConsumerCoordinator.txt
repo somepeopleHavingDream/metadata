@@ -11,4 +11,10 @@
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#invokePartitionsAssigned
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#ConsumerCoordinator
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#refreshCommittedOffsetsIfNeeded
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#fetchCommittedOffsets
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#protocolType
 #

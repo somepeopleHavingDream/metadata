@@ -1,3 +1,5 @@
 - org.apache.kafka.common.Node#Node(int, java.lang.String, int)
   - org.apache.kafka.common.Node#Node(int, java.lang.String, int, java.lang.String)
+
+- org.apache.kafka.common.Node#idString
 #

@@ -4,6 +4,7 @@
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#assignFromSubscribed
   - org.apache.kafka.clients.consumer.internals.SubscriptionState#hasAutoAssignedPartitions
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#TopicPartitionState
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#SubscriptionState
 
@@ -15,4 +16,14 @@
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#subscribe(java.util.Set<java.lang.String>, org.apache.kafka.clients.consumer.ConsumerRebalanceListener)
   - org.apache.kafka.clients.consumer.internals.SubscriptionState#registerRebalanceListener
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#seekUnvalidated
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#seekUnvalidated
+    - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#seekValidated
+      - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#transitionState
+        - org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchState#transitionTo
+          - org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchStates#validTransitions
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#initializingPartitions
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState#collectPartitions
 #
