@@ -1,7 +1,5 @@
 - org.apache.kafka.clients.consumer.KafkaConsumer#poll(java.time.Duration)
   - org.apache.kafka.clients.consumer.KafkaConsumer#poll(org.apache.kafka.common.utils.Timer, boolean)
-    - org.apache.kafka.clients.consumer.KafkaConsumer#acquireAndEnsureOpen
-      - org.apache.kafka.clients.consumer.KafkaConsumer#acquire
     - org.apache.kafka.clients.consumer.KafkaConsumer#pollForFetches
     - org.apache.kafka.clients.consumer.KafkaConsumer#updateAssignmentMetadataIfNeeded(org.apache.kafka.common.utils.Timer, boolean)
 
@@ -11,4 +9,10 @@
 
 - org.apache.kafka.clients.consumer.KafkaConsumer#subscribe(java.util.Collection<java.lang.String>)
   - org.apache.kafka.clients.consumer.KafkaConsumer#subscribe(java.util.Collection<java.lang.String>, org.apache.kafka.clients.consumer.ConsumerRebalanceListener)
+    - org.apache.kafka.clients.consumer.KafkaConsumer#maybeThrowInvalidGroupIdException
+    - org.apache.kafka.clients.consumer.KafkaConsumer#throwIfNoAssignorsConfigured
+    - org.apache.kafka.clients.consumer.KafkaConsumer#release
+
+- org.apache.kafka.clients.consumer.KafkaConsumer#acquireAndEnsureOpen
+  - org.apache.kafka.clients.consumer.KafkaConsumer#acquire
 #

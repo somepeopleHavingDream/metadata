@@ -28,4 +28,6 @@
 - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#tryConnect
 
 - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#isUnavailable
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#ensureFreshMetadata
 #

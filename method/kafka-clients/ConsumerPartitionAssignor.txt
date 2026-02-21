@@ -1,2 +1,4 @@
 - org.apache.kafka.clients.consumer.ConsumerPartitionAssignor.Assignment#Assignment(java.util.List<org.apache.kafka.common.TopicPartition>, java.nio.ByteBuffer)
+
+- org.apache.kafka.clients.consumer.ConsumerPartitionAssignor.GroupSubscription#GroupSubscription
 #
