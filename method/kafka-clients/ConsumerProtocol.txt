@@ -6,4 +6,6 @@
   - org.apache.kafka.clients.consumer.internals.ConsumerProtocol#checkSubscriptionVersion
 
 - org.apache.kafka.clients.consumer.internals.ConsumerProtocol#deserializeVersion
+
+- org.apache.kafka.clients.consumer.internals.ConsumerProtocol#serializeAssignment(org.apache.kafka.clients.consumer.ConsumerPartitionAssignor.Assignment)
 #

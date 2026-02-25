@@ -1,0 +1,3 @@
+- org.apache.kafka.clients.consumer.RangeAssignor#assign
+  - org.apache.kafka.clients.consumer.RangeAssignor#consumersPerTopic
+#
