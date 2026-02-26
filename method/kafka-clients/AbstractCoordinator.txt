@@ -7,9 +7,10 @@
         - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendFindCoordinatorRequest
     - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#initiateJoinGroup
       - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendJoinGroupRequest
-        - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#coordinatorUnknown
-          - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#checkAndGetCoordinator
     - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinComplete
+
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator#coordinatorUnknown
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#checkAndGetCoordinator
 
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#rejoinNeededOrPending
 
@@ -18,9 +19,11 @@
 
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#generationIfStable
 
-- org.apache.kafka.clients.consumer.internals.AbstractCoordinator.JoinGroupResponseHandler#handle
-  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#isProtocolTypeInconsistent
-  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.HeartbeatThread#enable
-  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.Generation#Generation
-  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#onJoinLeader
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator.CoordinatorResponseHandler#onSuccess
+  - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.JoinGroupResponseHandler#handle
+    - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#isProtocolTypeInconsistent
+    - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.HeartbeatThread#enable
+    - org.apache.kafka.clients.consumer.internals.AbstractCoordinator.Generation#Generation
+    - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#onJoinLeader
+      - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendSyncGroupRequest
 #
