@@ -1,2 +1,4 @@
 - org.apache.dubbo.rpc.proxy.InvokerInvocationHandler#invoke
+
+- org.apache.dubbo.rpc.proxy.InvokerInvocationHandler#InvokerInvocationHandler
 #

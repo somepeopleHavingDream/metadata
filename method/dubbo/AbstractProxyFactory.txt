@@ -1,0 +1,2 @@
+- org.apache.dubbo.rpc.proxy.AbstractProxyFactory#getProxy(org.apache.dubbo.rpc.Invoker<T>, boolean)
+#

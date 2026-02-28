@@ -1,2 +1,5 @@
 - org.apache.dubbo.registry.client.migration.MigrationInvoker#destroy
+
+- org.apache.dubbo.registry.client.migration.MigrationInvoker#invoke
+  - org.apache.dubbo.registry.client.migration.MigrationInvoker#decideInvoker
 #

@@ -1,0 +1,4 @@
+- org.apache.dubbo.rpc.RpcContext#storeServiceContext
+  - org.apache.dubbo.rpc.RpcContext.RestoreServiceContext#RestoreServiceContext
+    - org.apache.dubbo.rpc.RpcContext#getCurrentServiceContext
+#
