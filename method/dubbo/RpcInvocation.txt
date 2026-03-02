@@ -1,3 +1,5 @@
 - org.apache.dubbo.rpc.RpcInvocation#RpcInvocation(org.apache.dubbo.rpc.model.ServiceModel, java.lang.String, java.lang.String, java.lang.String, java.lang.Class<?>[], java.lang.Object[])
   - org.apache.dubbo.rpc.RpcInvocation#RpcInvocation(java.lang.String, org.apache.dubbo.rpc.model.ServiceModel, java.lang.String, java.lang.String, java.lang.String, java.lang.Class<?>[], java.lang.Object[], java.util.Map<java.lang.String,java.lang.Object>, org.apache.dubbo.rpc.Invoker<?>, java.util.Map<java.lang.Object,java.lang.Object>, org.apache.dubbo.rpc.InvokeMode)
+
+- org.apache.dubbo.rpc.RpcInvocation#getMethodName
 #

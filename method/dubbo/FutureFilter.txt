@@ -1,0 +1,4 @@
+- org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter#invoke
+  - org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter#fireInvokeCallback
+    - org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter#getAsyncMethodInfo
+#

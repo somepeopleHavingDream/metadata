@@ -1,4 +1,8 @@
 - org.apache.dubbo.registry.integration.DynamicDirectory#subscribe
 
 - org.apache.dubbo.registry.integration.DynamicDirectory#destroy
+
+- org.apache.dubbo.registry.integration.DynamicDirectory#getConsumerUrl
+
+- org.apache.dubbo.registry.integration.DynamicDirectory#doList
 #

@@ -1,3 +1,5 @@
 - org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder.CallbackRegistrationInvoker#invoke
   - org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder.CopyOfFilterChainNode#invoke
+
+- org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder.CopyOfFilterChainNode#getUrl
 #

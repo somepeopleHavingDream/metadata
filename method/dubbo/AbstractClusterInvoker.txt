@@ -1,6 +1,16 @@
 - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#invoke
+  - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#checkWhetherDestroyed
   - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#list
-    - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#getDirectory
+  - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#checkInvokers
+  - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#initLoadBalance
+
+- org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#getDirectory
 
 - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#destroy
+
+- org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#getUrl
+
+- org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#select
+  - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#doSelect
+    - org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker#checkShouldInvalidateInvoker
 #

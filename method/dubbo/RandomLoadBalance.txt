@@ -1,0 +1,3 @@
+- org.apache.dubbo.rpc.cluster.loadbalance.RandomLoadBalance#doSelect
+  - org.apache.dubbo.rpc.cluster.loadbalance.RandomLoadBalance#needWeightLoadBalance
+#
