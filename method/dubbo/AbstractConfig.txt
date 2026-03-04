@@ -1,0 +1,7 @@
+- org.apache.dubbo.config.AbstractConfig#getMetaData(java.lang.String)
+  - org.apache.dubbo.config.AbstractConfig#appendAttributes(java.util.Map<java.lang.String,java.lang.String>, java.lang.Object, java.lang.String)
+    - org.apache.dubbo.config.AbstractConfig#appendParameters0
+
+- org.apache.dubbo.config.AbstractConfig#refreshWithPrefixes
+  - org.apache.dubbo.config.AbstractConfig#assignProperties
+#

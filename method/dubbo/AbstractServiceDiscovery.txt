@@ -1,0 +1,5 @@
+- org.apache.dubbo.registry.client.AbstractServiceDiscovery#update
+
+- org.apache.dubbo.registry.client.AbstractServiceDiscovery#register()
+  - org.apache.dubbo.registry.client.AbstractServiceDiscovery#createServiceInstance
+#

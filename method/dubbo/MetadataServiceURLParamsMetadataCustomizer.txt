@@ -1,0 +1,4 @@
+- org.apache.dubbo.config.metadata.MetadataServiceURLParamsMetadataCustomizer#customize
+  - org.apache.dubbo.config.metadata.MetadataServiceURLParamsMetadataCustomizer#resolveMetadataPropertyName
+  - org.apache.dubbo.config.metadata.MetadataServiceURLParamsMetadataCustomizer#resolveMetadataPropertyValue
+#

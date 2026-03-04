@@ -1,0 +1,4 @@
+- org.apache.dubbo.registry.client.metadata.ServiceInstanceMetadataUtils#setMetadataStorageType
+
+- org.apache.dubbo.registry.client.metadata.ServiceInstanceMetadataUtils#customizeInstance
+#

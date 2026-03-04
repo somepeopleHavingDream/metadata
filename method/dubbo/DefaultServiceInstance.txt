@@ -1,0 +1,9 @@
+- org.apache.dubbo.registry.client.DefaultServiceInstance#DefaultServiceInstance(org.apache.dubbo.registry.client.DefaultServiceInstance)
+
+- org.apache.dubbo.registry.client.DefaultServiceInstance#DefaultServiceInstance(java.lang.String, org.apache.dubbo.rpc.model.ApplicationModel)
+  - org.apache.dubbo.registry.client.DefaultServiceInstance#setApplicationModel
+
+- org.apache.dubbo.registry.client.DefaultServiceInstance#setServiceMetadata
+
+- org.apache.dubbo.registry.client.DefaultServiceInstance#getServiceMetadata
+#
