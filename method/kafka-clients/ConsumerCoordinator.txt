@@ -4,10 +4,14 @@
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinPrepare
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#maybeAutoCommitOffsetsSync
+    - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#commitOffsetsSync
+  
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#invokeCompletedOffsetCommitCallbacks
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#onJoinComplete
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#lookupAssignor
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#maybeUpdateJoinedSubscription
+  - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#invokeOnAssignment
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#invokePartitionsAssigned
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#ConsumerCoordinator
@@ -21,5 +25,10 @@
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#performAssignment
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#lookupAssignor
   - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#updateGroupSubscription
-    - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#maybeUpdateSubscriptionMetadata
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#maybeUpdateSubscriptionMetadata
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#rejoinNeededOrPending
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#poll(org.apache.kafka.common.utils.Timer, boolean)
 #

@@ -1,0 +1,6 @@
+- org.apache.kafka.common.internals.PartitionStates#stateValue
+
+- org.apache.kafka.common.internals.PartitionStates#set
+  - org.apache.kafka.common.internals.PartitionStates#update
+  - org.apache.kafka.common.internals.PartitionStates#updateSize
+#
