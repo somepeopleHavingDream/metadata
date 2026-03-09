@@ -1,0 +1,3 @@
+- org.apache.kafka.common.utils.KafkaThread#KafkaThread(java.lang.String, boolean)
+  - org.apache.kafka.common.utils.KafkaThread#configureThread
+#

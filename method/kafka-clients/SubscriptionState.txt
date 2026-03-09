@@ -30,4 +30,5 @@
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#groupSubscribe
 
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#resetGroupSubscription
 #
