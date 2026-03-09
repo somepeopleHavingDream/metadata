@@ -1,0 +1,3 @@
+- io.netty.handler.codec.ByteToMessageDecoder#channelInactive
+  - io.netty.handler.codec.ByteToMessageDecoder#channelInputClosed(io.netty.channel.ChannelHandlerContext, boolean)
+#

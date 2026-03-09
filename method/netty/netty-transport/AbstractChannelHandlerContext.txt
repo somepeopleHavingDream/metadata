@@ -4,4 +4,9 @@
       - io.netty.channel.AbstractChannelHandlerContext#invokeConnect
 
 - io.netty.channel.AbstractChannelHandlerContext#invokeConnect
+
+- io.netty.channel.AbstractChannelHandlerContext#fireChannelInactive
+  - io.netty.channel.AbstractChannelHandlerContext#invokeChannelInactive(io.netty.channel.AbstractChannelHandlerContext)
+
+- io.netty.channel.AbstractChannelHandlerContext#invokeChannelInactive()
 #

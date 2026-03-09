@@ -1,4 +1,7 @@
 - io.netty.channel.CombinedChannelDuplexHandler.DelegatingChannelHandlerContext#connect(java.net.SocketAddress, java.net.SocketAddress, io.netty.channel.ChannelPromise)
 
 - io.netty.channel.CombinedChannelDuplexHandler#connect
+
+- io.netty.channel.CombinedChannelDuplexHandler#channelInactive
+  - io.netty.channel.CombinedChannelDuplexHandler.DelegatingChannelHandlerContext#fireChannelInactive
 #
