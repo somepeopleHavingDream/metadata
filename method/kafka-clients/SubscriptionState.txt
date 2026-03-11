@@ -31,4 +31,10 @@
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#groupSubscribe
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#resetGroupSubscription
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#hasNoSubscriptionOrUserAssignment
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#fetchablePartitions
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#assignedState
 #
