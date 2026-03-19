@@ -18,4 +18,6 @@
 - org.apache.kafka.clients.Metadata#update
   - org.apache.kafka.clients.Metadata#handleMetadataResponse
     - org.apache.kafka.clients.Metadata#updateLatestMetadata
+
+- org.apache.kafka.clients.Metadata#Metadata
 #

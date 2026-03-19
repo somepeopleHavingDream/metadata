@@ -9,6 +9,8 @@
                 - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchOnMessage
 
 - org.springframework.kafka.listener.KafkaMessageListenerContainer#doStart
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#ListenerConsumer
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#subscribeOrAssignTopics
 
 - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollAndInvoke
   - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doPoll
@@ -21,4 +23,5 @@
           - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeRecordListener
             - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeOnMessage
               - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeOnMessage
+
 #

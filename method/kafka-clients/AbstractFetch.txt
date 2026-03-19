@@ -1,2 +1,5 @@
 - org.apache.kafka.clients.consumer.internals.AbstractFetch#collectFetch
+
+- org.apache.kafka.clients.consumer.internals.AbstractFetch#clearBufferedDataForUnassignedTopics
+  - org.apache.kafka.clients.consumer.internals.AbstractFetch#clearBufferedDataForUnassignedPartitions
 #

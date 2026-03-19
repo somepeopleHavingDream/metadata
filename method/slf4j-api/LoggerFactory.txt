@@ -1,0 +1,5 @@
+- org.slf4j.LoggerFactory#getLogger(java.lang.Class<?>)
+  - org.slf4j.LoggerFactory#getLogger(java.lang.String)
+    - org.slf4j.LoggerFactory#getILoggerFactory
+      - org.slf4j.LoggerFactory#getProvider
+#

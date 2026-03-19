@@ -1,0 +1,7 @@
+- org.springframework.kafka.core.DefaultKafkaConsumerFactory#createConsumer(java.lang.String, java.lang.String, java.lang.String, java.util.Properties)
+  - org.springframework.kafka.core.DefaultKafkaConsumerFactory#createKafkaConsumer(java.lang.String, java.lang.String, java.lang.String, java.util.Properties)
+    - org.springframework.kafka.core.DefaultKafkaConsumerFactory#createConsumerWithAdjustedProperties
+      - org.springframework.kafka.core.DefaultKafkaConsumerFactory#createKafkaConsumer(java.util.Map<java.lang.String,java.lang.Object>)
+        - org.springframework.kafka.core.DefaultKafkaConsumerFactory#createRawConsumer
+          - org.springframework.kafka.core.DefaultKafkaConsumerFactory.ExtendedKafkaConsumer#ExtendedKafkaConsumer
+#

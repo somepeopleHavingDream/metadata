@@ -1,0 +1,3 @@
+- org.apache.kafka.clients.consumer.internals.ConsumerMetadata#ConsumerMetadata(org.apache.kafka.clients.consumer.ConsumerConfig, org.apache.kafka.clients.consumer.internals.SubscriptionState, org.apache.kafka.common.utils.LogContext, org.apache.kafka.common.internals.ClusterResourceListeners)
+  - org.apache.kafka.clients.consumer.internals.ConsumerMetadata#ConsumerMetadata(long, long, boolean, boolean, org.apache.kafka.clients.consumer.internals.SubscriptionState, org.apache.kafka.common.utils.LogContext, org.apache.kafka.common.internals.ClusterResourceListeners)
+#

@@ -1,0 +1,4 @@
+- ch.qos.logback.classic.LoggerContext#getLogger(java.lang.String)
+
+- org.apache.kafka.common.utils.LogContext#LogContext(java.lang.String)
+#

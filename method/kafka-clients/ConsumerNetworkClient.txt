@@ -29,4 +29,6 @@
 - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#isUnavailable
 
 - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#ensureFreshMetadata
+
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#ConsumerCoordinator
 #

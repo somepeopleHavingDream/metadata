@@ -1,4 +1,6 @@
 - org.apache.kafka.clients.consumer.ConsumerConfig#appendDeserializerToConfig
 
 - org.apache.kafka.clients.consumer.ConsumerConfig#maybeOverrideEnableAutoCommit
+
+- org.apache.kafka.clients.consumer.ConsumerConfig#ConsumerConfig(java.util.Map<java.lang.String,java.lang.Object>)
 #

@@ -6,7 +6,9 @@
 
 - org.apache.kafka.clients.consumer.KafkaConsumer#KafkaConsumer(java.util.Properties)
   - org.apache.kafka.clients.consumer.KafkaConsumer#KafkaConsumer(java.util.Properties, org.apache.kafka.common.serialization.Deserializer<K>, org.apache.kafka.common.serialization.Deserializer<V>)
-    - org.apache.kafka.clients.consumer.KafkaConsumer#KafkaConsumer(java.util.Map<java.lang.String,java.lang.Object>, org.apache.kafka.common.serialization.Deserializer<K>, org.apache.kafka.common.serialization.Deserializer<V>)
+
+- org.apache.kafka.clients.consumer.KafkaConsumer#KafkaConsumer(java.util.Map<java.lang.String,java.lang.Object>, org.apache.kafka.common.serialization.Deserializer<K>, org.apache.kafka.common.serialization.Deserializer<V>)
+  - org.apache.kafka.clients.consumer.KafkaConsumer#KafkaConsumer(org.apache.kafka.clients.consumer.ConsumerConfig, org.apache.kafka.common.serialization.Deserializer<K>, org.apache.kafka.common.serialization.Deserializer<V>)
 
 - org.apache.kafka.clients.consumer.KafkaConsumer#subscribe(java.util.Collection<java.lang.String>)
   - org.apache.kafka.clients.consumer.KafkaConsumer#subscribe(java.util.Collection<java.lang.String>, org.apache.kafka.clients.consumer.ConsumerRebalanceListener)
@@ -16,4 +18,5 @@
 
 - org.apache.kafka.clients.consumer.KafkaConsumer#acquireAndEnsureOpen
   - org.apache.kafka.clients.consumer.KafkaConsumer#acquire
+
 #

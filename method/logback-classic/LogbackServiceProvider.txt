@@ -1,0 +1,2 @@
+- ch.qos.logback.classic.spi.LogbackServiceProvider#getLoggerFactory
+#

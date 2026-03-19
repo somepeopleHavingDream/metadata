@@ -32,4 +32,6 @@
       - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#sendSyncGroupRequest
 
 - org.apache.kafka.clients.consumer.internals.AbstractCoordinator#pollHeartbeat
+
+- org.apache.kafka.clients.consumer.internals.AbstractCoordinator#AbstractCoordinator
 #
