@@ -24,6 +24,7 @@
       - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#transitionState
         - org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchState#transitionTo
           - org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchStates#validTransitions
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#validatePosition
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#initializingPartitions
   - org.apache.kafka.clients.consumer.internals.SubscriptionState#collectPartitions
@@ -39,4 +40,18 @@
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#assignedState
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchPosition#FetchPosition(long, java.util.Optional<java.lang.Integer>, org.apache.kafka.clients.Metadata.LeaderAndEpoch)
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#isAssigned
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#hasAllFetchPositions
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#hasValidPosition
+    - org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchStates#hasValidPosition
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#resetInitializingPositions
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#partitionsNeedingReset
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#position(org.apache.kafka.common.TopicPartition)
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#updateHighWatermark
 #

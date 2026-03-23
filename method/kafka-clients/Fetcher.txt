@@ -2,6 +2,8 @@
   - org.apache.kafka.clients.consumer.internals.Fetcher#clearBufferedDataForUnassignedPartitions
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#fetchedRecords
+  - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#notInitialized
+  - org.apache.kafka.clients.consumer.internals.Fetcher#initializeCompletedFetch
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#Fetcher
 
@@ -12,4 +14,8 @@
   - org.apache.kafka.clients.consumer.internals.Fetcher#prepareFetchRequests
     - org.apache.kafka.clients.consumer.internals.Fetcher#validatePositionsOnMetadataChange
     - org.apache.kafka.clients.consumer.internals.Fetcher#fetchablePartitions
+
+- org.apache.kafka.clients.consumer.internals.Fetcher#validateOffsetsIfNeeded
+
+- org.apache.kafka.clients.consumer.internals.Fetcher#resetOffsetsIfNeeded
 #
