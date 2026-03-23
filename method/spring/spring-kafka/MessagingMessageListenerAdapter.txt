@@ -1,2 +1,6 @@
 - org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#invokeHandler
+
+- org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#registerSeekCallback
+
+- org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#MessagingMessageListenerAdapter
 #

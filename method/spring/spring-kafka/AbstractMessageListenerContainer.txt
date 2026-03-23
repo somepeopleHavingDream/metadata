@@ -1,2 +1,6 @@
 - org.springframework.kafka.listener.AbstractMessageListenerContainer#start
+
+- org.springframework.kafka.listener.AbstractMessageListenerContainer#isPartitionPauseRequested
+
+- org.springframework.kafka.listener.AbstractMessageListenerContainer#isChangeConsumerThreadName
 #

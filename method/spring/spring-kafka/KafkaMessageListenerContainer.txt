@@ -10,6 +10,7 @@
 
 - org.springframework.kafka.listener.KafkaMessageListenerContainer#doStart
   - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#ListenerConsumer
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#determineAutoCommit
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#subscribeOrAssignTopics
 
 - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollAndInvoke
@@ -24,4 +25,33 @@
             - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeOnMessage
               - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeOnMessage
 
+- org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer.ListenerConsumerRebalanceListener#onPartitionsAssigned
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer.ListenerConsumerRebalanceListener#repauseIfNeeded
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer.ListenerConsumerRebalanceListener#collectAndCommitIfNecessary
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#seekPartitions
+
+- org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#run
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#initialize
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#setupSeeks
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#initAssignedPartitions
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollAndInvoke
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doProcessCommits
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#processCommits
+        - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#handleAcks
+        - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#commitIfNecessary
+          - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#buildCommits
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#updatePendingOffsets
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#fixTxOffsetsIfNeeded
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#idleBetweenPollIfNecessary
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pauseConsumerIfNecessary
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doPauseConsumerIfNecessary
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doPoll
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollConsumer
+        - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#beforePoll
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#captureOffsets
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkRebalanceCommits
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#debugRecords
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeIfHaveRecords
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkIdle
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkIdlePartitions
 #

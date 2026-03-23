@@ -37,4 +37,6 @@
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#fetchablePartitions
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#assignedState
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchPosition#FetchPosition(long, java.util.Optional<java.lang.Integer>, org.apache.kafka.clients.Metadata.LeaderAndEpoch)
 #

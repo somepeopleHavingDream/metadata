@@ -1,2 +1,4 @@
 - org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter#onMessage
+
+- org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter#RecordMessagingMessageListenerAdapter(java.lang.Object, java.lang.reflect.Method, org.springframework.kafka.listener.KafkaListenerErrorHandler)
 #

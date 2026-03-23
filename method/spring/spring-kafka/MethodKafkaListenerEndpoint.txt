@@ -1,0 +1,4 @@
+- org.springframework.kafka.config.MethodKafkaListenerEndpoint#createMessageListenerInstance
+
+- org.springframework.kafka.config.MethodKafkaListenerEndpoint#setBean
+#
