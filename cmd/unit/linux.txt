@@ -58,3 +58,4 @@ protoc --version
 openssl rand -base64 32
 glances
 networkQuality
+unset https_proxy
