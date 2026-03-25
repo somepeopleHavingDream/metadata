@@ -1,0 +1,14 @@
+- io.netty.util.HashedWheelTimer.HashedWheelTimeout#run
+
+- io.netty.util.HashedWheelTimer.Worker#run
+  - io.netty.util.HashedWheelTimer.Worker#processCancelledTasks
+  - io.netty.util.HashedWheelTimer.HashedWheelBucket#expireTimeouts
+    - io.netty.util.HashedWheelTimer.HashedWheelTimeout#expire
+  - io.netty.util.HashedWheelTimer.Worker#transferTimeoutsToBuckets
+
+- io.netty.util.HashedWheelTimer.Worker#waitForNextTick
+
+- io.netty.util.HashedWheelTimer#HashedWheelTimer(java.util.concurrent.ThreadFactory, long, java.util.concurrent.TimeUnit, int, boolean)
+  - io.netty.util.HashedWheelTimer#HashedWheelTimer(java.util.concurrent.ThreadFactory, long, java.util.concurrent.TimeUnit, int, boolean, long)
+    - io.netty.util.HashedWheelTimer#HashedWheelTimer(java.util.concurrent.ThreadFactory, long, java.util.concurrent.TimeUnit, int, boolean, long, java.util.concurrent.Executor)
+#

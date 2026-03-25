@@ -1,0 +1,2 @@
+- org.redisson.connection.MasterSlaveEntry#setupMasterEntry(org.redisson.misc.RedisURI, java.lang.String)
+#

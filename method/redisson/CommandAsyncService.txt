@@ -1,0 +1,3 @@
+- org.redisson.command.CommandAsyncExecutor#create
+  - org.redisson.command.CommandAsyncService#CommandAsyncService(org.redisson.connection.ConnectionManager, org.redisson.liveobject.core.RedissonObjectBuilder, org.redisson.liveobject.core.RedissonObjectBuilder.ReferenceType)
+#

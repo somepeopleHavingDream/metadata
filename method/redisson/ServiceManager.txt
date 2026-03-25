@@ -1,0 +1,3 @@
+- org.redisson.connection.ServiceManager#ServiceManager
+  - org.redisson.connection.ServiceManager#initTimer
+#

@@ -1,0 +1,9 @@
+- org.redisson.connection.MasterSlaveConnectionManager#MasterSlaveConnectionManager
+
+- org.redisson.connection.MasterSlaveConnectionManager#createClient(org.redisson.api.NodeType, org.redisson.misc.RedisURI, java.lang.String)
+
+- org.redisson.connection.MasterSlaveConnectionManager#connect
+  - org.redisson.connection.MasterSlaveConnectionManager#doConnect
+
+- org.redisson.connection.MasterSlaveConnectionManager#createCommandExecutor
+#

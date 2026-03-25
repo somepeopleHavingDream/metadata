@@ -1,0 +1,2 @@
+- org.redisson.client.RedisConnection#async(long, org.redisson.client.codec.Codec, org.redisson.client.protocol.RedisCommand<T>, java.lang.Object...)
+#

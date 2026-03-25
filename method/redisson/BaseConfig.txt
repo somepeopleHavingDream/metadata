@@ -1,0 +1,5 @@
+- org.redisson.config.SingleServerConfig#SingleServerConfig(org.redisson.config.SingleServerConfig)
+  - org.redisson.config.BaseConfig#BaseConfig(T)
+
+- org.redisson.config.BaseConfig#getTimeout
+#

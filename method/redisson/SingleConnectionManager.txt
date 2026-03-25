@@ -1,0 +1,3 @@
+- org.redisson.connection.SingleConnectionManager#SingleConnectionManager
+  - org.redisson.connection.SingleConnectionManager#create
+#
