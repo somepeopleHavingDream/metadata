@@ -1,0 +1,3 @@
+- io.netty.util.concurrent.DefaultThreadFactory#newThread(java.lang.Runnable)
+  - io.netty.util.concurrent.DefaultThreadFactory#newThread(java.lang.Runnable, java.lang.String)
+#

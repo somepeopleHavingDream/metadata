@@ -1,0 +1,4 @@
+- org.redisson.client.handler.BaseConnectionHandler#channelActive
+
+- org.redisson.client.handler.BaseConnectionHandler#channelRegistered
+#

@@ -1,0 +1,4 @@
+- org.redisson.client.RedisClientConfig#getNettyHook
+
+- org.redisson.client.DefaultNettyHook#afterChannelInitialization
+#

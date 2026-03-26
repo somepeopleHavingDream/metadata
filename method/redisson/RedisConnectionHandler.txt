@@ -1,0 +1,4 @@
+- org.redisson.client.handler.RedisConnectionHandler#createConnection
+
+- org.redisson.client.handler.RedisConnectionHandler#RedisConnectionHandler
+#

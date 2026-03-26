@@ -1,2 +1,7 @@
-- org.redisson.client.RedisConnection#async(long, org.redisson.client.codec.Codec, org.redisson.client.protocol.RedisCommand<T>, java.lang.Object...)
+- org.redisson.client.RedisConnection#async(org.redisson.client.protocol.RedisCommand<T>, java.lang.Object...)
+  - org.redisson.client.RedisConnection#async(long, org.redisson.client.protocol.RedisCommand<T>, java.lang.Object...)
+    - org.redisson.client.RedisConnection#async(long, org.redisson.client.codec.Codec, org.redisson.client.protocol.RedisCommand<T>, java.lang.Object...)
+
+- org.redisson.client.RedisConnection#RedisConnection(org.redisson.client.RedisClient, io.netty.channel.Channel, java.util.concurrent.CompletableFuture<C>)
+  - org.redisson.client.RedisConnection#updateChannel
 #

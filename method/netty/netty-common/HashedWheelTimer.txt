@@ -11,4 +11,9 @@
 - io.netty.util.HashedWheelTimer#HashedWheelTimer(java.util.concurrent.ThreadFactory, long, java.util.concurrent.TimeUnit, int, boolean)
   - io.netty.util.HashedWheelTimer#HashedWheelTimer(java.util.concurrent.ThreadFactory, long, java.util.concurrent.TimeUnit, int, boolean, long)
     - io.netty.util.HashedWheelTimer#HashedWheelTimer(java.util.concurrent.ThreadFactory, long, java.util.concurrent.TimeUnit, int, boolean, long, java.util.concurrent.Executor)
+      - io.netty.util.HashedWheelTimer#createWheel
+
+- io.netty.util.HashedWheelTimer#newTimeout
+  - io.netty.util.HashedWheelTimer#start
+  - io.netty.util.HashedWheelTimer.HashedWheelTimeout#HashedWheelTimeout
 #
