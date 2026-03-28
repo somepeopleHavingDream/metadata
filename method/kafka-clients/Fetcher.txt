@@ -9,11 +9,14 @@
 
 - org.apache.kafka.clients.consumer.internals.RequestFutureListener#onSuccess
 
+- org.apache.kafka.clients.consumer.internals.Fetcher#sessionHandler
+
 - org.apache.kafka.clients.consumer.internals.Fetcher#sendFetches
   - org.apache.kafka.clients.consumer.internals.Fetcher.FetchManagerMetrics#maybeUpdateAssignment
   - org.apache.kafka.clients.consumer.internals.Fetcher#prepareFetchRequests
     - org.apache.kafka.clients.consumer.internals.Fetcher#validatePositionsOnMetadataChange
     - org.apache.kafka.clients.consumer.internals.Fetcher#fetchablePartitions
+    - org.apache.kafka.clients.consumer.internals.Fetcher#selectReadReplica
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#validateOffsetsIfNeeded
 

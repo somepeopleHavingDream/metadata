@@ -54,4 +54,8 @@
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#position(org.apache.kafka.common.TopicPartition)
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#updateHighWatermark
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#preferredReadReplica
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState#assignedStateOrNull
+  - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#preferredReadReplica
 #

@@ -1,0 +1,11 @@
+- org.apache.kafka.clients.FetchSessionHandler#FetchSessionHandler
+
+- org.apache.kafka.clients.FetchSessionHandler#newBuilder()
+  - org.apache.kafka.clients.FetchSessionHandler.Builder#Builder()
+
+- org.apache.kafka.clients.FetchSessionHandler.Builder#add
+
+- org.apache.kafka.clients.FetchSessionHandler.Builder#build
+
+- org.apache.kafka.clients.FetchSessionHandler.FetchRequestData#FetchRequestData
+#
