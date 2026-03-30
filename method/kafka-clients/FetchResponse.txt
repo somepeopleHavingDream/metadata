@@ -1,2 +1,6 @@
 - org.apache.kafka.common.requests.FetchResponse.PartitionData#preferredReadReplica
+
+- org.apache.kafka.common.requests.FetchResponse.PartitionData#records
+
+- org.apache.kafka.common.requests.FetchResponse.PartitionData#highWatermark
 #

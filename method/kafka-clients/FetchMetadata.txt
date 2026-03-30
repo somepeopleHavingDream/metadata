@@ -1,2 +1,6 @@
 - org.apache.kafka.common.requests.FetchMetadata#isFull
+
+- org.apache.kafka.common.requests.FetchMetadata#newIncremental
+  - org.apache.kafka.common.requests.FetchMetadata#nextEpoch
+  - org.apache.kafka.common.requests.FetchMetadata#FetchMetadata
 #

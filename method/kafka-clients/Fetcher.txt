@@ -4,6 +4,7 @@
 - org.apache.kafka.clients.consumer.internals.Fetcher#fetchedRecords
   - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#notInitialized
   - org.apache.kafka.clients.consumer.internals.Fetcher#initializeCompletedFetch
+  - org.apache.kafka.clients.consumer.internals.Fetcher#fetchRecords
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#Fetcher
 

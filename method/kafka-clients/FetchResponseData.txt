@@ -1,0 +1,4 @@
+- org.apache.kafka.common.message.FetchResponseData.FetchablePartitionResponse#recordSet
+
+- org.apache.kafka.common.message.FetchResponseData.FetchablePartitionResponse#highWatermark
+#

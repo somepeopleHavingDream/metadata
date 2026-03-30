@@ -8,4 +8,8 @@
 - org.apache.kafka.clients.FetchSessionHandler.Builder#build
 
 - org.apache.kafka.clients.FetchSessionHandler.FetchRequestData#FetchRequestData
+
+- org.apache.kafka.clients.FetchSessionHandler.FetchRequestData#toSend
+
+- org.apache.kafka.clients.FetchSessionHandler.FetchRequestData#sessionPartitions
 #

@@ -6,4 +6,6 @@
   - org.apache.kafka.common.record.MemoryRecords#MemoryRecords
 
 - org.apache.kafka.common.record.MemoryRecords#sizeInBytes
+
+- org.apache.kafka.common.record.MemoryRecords#batches
 #

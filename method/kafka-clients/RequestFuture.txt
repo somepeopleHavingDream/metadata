@@ -17,4 +17,6 @@
 - org.apache.kafka.clients.consumer.internals.RequestFuture#isRetriable
   - org.apache.kafka.clients.consumer.internals.RequestFuture#exception
     - org.apache.kafka.clients.consumer.internals.RequestFuture#failed
+
+- org.apache.kafka.clients.FetchSessionHandler#handleResponse
 #
