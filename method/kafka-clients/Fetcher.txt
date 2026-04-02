@@ -5,10 +5,13 @@
   - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#notInitialized
   - org.apache.kafka.clients.consumer.internals.Fetcher#initializeCompletedFetch
   - org.apache.kafka.clients.consumer.internals.Fetcher#fetchRecords
+    - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#fetchRecords
+      - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#nextFetchedRecord
+        - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#drain
+
+- org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#maybeCloseRecordStream
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#Fetcher
-
-- org.apache.kafka.clients.consumer.internals.RequestFutureListener#onSuccess
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#sessionHandler
 
@@ -22,4 +25,6 @@
 - org.apache.kafka.clients.consumer.internals.Fetcher#validateOffsetsIfNeeded
 
 - org.apache.kafka.clients.consumer.internals.Fetcher#resetOffsetsIfNeeded
+
+- org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#CompletedFetch
 #
