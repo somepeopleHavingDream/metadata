@@ -7,4 +7,8 @@
 - org.apache.kafka.common.network.PlaintextTransportLayer#finishConnect
 
 - org.apache.kafka.common.network.PlaintextTransportLayer#ready
+
+- org.apache.kafka.common.network.PlaintextTransportLayer#write(java.nio.ByteBuffer[])
+
+- org.apache.kafka.common.network.PlaintextTransportLayer#hasPendingWrites
 #

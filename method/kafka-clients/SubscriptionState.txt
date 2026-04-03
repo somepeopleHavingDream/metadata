@@ -60,4 +60,6 @@
   - org.apache.kafka.clients.consumer.internals.SubscriptionState.TopicPartitionState#preferredReadReplica
 
 - org.apache.kafka.clients.consumer.internals.SubscriptionState#position(org.apache.kafka.common.TopicPartition, org.apache.kafka.clients.consumer.internals.SubscriptionState.FetchPosition)
+
+- org.apache.kafka.clients.consumer.internals.SubscriptionState#movePartitionToEnd
 #

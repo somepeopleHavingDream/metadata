@@ -13,4 +13,8 @@
   - org.apache.kafka.common.network.KafkaChannel#ready
 
 - org.apache.kafka.common.network.KafkaChannel#pollResponseReceivedDuringReauthentication
+
+- org.apache.kafka.common.network.KafkaChannel#write
+
+- org.apache.kafka.common.network.KafkaChannel#maybeCompleteSend
 #

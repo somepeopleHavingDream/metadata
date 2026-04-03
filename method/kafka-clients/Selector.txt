@@ -34,4 +34,7 @@
   - org.apache.kafka.common.network.Selector#ensureNotRegistered
   - org.apache.kafka.common.network.Selector#configureSocketChannel
   - org.apache.kafka.common.network.Selector#doConnect
+
+- org.apache.kafka.common.network.Selector#attemptWrite
+  - org.apache.kafka.common.network.Selector#write
 #
