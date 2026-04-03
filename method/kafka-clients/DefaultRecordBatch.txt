@@ -1,2 +1,20 @@
 - org.apache.kafka.common.record.DefaultRecordBatch#estimateBatchSizeUpperBound
+
+- org.apache.kafka.common.record.DefaultRecordBatch#ensureValid
+  - org.apache.kafka.common.record.DefaultRecordBatch#isValid
+
+- org.apache.kafka.common.record.DefaultRecordBatch#streamingIterator
+  - org.apache.kafka.common.record.DefaultRecordBatch#uncompressedIterator
+    - org.apache.kafka.common.record.DefaultRecordBatch.RecordIterator#RecordIterator
+      - org.apache.kafka.common.record.DefaultRecordBatch#timestampType
+      - org.apache.kafka.common.record.DefaultRecordBatch#baseSequence
+      - org.apache.kafka.common.record.DefaultRecordBatch#count
+
+- org.apache.kafka.common.record.DefaultRecordBatch#compressionType
+
+- org.apache.kafka.common.record.DefaultRecordBatch.RecordIterator#next
+  - org.apache.kafka.common.record.DefaultRecordBatch.RecordIterator#readNext
+  - org.apache.kafka.common.record.DefaultRecordBatch.RecordIterator#ensureNoneRemaining
+
+- org.apache.kafka.common.record.DefaultRecordBatch#isControlBatch
 #

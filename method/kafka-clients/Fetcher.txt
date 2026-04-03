@@ -8,6 +8,9 @@
     - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#fetchRecords
       - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#nextFetchedRecord
         - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#drain
+        - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#maybeEnsureValid(org.apache.kafka.common.record.RecordBatch)
+        - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#maybeEnsureValid(org.apache.kafka.common.record.Record)
+      - org.apache.kafka.clients.consumer.internals.Fetcher#parseRecord
 
 - org.apache.kafka.clients.consumer.internals.Fetcher.CompletedFetch#maybeCloseRecordStream
 

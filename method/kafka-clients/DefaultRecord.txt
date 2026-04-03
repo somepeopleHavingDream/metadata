@@ -2,4 +2,7 @@
   - org.apache.kafka.common.record.DefaultRecord#sizeOf
 
 - org.apache.kafka.common.record.DefaultRecord#writeTo
+
+- org.apache.kafka.common.record.DefaultRecord#readFrom(java.nio.ByteBuffer, long, long, int, java.lang.Long)
+  - org.apache.kafka.common.record.DefaultRecord#readFrom(java.nio.ByteBuffer, int, int, long, long, int, java.lang.Long)
 #
