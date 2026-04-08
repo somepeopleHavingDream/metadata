@@ -11,4 +11,6 @@
 - org.apache.kafka.common.network.PlaintextTransportLayer#write(java.nio.ByteBuffer[])
 
 - org.apache.kafka.common.network.PlaintextTransportLayer#hasPendingWrites
+
+- org.apache.kafka.common.network.PlaintextTransportLayer#removeInterestOps
 #
