@@ -37,5 +37,9 @@
 
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.OffsetFetchResponseHandler#handle
 
-- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#doAutoCommitOffsetsAsync
+- org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#maybeAutoCommitOffsetsAsync
+  - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#doAutoCommitOffsetsAsync
+    - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#commitOffsetsAsync
+      - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#doCommitOffsetsAsync
+        - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#sendOffsetCommitRequest
 #

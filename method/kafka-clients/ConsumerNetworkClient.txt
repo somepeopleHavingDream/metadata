@@ -33,4 +33,8 @@
 - org.apache.kafka.clients.consumer.internals.ConsumerCoordinator#ConsumerCoordinator
 
 - org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#transmitSends
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#pollNoWakeup
+
+- org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient#ConsumerNetworkClient
 #
