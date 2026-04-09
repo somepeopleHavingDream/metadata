@@ -1,29 +1,7 @@
-- org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#run
-  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollAndInvoke
-    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeIfHaveRecords
-      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeListener
-        - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchListener
-          - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchListener
-            - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessage
-              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessageWithRecordsOrList
-                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchOnMessage
-
 - org.springframework.kafka.listener.KafkaMessageListenerContainer#doStart
   - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#ListenerConsumer
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#determineAutoCommit
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#subscribeOrAssignTopics
-
-- org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollAndInvoke
-  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doPoll
-    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#pollConsumer
-      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#beforePoll
-  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeIfHaveRecords
-    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeListener
-      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeRecordListener
-        - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeWithRecords
-          - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeRecordListener
-            - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeOnMessage
-              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeOnMessage
 
 - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer.ListenerConsumerRebalanceListener#onPartitionsAssigned
   - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer.ListenerConsumerRebalanceListener#repauseIfNeeded
@@ -54,4 +32,6 @@
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeIfHaveRecords
       - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkIdle
       - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkIdlePartitions
+
+- org.springframework.kafka.listener.KafkaMessageListenerContainer#setClientIdSuffix
 #

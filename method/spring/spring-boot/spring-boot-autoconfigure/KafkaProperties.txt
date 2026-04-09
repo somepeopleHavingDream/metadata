@@ -1,0 +1,4 @@
+- org.springframework.boot.autoconfigure.kafka.KafkaProperties#buildConsumerProperties(org.springframework.boot.ssl.SslBundles)
+  - org.springframework.boot.autoconfigure.kafka.KafkaProperties#buildCommonProperties
+  - org.springframework.boot.autoconfigure.kafka.KafkaProperties.Consumer#buildProperties
+#

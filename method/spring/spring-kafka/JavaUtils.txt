@@ -1,0 +1,2 @@
+- org.springframework.kafka.support.JavaUtils#acceptIfNotNull(T, java.util.function.Consumer<T>)
+#

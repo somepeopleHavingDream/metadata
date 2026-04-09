@@ -1,4 +1,6 @@
 - org.springframework.kafka.listener.ContainerProperties#getListenerTaskExecutor
 
 - org.springframework.kafka.listener.ContainerProperties#setListenerTaskExecutor
+
+- org.springframework.kafka.listener.ContainerProperties#ContainerProperties(java.lang.String...)
 #

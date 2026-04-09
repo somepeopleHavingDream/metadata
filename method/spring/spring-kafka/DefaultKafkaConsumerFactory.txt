@@ -4,4 +4,8 @@
       - org.springframework.kafka.core.DefaultKafkaConsumerFactory#createKafkaConsumer(java.util.Map<java.lang.String,java.lang.Object>)
         - org.springframework.kafka.core.DefaultKafkaConsumerFactory#createRawConsumer
           - org.springframework.kafka.core.DefaultKafkaConsumerFactory.ExtendedKafkaConsumer#ExtendedKafkaConsumer
+
+- org.springframework.kafka.core.DefaultKafkaConsumerFactory#DefaultKafkaConsumerFactory(java.util.Map<java.lang.String,java.lang.Object>)
+  - org.springframework.kafka.core.DefaultKafkaConsumerFactory#DefaultKafkaConsumerFactory(java.util.Map<java.lang.String,java.lang.Object>, java.util.function.Supplier<org.apache.kafka.common.serialization.Deserializer<K>>, java.util.function.Supplier<org.apache.kafka.common.serialization.Deserializer<V>>)
+    - org.springframework.kafka.core.DefaultKafkaConsumerFactory#DefaultKafkaConsumerFactory(java.util.Map<java.lang.String,java.lang.Object>, java.util.function.Supplier<org.apache.kafka.common.serialization.Deserializer<K>>, java.util.function.Supplier<org.apache.kafka.common.serialization.Deserializer<V>>, boolean)
 #

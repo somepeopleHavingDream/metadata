@@ -1,2 +1,7 @@
 - org.springframework.kafka.config.AbstractKafkaListenerContainerFactory#createListenerContainer
+  - org.springframework.kafka.config.AbstractKafkaListenerContainerFactory#configureEndpoint
+
+- org.springframework.kafka.config.AbstractKafkaListenerContainerFactory#getConsumerFactory
+
+- org.springframework.kafka.config.AbstractKafkaListenerContainerFactory#setConsumerFactory
 #

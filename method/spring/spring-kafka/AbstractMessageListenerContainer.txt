@@ -3,4 +3,12 @@
 - org.springframework.kafka.listener.AbstractMessageListenerContainer#isPartitionPauseRequested
 
 - org.springframework.kafka.listener.AbstractMessageListenerContainer#isChangeConsumerThreadName
+
+- org.springframework.kafka.listener.AbstractMessageListenerContainer#isRunning
+
+- org.springframework.kafka.listener.AbstractMessageListenerContainer#getBeanName
+
+- org.springframework.kafka.listener.AbstractMessageListenerContainer#setBeanName
+
+- org.springframework.kafka.listener.AbstractMessageListenerContainer#AbstractMessageListenerContainer
 #
