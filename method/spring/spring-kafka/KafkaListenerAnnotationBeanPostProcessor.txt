@@ -1,8 +1,10 @@
 - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#postProcessAfterInitialization
   - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#findListenerAnnotations(java.lang.Class<?>)
-
-- org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#postProcessAfterInitialization
   - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#processKafkaListener
+    - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#getEndpointId
+    - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#processMainAndRetryListeners
     - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#processListener
       - org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#processKafkaListenerAnnotation
+
+- org.springframework.kafka.annotation.KafkaListenerAnnotationBeanPostProcessor#afterSingletonsInstantiated
 #

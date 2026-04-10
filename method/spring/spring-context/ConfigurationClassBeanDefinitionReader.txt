@@ -1,0 +1,4 @@
+- org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader#loadBeanDefinitions
+  - org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader#loadBeanDefinitionsForConfigurationClass
+    - org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader#loadBeanDefinitionsFromRegistrars
+#

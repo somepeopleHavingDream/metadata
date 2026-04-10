@@ -1,4 +1,5 @@
 - org.springframework.kafka.listener.KafkaMessageListenerContainer#doStart
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer#determineListenerType
   - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#ListenerConsumer
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#determineAutoCommit
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#subscribeOrAssignTopics
@@ -34,4 +35,10 @@
       - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkIdlePartitions
 
 - org.springframework.kafka.listener.KafkaMessageListenerContainer#setClientIdSuffix
+
+- org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessage
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessageWithRecordsOrList
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchOnMessage
+  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#ackBatch
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#getHighestOffsetRecords
 #

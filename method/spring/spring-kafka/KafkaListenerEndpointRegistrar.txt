@@ -1,0 +1,7 @@
+- org.springframework.kafka.config.KafkaListenerEndpointRegistrar#afterPropertiesSet
+  - org.springframework.kafka.config.KafkaListenerEndpointRegistrar#registerAllEndpoints
+    - org.springframework.kafka.config.KafkaListenerEndpointRegistrar#resolveContainerFactory
+
+- org.springframework.kafka.config.KafkaListenerEndpointRegistrar#registerEndpoint(org.springframework.kafka.config.KafkaListenerEndpoint, org.springframework.kafka.config.KafkaListenerContainerFactory<?>)
+  - org.springframework.kafka.config.KafkaListenerEndpointRegistrar.KafkaListenerEndpointDescriptor#KafkaListenerEndpointDescriptor
+#

@@ -1,0 +1,14 @@
+- org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorGrouping#getImports
+  - org.springframework.context.annotation.ConfigurationClassParser.DefaultDeferredImportSelectorGroup#process
+  - org.springframework.context.annotation.ConfigurationClassParser.DefaultDeferredImportSelectorGroup#selectImports
+
+- org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorHandler#process
+  - org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorGroupingHandler#register
+    - org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorGrouping#add
+  - org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorGroupingHandler#processGroupImports
+    - org.springframework.context.annotation.ConfigurationClassParser#processImports
+      - org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorHandler#handle
+        - org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorHolder#DeferredImportSelectorHolder
+
+- org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorGroupingHandler#createGroup
+#
