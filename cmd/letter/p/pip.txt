@@ -1,6 +1,7 @@
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple cmake
 pip install pandas_datareader
 pip install --upgrade pandas_datareader
+pip install -r requirements.txt
 
 pip config list
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
