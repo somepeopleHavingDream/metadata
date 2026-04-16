@@ -1,1 +1,2 @@
 python.exe -m pip install --upgrade pip
+python .\agents\s01_agent_loop.py
