@@ -3,6 +3,9 @@
 - org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#registerSeekCallback
 
 - org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#MessagingMessageListenerAdapter
+  - org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#determineInferredType
+    - org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#extractGenericParameterTypFromMethodParameter
+      - org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#isSimpleListOfConsumerRecord
 
 - org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter#isConsumerRecordList
 #
