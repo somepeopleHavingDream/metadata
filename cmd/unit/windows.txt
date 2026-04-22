@@ -1,3 +1,5 @@
+Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 ping 192.168.1.105
 telnet 192.168.1.106 3307
-Set-ExecutionPolicy RemoteSigned
