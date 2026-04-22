@@ -1,0 +1,3 @@
+- org.springframework.kafka.config.AbstractKafkaListenerEndpoint#setupListenerContainer
+  - org.springframework.kafka.config.AbstractKafkaListenerEndpoint#setupMessageListener
+#

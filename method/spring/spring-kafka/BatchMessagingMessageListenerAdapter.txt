@@ -1,3 +1,5 @@
 - org.springframework.kafka.listener.adapter.BatchMessagingMessageListenerAdapter#onMessage(java.util.List<org.apache.kafka.clients.consumer.ConsumerRecord<K,V>>, org.springframework.kafka.support.Acknowledgment, org.apache.kafka.clients.consumer.Consumer<?,?>)
   - org.springframework.kafka.listener.adapter.BatchMessagingMessageListenerAdapter#invoke
+
+- org.springframework.kafka.listener.adapter.BatchMessagingMessageListenerAdapter#BatchMessagingMessageListenerAdapter(java.lang.Object, java.lang.reflect.Method, org.springframework.kafka.listener.KafkaListenerErrorHandler)
 #
