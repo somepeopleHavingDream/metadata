@@ -14,11 +14,10 @@ git rm --cached -r -f .idea
 git reset --soft HEAD~2
 git reset
 
-git config --global http.proxy http://127.0.0.1:7890
-git config --global https.proxy http://127.0.0.1:7890
+git config --global http.proxy http://127.0.0.1:7897
+git config --global https.proxy http://127.0.0.1:7897
 git config --global user.name "yangxin"
 git config --global user.email "1393003255@qq.com"
-git config --global --get http.proxy
 
 git config --global --get http.proxy
 git config --global --get https.proxy
@@ -35,3 +34,4 @@ git init
 git add -A
 git commit -m "初始化运维相关"
 git branch
+git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 clone --depth=1 https://github.com/claude-code-best/claude-code.git
