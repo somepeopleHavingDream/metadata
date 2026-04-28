@@ -1,0 +1,7 @@
+bun run dev
+bun run build
+
+bun
+bun --help
+bun --version
+bun install

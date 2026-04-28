@@ -35,3 +35,5 @@ git add -A
 git commit -m "初始化运维相关"
 git branch
 git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 clone --depth=1 https://github.com/claude-code-best/claude-code.git
+git switch feat/yangxin-2026042701
+git merge main
