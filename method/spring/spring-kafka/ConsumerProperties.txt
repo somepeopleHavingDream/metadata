@@ -1,2 +1,4 @@
 - org.springframework.kafka.listener.ConsumerProperties#ConsumerProperties(java.lang.String...)
+
+- org.springframework.kafka.listener.ConsumerProperties#isSyncCommits
 #

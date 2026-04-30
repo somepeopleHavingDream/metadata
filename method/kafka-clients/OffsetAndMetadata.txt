@@ -1,0 +1,4 @@
+- org.apache.kafka.clients.consumer.OffsetAndMetadata#OffsetAndMetadata(long)
+  - org.apache.kafka.clients.consumer.OffsetAndMetadata#OffsetAndMetadata(long, java.lang.String)
+    - org.apache.kafka.clients.consumer.OffsetAndMetadata#OffsetAndMetadata(long, java.util.Optional<java.lang.Integer>, java.lang.String)
+#

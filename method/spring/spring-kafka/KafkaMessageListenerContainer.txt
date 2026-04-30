@@ -31,14 +31,35 @@
       - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkRebalanceCommits
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#debugRecords
     - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeIfHaveRecords
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#savePositionsIfNeeded
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#notIdle
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#notIdlePartitions
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeListener
+        - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchListener
+          - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchListener
+            - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessage
+              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessageWithRecordsOrList
+                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchOnMessage
+              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#ackBatch
+                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#getHighestOffsetRecords
+            - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#batchInterceptAfter
+            - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#processCommits
+              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#handleAcks
+                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#traceAck
+                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#processAck
+                  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#addOffset
+              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#updatePendingOffsets
+              - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#commitIfNecessary
+                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#buildCommits
+                  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#createOffsetAndMetadata
+                - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#commitSync
+                  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doCommitSync
       - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkIdle
       - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#checkIdlePartitions
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#resumeConsumerIfNeccessary
+      - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doResumeConsumerIfNeccessary
+    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#resumePartitionsIfNecessary
 
 - org.springframework.kafka.listener.KafkaMessageListenerContainer#setClientIdSuffix
 
-- org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessage
-  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#invokeBatchOnMessageWithRecordsOrList
-    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#doInvokeBatchOnMessage
-  - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#ackBatch
-    - org.springframework.kafka.listener.KafkaMessageListenerContainer.ListenerConsumer#getHighestOffsetRecords
 #
