@@ -1,5 +1,5 @@
 claude --help
-cluade --version
+claude --version
 claude doctor
 
 HTTPS_PROXY=http://127.0.0.1:7897 claude doctor

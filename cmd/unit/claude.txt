@@ -3,4 +3,5 @@
 /compact
 /clear
 /resume
+/status
 #

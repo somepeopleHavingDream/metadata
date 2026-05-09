@@ -1,0 +1,22 @@
+set list
+set nolist
+set nu
+set tabstop=4
+
+yy
+y
+
+:95
+:%d
+
+2dd
+
+G
+q
+%s/old/new/g
+!q
+p
+v
+dG
+
+vi --version
