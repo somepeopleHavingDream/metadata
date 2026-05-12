@@ -1,4 +1,6 @@
 bun run dev
+bun run dev:inspect
+
 bun run build
 
 bun
