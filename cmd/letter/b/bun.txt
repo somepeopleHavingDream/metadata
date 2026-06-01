@@ -7,3 +7,4 @@ bun
 bun --help
 bun --version
 bun install
+bun upgrade
