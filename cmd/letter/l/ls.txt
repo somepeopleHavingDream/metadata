@@ -1,5 +1,7 @@
 ls -l
 ls -lh
+ls -lt
+ls -lth
 
 ls -a
 ls *.sh
