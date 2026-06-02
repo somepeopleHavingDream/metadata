@@ -33,6 +33,8 @@ git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 clo
 git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 clone https://github.com/apache/kafka.git
 
 git stash drop stash@`{0`}
+git stash list
+
 git init
 git add -A
 git commit -m "初始化运维相关"
