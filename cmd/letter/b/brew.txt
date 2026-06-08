@@ -1,13 +1,17 @@
 brew update
 brew update-reset
+
 brew upgrade opencode
+brew upgrade opencode --verbose
 
 http_proxy="http://127.0.0.1:7897" https_proxy="http://127.0.0.1:7897" brew install jmeter
 http_proxy="http://127.0.0.1:7897" https_proxy="http://127.0.0.1:7897" brew install --cask rio
 
 http_proxy="http://127.0.0.1:7897" https_proxy="http://127.0.0.1:7897" brew tap farion1231/ccswitch
 http_proxy="http://127.0.0.1:7897" https_proxy="http://127.0.0.1:7897" brew upgrade --cask cc-switch
+http_proxy="http://127.0.0.1:7897" https_proxy="http://127.0.0.1:7897" brew update
 
 brew install maven
 brew config
 brew uninstall rio
+brew info opencode
