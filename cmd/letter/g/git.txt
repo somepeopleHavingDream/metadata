@@ -33,6 +33,8 @@ git -C "$(brew --repo)" remote -v
 git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 clone --depth=1 https://github.com/claude-code-best/claude-code.git
 git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 clone https://github.com/apache/kafka.git
 
+git -c http.proxy=http://127.0.0.1:7897 -c https.proxy=http://127.0.0.1:7897 pull
+
 git stash drop stash@`{0`}
 git stash list
 git stash pop
