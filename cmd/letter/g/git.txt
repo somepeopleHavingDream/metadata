@@ -13,6 +13,7 @@ git rm --cached -r -f .idea
 
 git reset --soft HEAD~2
 git reset
+git reset --hard HEAD
 
 git config --global http.proxy http://127.0.0.1:7897
 git config --global https.proxy http://127.0.0.1:7897
@@ -41,9 +42,12 @@ git stash
 git branch
 git branch -r
 
-git init
 git add -A
+git add bun.lock
+
+git init
 git commit -m "初始化运维相关"
 git switch feat/yangxin-2026042701
 git merge main
 git tag | grep v1.15.13
+git checkout --theirs bun.lock
