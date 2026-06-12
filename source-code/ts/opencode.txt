@@ -1,0 +1,12 @@
+- packages
+  - opencode
+    - src
+      - config
+        - tui-migrates.ts
+        - path.ts
+      - util
+        - filesystem.ts
+  - core
+    - src
+      - global.ts
+#
