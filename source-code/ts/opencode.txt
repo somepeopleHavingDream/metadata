@@ -4,6 +4,7 @@
       - config
         - tui-migrates.ts
         - path.ts
+        - tui.ts
       - util
         - filesystem.ts
   - core
