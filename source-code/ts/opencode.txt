@@ -13,6 +13,9 @@
           - tui.ts
         - tui
           - worker.ts
+      - project
+        - instance-runtime.ts
+        - instance-store.ts
   - core
     - src
       - global.ts
