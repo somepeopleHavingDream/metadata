@@ -7,6 +7,12 @@
         - tui.ts
       - util
         - filesystem.ts
+        - rpc.ts
+      - cli
+        - cmd
+          - tui.ts
+        - tui
+          - worker.ts
   - core
     - src
       - global.ts
