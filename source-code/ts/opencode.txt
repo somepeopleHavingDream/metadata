@@ -19,4 +19,5 @@
   - core
     - src
       - global.ts
+      - fs-util.ts
 #
