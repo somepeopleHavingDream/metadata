@@ -9,3 +9,4 @@ bun --version
 bun install
 bun upgrade
 bun -v
+bun demo.ts
