@@ -19,6 +19,9 @@
         - project.ts
   - core
     - src
+      - observability
+        - logging.ts
+        - shared.ts
       - global.ts
       - fs-util.ts
 #
