@@ -16,6 +16,7 @@
       - project
         - instance-runtime.ts
         - instance-store.ts
+        - project.ts
   - core
     - src
       - global.ts
