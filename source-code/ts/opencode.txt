@@ -22,7 +22,29 @@
       - observability
         - logging.ts
         - shared.ts
+      - effect
+        - runtime.ts
+      - project
+        - schema.ts
+        - sql.ts
+      - database
+        - path.ts
+        - database.ts
+        - migration.ts
       - global.ts
       - fs-util.ts
       - observability.ts
+      - git.ts
+      - process.ts
+  - schema
+    - src
+      - project.ts
+      - project-id.ts
+  - effect-drizzle-sqlite
+    - src
+      - sqlite-core
+        - effect
+          - db.ts
+      - effect-sqlite
+        - driver.ts
 #
