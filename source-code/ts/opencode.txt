@@ -24,4 +24,5 @@
         - shared.ts
       - global.ts
       - fs-util.ts
+      - observability.ts
 #
