@@ -40,6 +40,7 @@
       - observability.ts
       - git.ts
       - process.ts
+      - project.ts
   - schema
     - src
       - project.ts
