@@ -15,3 +15,4 @@ brew install maven
 brew config
 brew uninstall rio
 brew info opencode
+brew trust anomalyco/tap
